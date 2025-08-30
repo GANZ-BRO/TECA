@@ -14,7 +14,8 @@
 
     .quiz-container {
       background-color: #1f2a38;
-      border-left: 5px solid #4a90e2;
+      border-left: 5px solid #5a7ca3;
+      border-right: 5px solid #5a7ca3;
       padding: 20px;
       border-radius: 8px;
       max-width: 700px;
@@ -24,6 +25,16 @@
     h2 {
       margin-top: 0;
       color: #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .admin-link {
+      font-size: 20px;
+      color: #4a90e2;
+      text-decoration: none;
+      cursor: pointer;
     }
 
     select, button {
@@ -60,10 +71,12 @@
     }
 
     #result {
+      display: none;
       margin-top: 20px;
       padding: 15px;
       background-color: #2a3445;
       border-left: 4px solid #4a90e2;
+      border-right: 4px solid #4a90e2;
       border-radius: 5px;
       color: #e6ecf3;
     }
@@ -72,7 +85,10 @@
 <body>
 
   <div class="quiz-container">
-    <h2 id="quizTitle">Kvízplatform</h2>
+    <h2 id="quizTitle">
+      TECA
+      <a href="generator.html" title="Kérdésgenerálás" class="admin-link" id="adminIcon">✅</a>
+    </h2>
 
     <select id="quizSelector" onchange="enableStartButton()">
       <option value="">-- Válassz kvízt --</option>
@@ -100,7 +116,6 @@
     let quiz;
     let selectedFile = "";
 
-    // Betöltjük az index.json fájlt a kvizek mappából
     fetch("kvizek/index.json")
       .then(res => res.json())
       .then(list => {
@@ -122,9 +137,11 @@
       if (!selectedFile) return;
 
       document.getElementById("quizForm").style.display = "none";
+      document.getElementById("result").style.display = "none";
       document.getElementById("result").innerHTML = "";
       document.getElementById("questionArea").innerHTML = "";
       document.getElementById("timer").textContent = "";
+      document.getElementById("adminIcon").style.display = "none";
 
       fetch("kvizek/" + selectedFile)
         .then(res => res.json())
@@ -135,7 +152,7 @@
     }
 
     function startQuizFromLoadedData() {
-      document.getElementById("quizTitle").textContent = quiz.title;
+      document.getElementById("quizTitle").childNodes[0].textContent = quiz.title;
       questions = quiz.shuffleQuestions
         ? [...quiz.questions].sort(() => Math.random() - 0.5)
         : quiz.questions;
@@ -204,6 +221,7 @@
       } else {
         stopTimer();
         document.getElementById("quizForm").style.display = "none";
+        document.getElementById("result").style.display = "block";
         document.getElementById("result").innerHTML =
           `<h3>📊 Eredmény: ${score} / ${questions.length} helyes válasz</h3>` +
           feedback +
@@ -216,7 +234,9 @@
       score = 0;
       feedback = "";
       document.getElementById("quizForm").style.display = "block";
+      document.getElementById("result").style.display = "none";
       document.getElementById("result").innerHTML = "";
+      document.getElementById("adminIcon").style.display = "inline";
       questions = quiz.shuffleQuestions
         ? [...quiz.questions].sort(() => Math.random() - 0.5)
         : quiz.questions;
