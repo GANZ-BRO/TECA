@@ -1,0 +1,66 @@
+{
+  "title": "Villaságtan biztonságtechnikai alapismeretek",
+  "shuffleQuestions": true,
+  "questions": [
+    {
+      "text": "Mi az izmok összerándulásának küszöbértéke váltakozó áram esetén?",
+      "options": ["0.5 mA", "30 mA", "100 mA", "10 mA"],
+      "correct": 3,
+      "explanation": "✅ Helyes! Az izmok összerándulásának küszöbértéke váltakozó áram esetén körülbelül 10 mA."
+    },
+    {
+      "text": "Hogyan befolyásolja a bőr nedvességtartalma az elektromos ellenállást?",
+      "options": ["Csökkenti az ellenállást", "Csak magas feszültségnél van hatása", "Nem befolyásolja", "Növeli az ellenállást"],
+      "correct": 0,
+      "explanation": "✅ Helyes! A nedves bőr csökkenti az ellenállást, így az áram könnyebben halad át."
+    },
+    {
+      "text": "Mi a vegyi hatás példája áramütésnél?",
+      "options": ["Szívritmuszavar", "Vér elektrolit-egyensúlyának megváltozása", "Égési sérülés", "Izomgörcs"],
+      "correct": 1,
+      "explanation": "✅ Helyes! Az elektromos áram megváltoztathatja a vér elektrolit-egyensúlyát, ez a vegyi hatás példája."
+    },
+    {
+      "text": "Melyik eszköz tartozik az aktív érintésvédelmi módszerek közé?",
+      "options": ["Szigetelő anyag", "Védőburkolat", "Kettős szigetelés", "FI-relé"],
+      "correct": 3,
+      "explanation": "✅ Helyes! Az FI-relé aktív érintésvédelmi eszköz, amely hiba esetén automatikusan megszakítja az áramkört."
+    },
+    {
+      "text": "Mi a védőföldelés célja?",
+      "options": ["A feszültség csökkentése", "A testáram elvezetése a földbe", "Az áramkör megszakítása", "A szigetelés növelése"],
+      "correct": 1,
+      "explanation": "✅ Helyes! A védőföldelés célja, hogy hiba esetén a testáramot biztonságosan a földbe vezesse."
+    },
+    {
+      "text": "Mi az érintésvédelmi osztályok szerepe?",
+      "options": ["A mechanikai védelem szintje", "A villamos biztonság szintjének jelzése", "A készülék színének meghatározása", "A szigetelés típusának jelölése"],
+      "correct": 1,
+      "explanation": "✅ Helyes! Az érintésvédelmi osztályok a villamos biztonság szintjét jelzik, például hogy van-e védőföldelés vagy kettős szigetelés."
+    },
+    {
+      "text": "Mi a feszültségmentesítés első lépése?",
+      "options": ["Ellenőrzés", "Biztosítás", "Földelés", "Leválasztás"],
+      "correct": 3,
+      "explanation": "✅ Helyes! A feszültségmentesítés első lépése a leválasztás, azaz az áramkör megszakítása."
+    },
+    {
+      "text": "Mi a teendő, ha az áramütött személyt nem lehet azonnal áramtalanítani?",
+      "options": ["Száraz, szigetelő eszközzel elválasztani", "Kézzel elhúzni", "Víz használata az áram elvezetésére", "Várni, amíg az áram megszűnik"],
+      "correct": 0,
+      "explanation": "✅ Helyes! Ilyenkor száraz, szigetelő eszközzel kell elválasztani, hogy elkerüljük a másodlagos áramütést."
+    },
+    {
+      "text": "Mikor kell értesíteni a mentőket áramütés esetén?",
+      "options": ["Minden esetben", "Ha az áramütés 230 V felett történt", "Csak ha az áramütött eszméletlen", "Ha látható égési sérülés van"],
+      "correct": 0,
+      "explanation": "✅ Helyes! Áramütés esetén minden esetben értesíteni kell a mentőket, mivel a belső sérülések nem mindig láthatók."
+    },
+    {
+      "text": "Mi az elsősegély teendője eszméletlen áramütött esetén?",
+      "options": ["Mozgatás és felállítás", "Hideg vízzel leöntés", "Csak mentők érkezésére várni", "Oldalfekvő helyzetbe helyezés és légzés ellenőrzése"],
+      "correct": 3,
+      "explanation": "✅ Helyes! Eszméletlen áramütöttet stabil oldalfekvő helyzetbe kell helyezni, biztosítani a légutakat, és ellenőrizni a légzést."
+    }
+  ]
+}
