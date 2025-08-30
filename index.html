@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Kvízplatform</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121820;
+      color: #e6ecf3;
+      padding: 20px;
+    }
+
+    .quiz-container {
+      background-color: #1f2a38;
+      border-left: 5px solid #4a90e2;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #ffffff;
+    }
+
+    select, button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      background-color: #2c3a4f;
+      border: 1px solid #4a5a6f;
+      border-radius: 5px;
+      color: #e6ecf3;
+      font-size: 16px;
+    }
+
+    button:disabled {
+      background-color: #3a4a5f;
+      cursor: not-allowed;
+    }
+
+    #timer {
+      font-size: 14px;
+      margin-bottom: 10px;
+      color: #a0b4cc;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0;
+      padding: 10px;
+      background-color: #2c3a4f;
+      border: 1px solid #4a5a6f;
+      border-radius: 5px;
+      cursor: pointer;
+      color: #e6ecf3;
+    }
+
+    #result {
+      margin-top: 20px;
+      padding: 15px;
+      background-color: #2a3445;
+      border-left: 4px solid #4a90e2;
+      border-radius: 5px;
+      color: #e6ecf3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="quiz-container">
+    <h2 id="quizTitle">Kvízplatform</h2>
+
+    <select id="quizSelector" onchange="enableStartButton()">
+      <option value="">-- Válassz kvízt --</option>
+    </select>
+
+    <button id="startButton" onclick="loadSelectedQuiz()" disabled>▶️ Kvíz indítása</button>
+
+    <div id="timer"></div>
+
+    <form id="quizForm" style="display:none;">
+      <div id="questionArea"></div>
+      <button type="button" onclick="nextQuestion()">Tovább</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+
+  <script>
+    let current = 0;
+    let score = 0;
+    let feedback = "";
+    let startTime;
+    let timerInterval;
+    let questions;
+    let quiz;
+    let selectedFile = "";
+
+    // Betöltjük az index.json fájlt a kvizek mappából
+    fetch("kvizek/index.json")
+      .then(res => res.json())
+      .then(list => {
+        const selector = document.getElementById("quizSelector");
+        list.forEach(kviz => {
+          const option = document.createElement("option");
+          option.value = kviz.file;
+          option.textContent = kviz.title;
+          selector.appendChild(option);
+        });
+      });
+
+    function enableStartButton() {
+      selectedFile = document.getElementById("quizSelector").value;
+      document.getElementById("startButton").disabled = !selectedFile;
+    }
+
+    function loadSelectedQuiz() {
+      if (!selectedFile) return;
+
+      document.getElementById("quizForm").style.display = "none";
+      document.getElementById("result").innerHTML = "";
+      document.getElementById("questionArea").innerHTML = "";
+      document.getElementById("timer").textContent = "";
+
+      fetch("kvizek/" + selectedFile)
+        .then(res => res.json())
+        .then(data => {
+          quiz = data;
+          startQuizFromLoadedData();
+        });
+    }
+
+    function startQuizFromLoadedData() {
+      document.getElementById("quizTitle").textContent = quiz.title;
+      questions = quiz.shuffleQuestions
+        ? [...quiz.questions].sort(() => Math.random() - 0.5)
+        : quiz.questions;
+      current = 0;
+      score = 0;
+      feedback = "";
+      document.getElementById("quizForm").style.display = "block";
+      startTimer();
+      loadQuestion();
+    }
+
+    function startTimer() {
+      startTime = Date.now();
+      timerInterval = setInterval(() => {
+        const elapsed = Date.now() - startTime;
+        const minutes = Math.floor(elapsed / 60000);
+        const seconds = Math.floor((elapsed % 60000) / 1000);
+        document.getElementById("timer").textContent = `⏱️ Idő: ${minutes} perc ${seconds} másodperc`;
+      }, 1000);
+    }
+
+    function stopTimer() {
+      clearInterval(timerInterval);
+    }
+
+    function shuffleOptions(q) {
+      const shuffled = q.options.map((opt, i) => ({ text: opt, originalIndex: i }));
+      for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+      }
+      q.shuffledOptions = shuffled;
+      q.shuffledCorrect = shuffled.findIndex(opt => opt.originalIndex === q.correct);
+    }
+
+    function loadQuestion() {
+      const q = questions[current];
+      shuffleOptions(q);
+      let html = `<p><strong>${current + 1}. kérdés:</strong> ${q.text}</p>`;
+      q.shuffledOptions.forEach((opt, i) => {
+        html += `<label><input type="radio" name="answer" value="${i}"> ${opt.text}</label>`;
+      });
+      document.getElementById("questionArea").innerHTML = html;
+    }
+
+    function nextQuestion() {
+      const selected = document.querySelector('input[name="answer"]:checked');
+      if (!selected) {
+        alert("Kérlek, válassz egy lehetőséget!");
+        return;
+      }
+
+      const val = parseInt(selected.value);
+      const q = questions[current];
+
+      if (val === q.shuffledCorrect) {
+        score++;
+        feedback += `<p>${q.explanation}</p>`;
+      } else {
+        feedback += `<p>❌ ${current + 1}. kérdés: Nem helyes válasz. ${q.explanation}</p>`;
+      }
+
+      current++;
+      if (current < questions.length) {
+        loadQuestion();
+      } else {
+        stopTimer();
+        document.getElementById("quizForm").style.display = "none";
+        document.getElementById("result").innerHTML =
+          `<h3>📊 Eredmény: ${score} / ${questions.length} helyes válasz</h3>` +
+          feedback +
+          `<button onclick="restartQuiz()">🔁 Újraindítás</button>`;
+      }
+    }
+
+    function restartQuiz() {
+      current = 0;
+      score = 0;
+      feedback = "";
+      document.getElementById("quizForm").style.display = "block";
+      document.getElementById("result").innerHTML = "";
+      questions = quiz.shuffleQuestions
+        ? [...quiz.questions].sort(() => Math.random() - 0.5)
+        : quiz.questions;
+      startTimer();
+      loadQuestion();
+    }
+  </script>
+
+</body>
+</html>
