@@ -11,18 +11,20 @@
       font-family: Arial, sans-serif;
       background-color: #121820;
       color: #e6ecf3;
-      padding: 20px;
+      padding: 3px;
     }
 
-    .quiz-container {
-      background-color: #1f2a38;
-      border-left: 5px solid #5a7ca3;
-      border-right: 5px solid #5a7ca3;
-      padding: 20px;
-      border-radius: 8px;
-      max-width: 700px;
-      margin: auto;
-    }
+.quiz-container {
+  width: auto;
+  umax-width: 963px;
+  margin: auto;
+  padding: 12px;
+  border-left: 5px solid #5a7ca3;
+  border-right: 5px solid #5a7ca3;
+  border-radius: 8px;
+  background-color: #1f2a38;
+}
+
 
     h2 {
       margin-top: 0;
@@ -192,15 +194,22 @@
       q.shuffledCorrect = shuffled.findIndex(opt => opt.originalIndex === q.correct);
     }
 
-    function loadQuestion() {
-      const q = questions[current];
-      shuffleOptions(q);
-      let html = `<p><strong>${current + 1}. kérdés:</strong> ${q.text}</p>`;
-      q.shuffledOptions.forEach((opt, i) => {
-        html += `<label><input type="radio" name="answer" value="${i}"> ${opt.text}</label>`;
-      });
-      document.getElementById("questionArea").innerHTML = html;
-    }
+function loadQuestion() {
+  const q = questions[current];
+  shuffleOptions(q);
+  let html = `<p><strong>${current + 1}. kérdés:</strong> ${q.text}</p>`;
+
+  if (q.image) {
+    html += `<img src="${q.image}" alt="Kérdés képe" style="max-width:100%; margin-bottom:10px; border-radius:5px;">`;
+  }
+
+  q.shuffledOptions.forEach((opt, i) => {
+    html += `<label><input type="radio" name="answer" value="${i}"> ${opt.text}</label>`;
+  });
+
+  document.getElementById("questionArea").innerHTML = html;
+}
+
 
     function nextQuestion() {
       const selected = document.querySelector('input[name="answer"]:checked');
@@ -213,11 +222,11 @@
       const q = questions[current];
 
       if (val === q.shuffledCorrect) {
-        score++;
-        feedback += `<p>${q.explanation}</p>`;
-      } else {
-        feedback += `<p>❌ ${current + 1}. kérdés: Nem helyes válasz. ${q.explanation}</p>`;
-      }
+  score++;
+  feedback += `<p><strong>${current + 1}. kérdés:</strong> <img src="pipa.png" alt="Helyes válasz" style="width:16px; height:16px; vertical-align:middle; margin-right:6px;"> ${q.explanation}</p>`;
+} else {
+  feedback += `<p><strong>${current + 1}. kérdés:</strong> <img src="hiba.png" alt="Hibás válasz" style="width:16px; height:16px; vertical-align:middle; margin-right:6px;"> Próbáld újra, gondold át még egyszer!</p>`;
+}
 
       current++;
       if (current < questions.length) {

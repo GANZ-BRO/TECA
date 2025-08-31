@@ -4,72 +4,80 @@
   <meta charset="UTF-8">
   <title>Kérdésgeneráló – JSON fájl készítő</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #121820;
+    color: #e6ecf3;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    font-size: 20px; /* Dupla méret az alaphoz képest */
+  }
+
+  h1 {
+    font-size: 32px; /* Főcím marad nagy, nem változik */
+  }
+
+  h3 {
+    font-size: 24px;
+    color: #ffffff;
+  }
+
+  label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #cfd8e3;
+    font-size: 20px;
+  }
+
+  input[type="text"], select, textarea {
+    width: 100%;
+    padding: 14px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    background-color: #2c3a4f;
+    border: 1px solid #4a5a6f;
+    border-radius: 5px;
+    color: #e6ecf3;
+    font-size: 20px;
+  }
+
+  textarea {
+    height: 200px;
+  }
+
+  button {
+    padding: 14px 24px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+
+  hr {
+    border: 0;
+    height: 1px;
+    background-color: #4a5a6f;
+    margin: 20px 0;
+  }
+
+  @media screen and (max-width: 600px) {
     body {
-      font-family: Arial, sans-serif;
-      background-color: #121820;
-      color: #e6ecf3;
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
+      padding: 15px;
     }
-
-    h1, h3 {
-      color: #ffffff;
-    }
-
-    label {
-      display: block;
-      margin-top: 10px;
-      font-weight: bold;
-      color: #cfd8e3;
-    }
-
-    input[type="text"], select, textarea {
-      width: 100%;
-      padding: 10px;
-      margin-top: 5px;
-      margin-bottom: 15px;
-      background-color: #2c3a4f;
-      border: 1px solid #4a5a6f;
-      border-radius: 5px;
-      color: #e6ecf3;
-    }
-
-    textarea {
-      height: 200px;
-    }
-
     button {
-      padding: 12px 20px;
-      background-color: #4a90e2;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      font-size: 16px;
-      cursor: pointer;
-      margin-right: 10px;
-      margin-top: 10px;
+      font-size: 20px;
+      width: 100%;
+      margin-bottom: 10px;
     }
-
-    hr {
-      border: 0;
-      height: 1px;
-      background-color: #4a5a6f;
-      margin: 20px 0;
-    }
-
-    @media screen and (max-width: 600px) {
-      body {
-        padding: 15px;
-      }
-      button {
-        font-size: 15px;
-        width: 100%;
-        margin-bottom: 10px;
-      }
-    }
-  </style>
+  }
+</style>
 </head>
 <body>
 
@@ -77,6 +85,9 @@
 
   <label for="title">Kvíz címe:</label>
   <input type="text" id="title" placeholder="Pl. Biztonságtechnikai alapismeretek">
+
+  <label for="filename">JSON fájl neve (kiterjesztés nélkül):</label>
+  <input type="text" id="filename" placeholder="Pl. biztonsag">
 
   <label for="shuffle">Keverje a kérdések sorrendjét?</label>
   <select id="shuffle">
@@ -87,10 +98,16 @@
   <div id="questionsArea"></div>
 
   <button onclick="addQuestion()">➕ Új kérdés hozzáadása</button>
-  <button onclick="generateJSON()">📄 JSON fájl generálása</button>
+  <button onclick="generateJSON()">📄 JSON generálása</button>
+  <button onclick="downloadJSON()">💾 Mentés fájlba</button>
 
   <label for="output">🔍 Generált JSON tartalom:</label>
   <textarea id="output" readonly></textarea>
+  <button onclick="copyJSON()">📋 JSON másolása vágólapra</button>
+
+  <label for="indexEntry">📁 Index.json bejegyzés:</label>
+  <textarea id="indexEntry" readonly></textarea>
+  <button onclick="copyIndexEntry()">📋 Index másolása vágólapra</button>
 
   <script>
     let questionCount = 0;
@@ -114,6 +131,8 @@
         <input type="text" id="q${questionCount}_correct">
         <label>Magyarázat:</label>
         <input type="text" id="q${questionCount}_explain">
+        <label>Kép fájlneve (pl. budapest.jpg):</label>
+        <input type="text" id="q${questionCount}_image">
         <hr>
       `;
       document.getElementById("questionsArea").appendChild(container);
@@ -121,6 +140,7 @@
 
     function generateJSON() {
       const title = document.getElementById("title").value.trim();
+      const filename = document.getElementById("filename").value.trim();
       const shuffle = document.getElementById("shuffle").value === "true";
 
       const questions = [];
@@ -136,14 +156,19 @@
         const correctRaw = parseInt(document.getElementById(`q${i}_correct`).value.trim());
         const correct = isNaN(correctRaw) ? 0 : correctRaw - 1;
         const explanation = document.getElementById(`q${i}_explain`).value.trim();
+        const imageName = document.getElementById(`q${i}_image`).value.trim();
 
         if (text && opts.every(opt => opt) && explanation) {
-          questions.push({
+          const questionObj = {
             text,
             options: opts,
             correct,
             explanation
-          });
+          };
+          if (imageName) {
+            questionObj.image = `kvizek/${filename}/${imageName}`;
+          }
+          questions.push(questionObj);
         }
       }
 
@@ -154,9 +179,43 @@
       };
 
       document.getElementById("output").value = JSON.stringify(quiz, null, 2);
+      const indexLine = `{ "file": "${filename}.json", "title": "${title}" }`;
+      document.getElementById("indexEntry").value = indexLine;
     }
 
-    // Automatikusan hozzáadunk egy kérdést induláskor
+    function downloadJSON() {
+      const filename = document.getElementById("filename").value.trim();
+      const content = document.getElementById("output").value;
+      if (!filename || !content) {
+        alert("Kérlek, add meg a fájl nevét és generáld le a JSON-t!");
+        return;
+      }
+
+      const blob = new Blob([content], { type: "application/json" });
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = `${filename}.json`;
+      link.click();
+    }
+
+    function copyIndexEntry() {
+      const entry = document.getElementById("indexEntry");
+      entry.select();
+      entry.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(entry.value)
+        .then(() => alert("✅ Index bejegyzés vágólapra másolva!"))
+        .catch(() => alert("❌ Nem sikerült másolni."));
+    }
+
+    function copyJSON() {
+      const jsonArea = document.getElementById("output");
+      jsonArea.select();
+      jsonArea.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(jsonArea.value)
+        .then(() => alert("✅ JSON tartalom vágólapra másolva!"))
+        .catch(() => alert("❌ Nem sikerült másolni."));
+    }
+
     addQuestion();
   </script>
 
