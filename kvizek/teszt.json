@@ -4,21 +4,24 @@
   "questions": [
     {
       "text": "Mi Magyarország fővárosa?",
+      "image": "kvizek/teszt/budapest.jpg",
       "options": ["Debrecen", "Szeged", "Budapest", "Pécs"],
       "correct": 2,
-      "explanation": "✅ Helyes! Budapest Magyarország fővárosa."
+      "explanation": "Budapest Magyarország fővárosa."
     },
     {
       "text": "Melyik a legnagyobb bolygó a Naprendszerben?",
+      "image": "kvizek/teszt/jupiter.jpg",
       "options": ["Föld", "Mars", "Jupiter", "Vénusz"],
       "correct": 2,
-      "explanation": "✅ Helyes! A Jupiter a legnagyobb bolygó."
+      "explanation": "A Jupiter a legnagyobb bolygó."
     },
     {
       "text": "Mi a víz képlete?",
+      "image": "kvizek/teszt/h2o.png",
       "options": ["CO₂", "H₂O", "NaCl", "O₂"],
       "correct": 1,
-      "explanation": "✅ Helyes! A víz képlete H₂O."
+      "explanation": "A víz képlete H₂O."
     }
   ]
 }
