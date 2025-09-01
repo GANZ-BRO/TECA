@@ -2,7 +2,7 @@
 <html lang="hu">
 <head>
   <meta charset="UTF-8">
-  <title>Kérdésgeneráló – JSON fájl készítő</title>
+  <title>Kérdésgeneráló – kvíz fájl készítő</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
   body {
@@ -16,7 +16,7 @@
   }
 
   h1 {
-    font-size: 32px; /* Főcím marad nagy, nem változik */
+    font-size: 27px; /* Főcím */
   }
 
   h3 {
@@ -81,15 +81,15 @@
 </head>
 <body>
 
-  <h1>🔧 Kérdésgeneráló – JSON fájl készítő</h1>
+  <h1>🔧 Kérdésgeneráló – kvíz fájl készítő</h1>
 
   <label for="title">Kvíz címe:</label>
   <input type="text" id="title" placeholder="Pl. Biztonságtechnikai alapismeretek">
 
-  <label for="filename">JSON fájl neve (kiterjesztés nélkül):</label>
+  <label for="filename">kvíz fájl neve (kiterjesztés  és ékezetek nélkül):</label>
   <input type="text" id="filename" placeholder="Pl. biztonsag">
 
-  <label for="shuffle">Keverje a kérdések sorrendjét?</label>
+  <label for="shuffle">Keverje a kérdések sorrendjét? ( a válaszokat mindig keveri)</label>
   <select id="shuffle">
     <option value="true">Igen</option>
     <option value="false">Nem</option>
@@ -103,9 +103,9 @@
 
   <label for="output">🔍 Generált JSON tartalom:</label>
   <textarea id="output" readonly></textarea>
-  <button onclick="copyJSON()">📋 JSON másolása vágólapra</button>
+  <button onclick="copyJSON()">📋 json másolása vágólapra</button>
 
-  <label for="indexEntry">📁 Index.json bejegyzés:</label>
+  <label for="indexEntry">📁 index.json bejegyzés:</label>
   <textarea id="indexEntry" readonly></textarea>
   <button onclick="copyIndexEntry()">📋 Index másolása vágólapra</button>
 
@@ -131,7 +131,7 @@
         <input type="text" id="q${questionCount}_correct">
         <label>Magyarázat:</label>
         <input type="text" id="q${questionCount}_explain">
-        <label>Kép fájlneve (pl. budapest.jpg):</label>
+        <label>Kép fájlneve (pl. vedoszemuveg.jpg):</label>
         <input type="text" id="q${questionCount}_image">
         <hr>
       `;

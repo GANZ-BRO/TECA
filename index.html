@@ -39,7 +39,7 @@ input[type="radio"] {
     }
 
     .admin-link {
-      font-size: 20px;
+      font-size: 15px;
       color: #4a90e2;
       text-decoration: none;
       cursor: pointer;
@@ -50,10 +50,10 @@ input[type="radio"] {
       padding: 10px;
       margin-bottom: 15px;
       background-color: #2c3a4f;
-      border: 1px solid #4a5a6f;
+      border: 1px 1solid #4a5a6f;
       border-radius: 5px;
       color: #e6ecf3;
-      font-size: 16px;
+      font-size: 15px;
     }
 
     button:disabled {
@@ -62,7 +62,7 @@ input[type="radio"] {
     }
 
     #timer {
-      font-size: 14px;
+      font-size: 15px;
       margin-bottom: 10px;
       color: #a0b4cc;
     }
@@ -215,36 +215,42 @@ function loadQuestion() {
 }
 
 
-    function nextQuestion() {
-      const selected = document.querySelector('input[name="answer"]:checked');
-      if (!selected) {
-        alert("Kérlek, válassz egy lehetőséget!");
-        return;
-      }
+function nextQuestion() {
+  const selected = document.querySelector('input[name="answer"]:checked');
+  if (!selected) {
+    alert("Kérlek, válassz egy lehetőséget!");
+    return;
+  }
 
-      const val = parseInt(selected.value);
-      const q = questions[current];
+  const val = parseInt(selected.value);
+  const q = questions[current];
+  const userAnswer = q.shuffledOptions[val].text;
 
-      if (val === q.shuffledCorrect) {
-  score++;
-  feedback += `<p><strong>${current + 1}. kérdés:</strong> <img src="pipa.png" alt="Helyes válasz" style="width:16px; height:16px; vertical-align:middle; margin-right:6px;"> ${q.explanation}</p>`;
-} else {
-  feedback += `<p><strong>${current + 1}. kérdés:</strong> <img src="hiba.png" alt="Hibás válasz" style="width:16px; height:16px; vertical-align:middle; margin-right:6px;"> Próbáld újra, gondold át még egyszer!</p>`;
+  if (val === q.shuffledCorrect) {
+    score++;
+    feedback += `<p><strong>${q.text}</strong><br>
+    <img src="pipa.png" alt="Helyes válasz" style="width:16px; height:16px; vertical-align:middle; margin-right:6px;">
+    Helyes válasz!<br>${q.explanation || ''}</p>`;
+  } else {
+    feedback += `<p><strong>${q.text}</strong><br>
+    <img src="hiba.png" alt="Hibás válasz" style="width:16px; height:16px; vertical-align:middle; margin-right:6px;">
+    A választott válasz: <em>${userAnswer}</em><br>
+    Próbáld meg újra, gondold át még egyszer!</p>`;
+  }
+
+  current++;
+  if (current < questions.length) {
+    loadQuestion();
+  } else {
+    stopTimer();
+    document.getElementById("quizForm").style.display = "none";
+    document.getElementById("result").style.display = "block";
+    document.getElementById("result").innerHTML =
+      `<h3>📊 Eredmény: ${score} / ${questions.length} helyes válasz</h3>` +
+      feedback +
+      `<button onclick="restartQuiz()">🔁 Újraindítás</button>`;
+  }
 }
-
-      current++;
-      if (current < questions.length) {
-        loadQuestion();
-      } else {
-        stopTimer();
-        document.getElementById("quizForm").style.display = "none";
-        document.getElementById("result").style.display = "block";
-        document.getElementById("result").innerHTML =
-          `<h3>📊 Eredmény: ${score} / ${questions.length} helyes válasz</h3>` +
-          feedback +
-          `<button onclick="restartQuiz()">🔁 Újraindítás</button>`;
-      }
-    }
 
     function restartQuiz() {
       current = 0;
