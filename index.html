@@ -126,7 +126,7 @@ input[type="radio"] {
     let quiz;
     let selectedFile = "";
 
-    fetch("kvizek/index.json")
+    fetch("kvizek/kvizlista.json")
       .then(res => res.json())
       .then(list => {
         const selector = document.getElementById("quizSelector");

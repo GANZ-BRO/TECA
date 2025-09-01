@@ -105,9 +105,20 @@
   <textarea id="output" readonly></textarea>
   <button onclick="copyJSON()">📋 json másolása vágólapra</button>
 
-  <label for="indexEntry">📁 index.json bejegyzés:</label>
+  <label for="indexEntry">📁 kvizlista.json bejegyzés:</label>
   <textarea id="indexEntry" readonly></textarea>
-  <button onclick="copyIndexEntry()">📋 Index másolása vágólapra</button>
+  <button onclick="copyIndexEntry()">📋 kvizlista.json-ba beillesztendő rész  másolása vágólapra</button>
+
+
+
+<label for="imageList">🖼️ Képfájl lista (mentendő képek):</label>
+<textarea id="imageList" readonly style="height:120px;"></textarea>
+<button onclick="copyImageList()">📋 Képfájl lista másolása vágólapra</button>
+
+
+
+<label for="previewArea">👁️ Kvíz előnézet:</label>
+<div id="previewArea" style="margin-top:20px;"></div>
 
   <script>
     let questionCount = 0;
@@ -179,9 +190,37 @@
       };
 
       document.getElementById("output").value = JSON.stringify(quiz, null, 2);
-      const indexLine = `{ "file": "${filename}.json", "title": "${title}" }`;
-      document.getElementById("indexEntry").value = indexLine;
-    }
+      const indexLine = `{ "file": "${filename}/${filename}.json", "title": "${title}" }`;
+      
+    
+
+
+document.getElementById("indexEntry").value = indexLine;
+
+let imagePaths = [];
+questions.forEach(q => {
+  if (q.image) {
+    imagePaths.push(q.image);
+  }
+});
+document.getElementById("imageList").value = imagePaths.length
+  ? imagePaths.join("\n")
+  : "Nincs megadott képfájl.";
+
+
+let previewHTML = "<h3>📋 Kvíz előnézet</h3>";
+questions.forEach((q, i) => {
+  previewHTML += `<p><strong>${i + 1}. kérdés:</strong> ${q.text}</p>`;
+  if (q.image) {
+    previewHTML += `<img src="${q.image}" style="max-width:100%; margin-bottom:10px; border-radius:5px;">`;
+  }
+  q.options.forEach((opt, idx) => {
+    previewHTML += `<label><input type="radio" disabled> ${opt}</label><br>`;
+  });
+  previewHTML += "<hr>";
+});
+document.getElementById("previewArea").innerHTML = previewHTML;
+}
 
     function downloadJSON() {
       const filename = document.getElementById("filename").value.trim();
