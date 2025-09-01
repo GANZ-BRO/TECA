@@ -11,7 +11,7 @@
     },
     {
       "text": "Melyik a legnagyobb bolygó a Naprendszerben?",
-      "image": "kvizek/mint/jupiter.jpg",
+      "image": "kvizek/minta/jupiter.jpg",
       "options": ["Föld", "Mars", "Jupiter", "Vénusz"],
       "correct": 2,
       "explanation": "A Jupiter a legnagyobb bolygó."
