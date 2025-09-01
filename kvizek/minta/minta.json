@@ -1,0 +1,27 @@
+{
+  "title": "Tesztkvíz – Alap kérdések",
+  "shuffleQuestions": true,
+  "questions": [
+    {
+      "text": "Mi Magyarország fővárosa?",
+      "image": "kvizek/teszt/budapest.jpg",
+      "options": ["Debrecen", "Szeged", "Budapest", "Pécs"],
+      "correct": 2,
+      "explanation": "Budapest Magyarország fővárosa."
+    },
+    {
+      "text": "Melyik a legnagyobb bolygó a Naprendszerben?",
+      "image": "kvizek/teszt/jupiter.jpg",
+      "options": ["Föld", "Mars", "Jupiter", "Vénusz"],
+      "correct": 2,
+      "explanation": "A Jupiter a legnagyobb bolygó."
+    },
+    {
+      "text": "Mi a víz képlete?",
+      "image": "kvizek/teszt/h2o.png",
+      "options": ["CH₄", "H₂O", "NH₃", "H₂"],
+      "correct": 1,
+      "explanation": "A víz képlete H₂O."
+    }
+  ]
+}
