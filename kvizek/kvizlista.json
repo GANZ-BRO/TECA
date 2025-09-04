@@ -1,5 +1,7 @@
 [
   { "file": "minta/minta.json", "title": "Tesztkvíz – Alap kérdések" },
   { "file": "villbiztech.json", "title": "Villamosságtan Biztonságtechnika" },
-  { "file": "üres.json", "title": "" }
+  { "file": "alkatreszek/alkatreszek1.json", "title": "Elektromos alkatrészek – Alap" },
+{ "file": "alkatreszek/alkatreszek2.json", "title": "Elektromos alkatrészek – Haladó" },
+{ "file": "üres.json", "title": "" }
 ]
