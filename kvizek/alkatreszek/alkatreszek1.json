@@ -1,0 +1,76 @@
+{
+  "title": "Elektromos alkatrészek – Alap kvíz",
+  "shuffleQuestions": true,
+  "questions": [
+    {
+      "text": "Melyik alkatrész szolgál elektromos áram vezetésére?",
+      "image": "kvizek/alkatreszek/wire.svg",
+      "options": ["Elem", "Kapcsoló", "Vezeték", "Izzó"],
+      "correct": 2,
+      "explanation": "A vezeték elektromos áram vezetésére szolgál."
+    },
+    {
+      "text": "Melyik alkatrész biztosít elektromos energiát például távirányítókban?",
+      "image": "kvizek/alkatreszek/cell.svg",
+      "options": ["Kapcsoló", "Elem", "Voltmérő", "LED"],
+      "correct": 1,
+      "explanation": "Az elem elektromos energiát biztosít, gyakran használják távirányítókban."
+    },
+    {
+      "text": "Melyik alkatrész nyitja vagy zárja az áramkört?",
+      "image": "kvizek/alkatreszek/switch.svg",
+      "options": ["Kapcsoló", "Nyomógomb", "Izzó", "Dióda"],
+      "correct": 0,
+      "explanation": "A kapcsoló az áramkör nyitására vagy zárására szolgál."
+    },
+    {
+      "text": "Melyik alkatrész fényt és hőt termel áram hatására?",
+      "image": "kvizek/alkatreszek/bulb.svg",
+      "options": ["LED", "Izzó", "Kondenzátor", "Tranzisztor"],
+      "correct": 1,
+      "explanation": "Az izzó fényt és hőt termel, régi típusú lámpákban használják."
+    },
+    {
+      "text": "Melyik műszerrel mérhető a feszültség?",
+      "image": "kvizek/alkatreszek/voltmeter.svg",
+      "options": ["Ampermérő", "Voltmérő", "Tekercs", "Biztosíték"],
+      "correct": 1,
+      "explanation": "A voltmérő feszültség mérésére szolgál."
+    },
+    {
+      "text": "Melyik alkatrész újratölthető elektromos energiát biztosít?",
+      "image": "kvizek/alkatreszek/battery.svg",
+      "options": ["Elem", "Akkumulátor", "Kondenzátor", "Dióda"],
+      "correct": 1,
+      "explanation": "Az akkumulátor újratölthető energiaforrás, például telefonokban."
+    },
+    {
+      "text": "Melyik alkatrész korlátozza az áramot?",
+      "image": "kvizek/alkatreszek/resistor.svg",
+      "options": ["Ellenállás", "Kapcsoló", "LED", "Fotódióda"],
+      "correct": 0,
+      "explanation": "Az ellenállás korlátozza az áramot, például feszültségosztókban."
+    },
+    {
+      "text": "Melyik műszerrel mérhető az áramerősség?",
+      "image": "kvizek/alkatreszek/ammeter.svg",
+      "options": ["Voltmérő", "Ampermérő", "Tranzisztor", "Biztosíték"],
+      "correct": 1,
+      "explanation": "Az ampermérő az áramerősség mérésére szolgál."
+    },
+    {
+      "text": "Melyik alkatrész tárol elektromos töltést?",
+      "image": "kvizek/alkatreszek/capacitor.svg",
+      "options": ["Kondenzátor", "Dióda", "Tekercs", "LED"],
+      "correct": 0,
+      "explanation": "A kondenzátor elektromos töltést tárol, például szűrőáramkörökben."
+    },
+    {
+      "text": "Melyik alkatrész csak egy irányban engedi az áramot?",
+      "image": "kvizek/alkatreszek/diode.svg",
+      "options": ["Dióda", "LED", "Kapcsoló", "Nyomógomb"],
+      "correct": 0,
+      "explanation": "A dióda egyirányú áramvezetést biztosít."
+    }
+  ]
+}
