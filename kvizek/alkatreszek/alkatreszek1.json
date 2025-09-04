@@ -24,12 +24,12 @@
       "explanation": "A kapcsoló az áramkör nyitására vagy zárására szolgál."
     },
     {
-      "text": "Melyik alkatrész fényt és hőt termel áram hatására?",
-      "image": "kvizek/alkatreszek/bulb.svg",
-      "options": ["LED", "Izzó", "Kondenzátor", "Tranzisztor"],
-      "correct": 1,
-      "explanation": "Az izzó fényt és hőt termel, régi típusú lámpákban használják."
-    },
+  "text": "Melyik alkatrész termel jelentős mennyiségű hőt és fényt áram hatására?",
+  "image": "kvizek/alkatreszek/bulb.svg",
+  "options": ["LED", "Izzó", "Kondenzátor", "Tranzisztor"],
+  "correct": 1,
+  "explanation": "Az izzószálas izzó működése során jelentős hő és fény keletkezik. A LED is termel hőt, de jóval kisebb mértékben, ezért energiatakarékosabb."
+},
     {
       "text": "Melyik műszerrel mérhető a feszültség?",
       "image": "kvizek/alkatreszek/voltmeter.svg",

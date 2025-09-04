@@ -3,9 +3,9 @@
   "shuffleQuestions": true,
   "questions": [
     {
-      "text": "Melyik alkatrész fényt bocsát ki áram hatására?",
+      "text": "Melyik alkatrész bocsát ki fényt áram hatására?",
       "image": "kvizek/alkatreszek/led.svg",
-      "options": ["Izzó", "LED", "Dióda", "Kondenzátor"],
+      "options": ["Ellenállás", "LED", "Dióda", "Kondenzátor"],
       "correct": 1,
       "explanation": "A LED fényt bocsát ki, jelzőfényként használják."
     },
@@ -16,15 +16,15 @@
       "correct": 1,
       "explanation": "A nyomógomb ideiglenesen zárja az áramkört, például kapucsengőben."
     },
+   {
+  "text": "Mennyi a lakossági fogyasztóknál használt hálózati feszültség átlagértéke Európában?",
+  "image": "kvizek/alkatreszek/ac_source.svg",
+  "options": ["12 V", "110 V", "230 V", "400 V"],
+  "correct": 2,
+  "explanation": "Európában a lakossági hálózati feszültség szabványos értéke 230 V, váltakozó áram formájában."
+},
     {
-      "text": "Melyik alkatrész biztosít váltakozó feszültséget az áramkör számára?",
-      "image": "kvizek/alkatreszek/ac_source.svg",
-      "options": ["Akkumulátor", "Hálózati áramforrás", "Elem", "Kondenzátor"],
-      "correct": 1,
-      "explanation": "A hálózati áramforrás váltakozó feszültséget biztosít, például 230V-os konnektorból."
-    },
-    {
-      "text": "Melyik alkatrész felerősíti az elektromos jelet?",
+      "text": "Melyik alkatrész erősíti fel az elektromos jelet?",
       "image": "kvizek/alkatreszek/transistor.svg",
       "options": ["Tranzisztor", "Dióda", "LED", "Voltmérő"],
       "correct": 0,
