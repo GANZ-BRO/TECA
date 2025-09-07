@@ -1,0 +1,246 @@
+{
+  "title": " 10C - Érintésvédelem",
+  "shuffleQuestions": true,
+  "questions": [
+    {
+      "text": "Mit jelent az érintésvédelem az elektromos berendezések esetében?",
+      "image": "kvizek/9C/erintesvedelem_alap.jpg",
+      "options": [
+        "Az eszközök színes burkolatát",
+        "Az áramütés elleni védelmet",
+        "Az eszköz gyorsabb működését",
+        "A vezetékek mágnesességét"
+      ],
+      "correct": 1,
+      "explanation": "Az érintésvédelem az áramütés elkerülésére szolgáló biztonsági intézkedés."
+    },
+    {
+      "text": "Miért fontos az érintésvédelem a mindennapi elektromos eszközök használatakor?",
+      "image": "kvizek/9C/erintesvedelem_fontos.jpg",
+      "options": [
+        "Mert szebbé teszi az eszközöket",
+        "Mert védi az emberi életet",
+        "Mert gyorsítja az áramot",
+        "Mert csökkenti az eszköz súlyát"
+      ],
+      "correct": 1,
+      "explanation": "Az érintésvédelem megakadályozza az áramütést, így védi az életet."
+    },
+    {
+      "text": "Milyen veszélyt előz meg az érintésvédelem?",
+      "image": "kvizek/9C/veszely_erintes.jpg",
+      "options": [
+        "A túlmelegedést",
+        "Az áramütést",
+        "A mágneses mezőt",
+        "A vezetékek elszíneződését"
+      ],
+      "correct": 1,
+      "explanation": "Az érintésvédelem az áramütés kockázatát csökkenti."
+    },
+    {
+      "text": "Milyen érintésvédelmi osztályokat különböztetünk meg?",
+      "image": "kvizek/9C/osztalyok.jpg",
+      "options": [
+        "A, B, C, D",
+        "0, I, II, III",
+        "1, 2, 3, 4",
+        "X, Y, Z, W"
+      ],
+      "correct": 1,
+      "explanation": "Az érintésvédelmi osztályok (0, I, II, III) a készülékek biztonsági szintjét jelzik."
+    },
+    {
+      "text": "Mi jellemző az I. érintésvédelmi osztályba sorolt készülékekre?",
+      "image": "kvizek/9C/osztaly_I.jpg",
+      "options": [
+        "Nincs szigetelésük",
+        "Földelt fémburkolatuk van",
+        "Csak műanyag burkolatuk van",
+        "Kizárólag egyenáramot használnak"
+      ],
+      "correct": 1,
+      "explanation": "Az I. osztályú készülékek földelt fémburkolattal rendelkeznek a biztonság érdekében."
+    },
+    {
+      "text": "Miért szükséges a védővezető az I. osztályú készülékeknél?",
+      "image": "kvizek/9C/vedovezeto.jpg",
+      "options": [
+        "Hogy gyorsabb legyen az áram",
+        "Hogy az áram a földbe távozzon hiba esetén",
+        "Hogy a készülék szebb legyen",
+        "Hogy az áramkör színes legyen"
+      ],
+      "correct": 1,
+      "explanation": "A védővezető biztosítja, hogy hiba esetén az áram a földbe távozzon, nem az emberen keresztül."
+    },
+    {
+      "text": "Milyen színű vezetéket használnak védővezetőként?",
+      "image": "kvizek/9C/vezetek_szin.jpg",
+      "options": [
+        "Piros",
+        "Kék",
+        "Zöld-sárga",
+        "Fekete"
+      ],
+      "correct": 2,
+      "explanation": "A védővezető zöld-sárga színű, hogy könnyen azonosítható legyen."
+    },
+    {
+      "text": "Milyen típusú burkolat jellemző az I. osztályú készülékekre?",
+      "image": "kvizek/9C/burkolat_I.jpg",
+      "options": [
+        "Csak műanyag",
+        "Fém, földeléssel",
+        "Fa burkolat",
+        "Üveg burkolat"
+      ],
+      "correct": 1,
+      "explanation": "Az I. osztályú készülékek fémburkolatúak, amelyeket földelni kell."
+    },
+    {
+      "text": "Milyen példákat tudsz mondani I. osztályú készülékekre?",
+      "image": "kvizek/9C/pelda_I.jpg",
+      "options": [
+        "Telefon, laptop",
+        "Hajszárító, elektromos fogkefe",
+        "Mosógép, hűtőszekrény",
+        "Zseblámpa, távirányító"
+      ],
+      "correct": 2,
+      "explanation": "Az I. osztályú készülékek, mint a mosógép vagy hűtő, földelt fémburkolattal rendelkeznek."
+    },
+    {
+      "text": "Mi jellemző a II. érintésvédelmi osztályba sorolt készülékekre?",
+      "image": "kvizek/9C/osztaly_II.jpg",
+      "options": [
+        "Földelt fémburkolat",
+        "Kettős szigetelés",
+        "Magas feszültség",
+        "Nincs szigetelés"
+      ],
+      "correct": 1,
+      "explanation": "A II. osztályú készülékek kettős szigeteléssel rendelkeznek, így nem igényelnek földelést."
+    },
+    {
+      "text": "Mi az a kettős szigetelés, és miért fontos?",
+      "image": "kvizek/9C/kettos_szigeteles.jpg",
+      "options": [
+        "Két különböző színű vezeték",
+        "Két rétegű szigetelés a biztonságért",
+        "Két áramkör összekapcsolása",
+        "Két konnektor egy eszközben"
+      ],
+      "correct": 1,
+      "explanation": "A kettős szigetelés két szigetelő réteget jelent, ami extra védelmet nyújt az áramütés ellen."
+    },
+    {
+      "text": "Miért nincs szükség földelésre a II. osztályú készülékeknél?",
+      "image": "kvizek/9C/nincs_foldeles.jpg",
+      "options": [
+        "Mert nem vezetnek áramot",
+        "Mert a kettős szigetelés véd",
+        "Mert csak egyenáramot használnak",
+        "Mert mágnesesek"
+      ],
+      "correct": 1,
+      "explanation": "A kettős szigetelés miatt a II. osztályú készülékek nem igényelnek földelést."
+    },
+    {
+      "text": "Milyen szimbólum jelöli a II. érintésvédelmi osztályt?",
+      "image": "kvizek/9C/szimbólum_II.jpg",
+      "options": [
+        "Villám szimbólum",
+        "Dupla négyzet",
+        "Körbe zárt X",
+        "Zöld-sárga csík"
+      ],
+      "correct": 1,
+      "explanation": "A II. osztályt a dupla négyzet szimbólum jelöli a készülékeken."
+    },
+    {
+      "text": "Milyen példákat tudsz mondani II. osztályú készülékekre?",
+      "image": "kvizek/9C/pelda_II.jpg",
+      "options": [
+        "Mosógép, hűtőszekrény",
+        "Hajszárító, porszívó",
+        "Autó akkumulátor",
+        "Villanybojler"
+      ],
+      "correct": 1,
+      "explanation": "A II. osztályú készülékek, mint a hajszárító vagy porszívó, kettős szigeteléssel rendelkeznek."
+    },
+    {
+      "text": "Mi jellemző a III. érintésvédelmi osztályba sorolt készülékekre?",
+      "image": "kvizek/9C/osztaly_III.jpg",
+      "options": [
+        "Földelt fémburkolat",
+        "Kettős szigetelés",
+        "Alacsony feszültségű működés",
+        "Magas áramfogyasztás"
+      ],
+      "correct": 2,
+      "explanation": "A III. osztályú készülékek alacsony feszültségen (pl. 50 V alatt) működnek, így biztonságosak."
+    },
+    {
+      "text": "Miért biztonságosabb a III. osztályú készülékek használata?",
+      "image": "kvizek/9C/biztonsag_III.jpg",
+      "options": [
+        "Mert színesek",
+        "Mert alacsony feszültségen működnek",
+        "Mert gyorsabbak",
+        "Mert mágnesesek"
+      ],
+      "correct": 1,
+      "explanation": "A III. osztályú készülékek alacsony feszültsége csökkenti az áramütés kockázatát."
+    },
+    {
+      "text": "Milyen feszültségen működnek a III. osztályú készülékek?",
+      "image": "kvizek/9C/feszultseg_III.jpg",
+      "options": [
+        "230 V",
+        "50 V alatt",
+        "400 V",
+        "1000 V"
+      ],
+      "correct": 1,
+      "explanation": "A III. osztályú készülékek 50 V alatti feszültségen működnek, így biztonságosak."
+    },
+    {
+      "text": "Mi az a leválasztó transzformátor, és hogyan működik?",
+      "image": "kvizek/9C/transzformator_alap.jpg",
+      "options": [
+        "Egy színes vezeték",
+        "Eszköz, ami elszigeteli az áramkört",
+        "Egy gyorsító áramkör",
+        "Egy mágneses konnektor"
+      ],
+      "correct": 1,
+      "explanation": "A leválasztó transzformátor elszigeteli a szekunder oldalt a hálózattól, növelve a biztonságot."
+    },
+    {
+      "text": "Miért nincs galvanikus kapcsolat a transzformátor primer és szekunder oldala között?",
+      "image": "kvizek/9C/galvanikus.jpg",
+      "options": [
+        "Mert a transzformátor színes",
+        "Mert mágneses mező közvetíti az energiát",
+        "Mert a vezetékek nem érnek össze",
+        "Mert a transzformátor hideg"
+      ],
+      "correct": 1,
+      "explanation": "A mágneses mező közvetíti az energiát, így nincs közvetlen elektromos kapcsolat."
+    },
+    {
+      "text": "Milyen példákat tudsz mondani III. osztályú készülékekre?",
+      "image": "kvizek/9C/pelda_III.jpg",
+      "options": [
+        "Mosógép, hűtőszekrény",
+        "Hajszárító, porszívó",
+        "Telefon töltő, LED lámpa",
+        "Villanybojler, sütő"
+      ],
+      "correct": 2,
+      "explanation": "A III. osztályú készülékek, mint a telefon töltő vagy LED lámpa, alacsony feszültségen működnek."
+    }
+  ]
+}
