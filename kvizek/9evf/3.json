@@ -1,0 +1,83 @@
+{
+  "title": "Villamosságtan biztonságtechnikai alapismeretek - Vegyi és hőhatások",
+  "shuffleQuestions": true,
+  "questions": [
+    {
+      "text": "Miért tud az áram 'megfőzni' minket?",
+      "image": "kvizek/9evf/vegyi1.jpg",
+      "options": ["Mert az áram túl gyors", "Mert az áram hőt termel a testben", "Mert az áram csak a bőrt éri", "Mert az áram szigetel"],
+      "correct": 1,
+      "explanation": "Az áram hőhatása miatt a test szövetei túlmelegedhetnek, ami égési sérülést okoz."
+    },
+    {
+      "text": "Miért hasonlítják az áram hatását a tojásfehérjéhez?",
+      "image": "kvizek/9evf/vegyi2.jpg",
+      "options": ["Mert az áram túl erős", "Mert a szövetek megkeményednek a hőtől", "Mert az áram csak kívül hat", "Mert az áram szigetel"],
+      "correct": 1,
+      "explanation": "Az áram hőhatása a szöveteket 'megsüti', hasonlóan a tojásfehérje megkeményedéséhez."
+    },
+    {
+      "text": "Miért veszélyes az egyenáram?",
+      "image": "kvizek/9evf/vegyi3.jpg",
+      "options": ["Mert az egyenáram túl gyors", "Mert vegyi változásokat okozhat a testben", "Mert az egyenáram nem hat a testre", "Mert az egyenáram szigetel"],
+      "correct": 1,
+      "explanation": "Az egyenáram elektrolízist okozhat, ami vegyi károsodást idéz elő a testben."
+    },
+    {
+      "text": "Miért keletkezhet gáz a vérben áramütés után?",
+      "image": "kvizek/9evf/vegyi4.jpg",
+      "options": ["Mert az áram túl gyors", "Mert az áram vegyi reakciót indít", "Mert az áram csak kívül hat", "Mert az áram szigetel"],
+      "correct": 1,
+      "explanation": "Az áram elektrolízist okozhat, ami gázbuborékokat hozhat létre a vérben."
+    },
+    {
+      "text": "Miért károsítja az áram a vesét?",
+      "image": "kvizek/9evf/vegyi5.jpg",
+      "options": ["Mert az áram túl erős", "Mert az áram vegyi és hőhatást okoz", "Mert az áram csak a bőrt éri", "Mert az áram szigetel"],
+      "correct": 1,
+      "explanation": "Az áram vegyi és hőhatása károsíthatja a vese szöveteit."
+    },
+    {
+      "text": "Miért nem látszik azonnal a károsodás?",
+      "image": "kvizek/9evf/vegyi6.jpg",
+      "options": ["Mert az áram túl gyors", "Mert a belső szervek károsodása rejtett", "Mert az áram csak kívül hat", "Mert az áram szigetel"],
+      "correct": 1,
+      "explanation": "Az áram belső szerveket károsíthat, ami nem látható azonnal."
+    },
+    {
+      "text": "Miért lehet halálos a kis áramerősség is?",
+      "image": "kvizek/9evf/vegyi7.jpg",
+      "options": ["Mert az áram túl gyors", "Mert megzavarhatja a szívritmust", "Mert az áram csak kívül hat", "Mert az áram szigetel"],
+      "correct": 1,
+      "explanation": "Kis áramerősség is megzavarhatja a szív elektromos jeleit, ami halálos lehet."
+    },
+    {
+      "text": "Miért ég meg a bőr az áram belépési pontján?",
+      "image": "kvizek/9evf/vegyi8.jpg",
+      "options": ["Mert az áram túl gyors", "Mert az áram hőt termel", "Mert az áram csak kívül hat", "Mert az áram szigetel"],
+      "correct": 1,
+      "explanation": "Az áram hőhatása égési sérülést okoz a belépési ponton."
+    },
+    {
+      "text": "Miért nem érezzük mindig a hőhatást?",
+      "image": "kvizek/9evf/vegyi9.jpg",
+      "options": ["Mert az áram túl gyors", "Mert a belső szövetek károsodnak először", "Mert az áram csak kívül hat", "Mert az áram szigetel"],
+      "correct": 1,
+      "explanation": "A belső szövetek károsodása előbb bekövetkezhet, mint a bőrön érzett hő."
+    },
+    {
+      "text": "Miért kell orvoshoz menni akkor is, ha 'jól vagyunk' áramütés után?",
+      "image": "kvizek/9evf/vegyi10.jpg",
+      "options": ["Mert az áram túl gyors", "Mert rejtett károsodások lehetnek", "Mert az áram csak kívül hat", "Mert az áram szigetel"],
+      "correct": 1,
+      "explanation": "Az áram rejtett belső károsodásokat okozhat, amit orvosnak kell ellenőriznie."
+    },
+    {
+      "text": "Miért nem lehet otthon eldönteni, hogy súlyos volt-e az áramütés?",
+      "image": "kvizek/9evf/vegyi11.jpg",
+      "options": ["Mert az áram túl gyors", "Mert a belső károsodások nem láthatók", "Mert az áram csak kívül hat", "Mert az áram szigetel"],
+      "correct": 1,
+      "explanation": "A belső szervek károsodása nem látható, ezért orvosi vizsgálat szükséges."
+    }
+  ]
+}

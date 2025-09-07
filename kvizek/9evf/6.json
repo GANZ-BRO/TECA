@@ -1,0 +1,83 @@
+{
+  "title": "Villamosságtan biztonságtechnikai alapismeretek - Mentés és elsősegély villamos baleset esetén",
+  "shuffleQuestions": true,
+  "questions": [
+    {
+      "text": "Miért nem szabad rögtön megfogni az áramütött embert?",
+      "image": "kvizek/9evf/mentes1.jpg",
+      "options": ["Mert az ember túl gyors", "Mert az áram rád is átterjedhet", "Mert az ember szigetel", "Mert az ember csak kívül hat"],
+      "correct": 1,
+      "explanation": "Az áramütött ember érintése áramütést okozhat a mentőnek is."
+    },
+    {
+      "text": "Miért kell először kikapcsolni az áramot?",
+      "image": "kvizek/9evf/mentes2.jpg",
+      "options": ["Mert az áram túl gyors", "Mert biztonságossá teszi a mentést", "Mert az áram szigetel", "Mert az áram csak kívül hat"],
+      "correct": 1,
+      "explanation": "Az áram kikapcsolása megszünteti az áramütés veszélyét a mentés során."
+    },
+    {
+      "text": "Miért nem elég csak elrántani valakit?",
+      "image": "kvizek/9evf/mentes3.jpg",
+      "options": ["Mert az elrántás túl gyors", "Mert az áram továbbra is folyhat", "Mert az elrántás szigetel", "Mert az elrántás csak kívül hat"],
+      "correct": 1,
+      "explanation": "Az elrántás nem szünteti meg az áramforrást, így a veszély megmarad."
+    },
+    {
+      "text": "Miért kell szigetelő eszközt használni mentéshez?",
+      "image": "kvizek/9evf/mentes4.jpg",
+      "options": ["Mert az eszköz túl gyors", "Mert megvédi a mentőt az áramtól", "Mert az eszköz szigetel", "Mert az eszköz csak kívül hat"],
+      "correct": 1,
+      "explanation": "A szigetelő eszköz (pl. fa vagy műanyag) nem vezeti az áramot, így biztonságos."
+    },
+    {
+      "text": "Miért kell azonnal elsősegélyt nyújtani?",
+      "image": "kvizek/9evf/mentes5.jpg",
+      "options": ["Mert az elsősegély túl gyors", "Mert életet menthet", "Mert az elsősegély szigetel", "Mert az elsősegély csak kívül hat"],
+      "correct": 1,
+      "explanation": "Az azonnali elsősegély növeli a túlélés esélyét áramütés után."
+    },
+    {
+      "text": "Miért kell stabil oldalfekvésbe helyezni a sérültet?",
+      "image": "kvizek/9evf/mentes6.jpg",
+      "options": ["Mert az oldalfekvés túl gyors", "Mert biztosítja a légutak szabadságát", "Mert az oldalfekvés szigetel", "Mert az oldalfekvés csak kívül hat"],
+      "correct": 1,
+      "explanation": "A stabil oldalfekvés megakadályozza a fulladást, ha a sérült eszméletlen."
+    },
+    {
+      "text": "Miért kell újraélesztést kezdeni légzéskimaradás esetén?",
+      "image": "kvizek/9evf/mentes7.jpg",
+      "options": ["Mert az újraélesztés túl gyors", "Mert helyreállíthatja a légzést és keringést", "Mert az újraélesztés szigetel", "Mert az újraélesztés csak kívül hat"],
+      "correct": 1,
+      "explanation": "Az újraélesztés visszaállíthatja a szív és a légzés működését."
+    },
+    {
+      "text": "Miért kell mentőt hívni akkor is, ha 'jól van' valaki?",
+      "image": "kvizek/9evf/mentes8.jpg",
+      "options": ["Mert a mentő túl gyors", "Mert rejtett sérülések lehetnek", "Mert a mentő szigetel", "Mert a mentő csak kívül hat"],
+      "correct": 1,
+      "explanation": "Az áramütés rejtett belső sérüléseket okozhat, amit orvosnak kell ellenőriznie."
+    },
+    {
+      "text": "Miért fontos a 112-es szám ismerete?",
+      "image": "kvizek/9evf/mentes9.jpg",
+      "options": ["Mert a szám túl gyors", "Mert ez az egységes segélyhívószám", "Mert a szám szigetel", "Mert a szám csak kívül hat"],
+      "correct": 1,
+      "explanation": "A 112-es szám Európában a segélyhívószám, amely gyors segítséget biztosít."
+    },
+    {
+      "text": "Miért kell EKG vizsgálat áramütés után?",
+      "image": "kvizek/9evf/mentes10.jpg",
+      "options": ["Mert az EKG túl gyors", "Mert ellenőrzi a szív működését", "Mert az EKG szigetel", "Mert az EKG csak kívül hat"],
+      "correct": 1,
+      "explanation": "Az EKG kimutatja az áramütés által okozott szívritmuszavarokat."
+    },
+    {
+      "text": "Miért kell utólag ellenőrizni a hálózatot?",
+      "image": "kvizek/9evf/mentes11.jpg",
+      "options": ["Mert a hálózat túl gyors", "Mert a hiba megismétlődhet", "Mert a hálózat szigetel", "Mert a hálózat csak kívül hat"],
+      "correct": 1,
+      "explanation": "A hálózat ellenőrzése megakadályozza a további baleseteket."
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "title": "Villamosságtan biztonságtechnikai alapismeretek - A villamos áram élettani hatásai",
+  "shuffleQuestions": true,
+  "questions": [
+    {
+      "text": "Miért tudja az áram megállítani a légzést?",
+      "image": "kvizek/9evf/elettani1.jpg",
+      "options": ["Mert az áram túl gyors", "Mert az áram az izmokat bénítja", "Mert az áram csak a kezet éri", "Mert az áram leállítja az agyat"],
+      "correct": 1,
+      "explanation": "Az áram az izmokat, köztük a légzőizmokat is béníthatja, így megállhat a légzés."
+    },
+    {
+      "text": "A szív miért nem tud 'újraindulni' magától áramütés után?",
+      "image": "kvizek/9evf/elettani2.jpg",
+      "options": ["Mert a szív túl gyenge", "Mert az áram megzavarja a szívritmust", "Mert az áram csak a kezet éri", "Mert az áram túl alacsony"],
+      "correct": 1,
+      "explanation": "Az áram megzavarhatja a szív elektromos jeleit, ami fibrillációhoz vezethet."
+    },
+    {
+      "text": "Miért veszélyesebb az áram a mellkason, mint a kézen?",
+      "image": "kvizek/9evf/elettani3.jpg",
+      "options": ["Mert a mellkas vastagabb", "Mert a mellkas közel van a szívhez", "Mert a kéz szigetel", "Mert a mellkas erősebb"],
+      "correct": 1,
+      "explanation": "A mellkason áthaladó áram elérheti a szívet, ami súlyos szívritmuszavart okozhat."
+    },
+    {
+      "text": "Mi az a fibrilláció, és miért halálos?",
+      "image": "kvizek/9evf/elettani4.jpg",
+      "options": ["A szív gyorsulása", "A szív szabálytalan remegése", "A szív túlterhelése", "A szív lassulása"],
+      "correct": 1,
+      "explanation": "A fibrilláció a szív szabálytalan, hatástalan remegése, ami megállíthatja a vérkeringést."
+    },
+    {
+      "text": "Miért fáj az izom, ha áram éri?",
+      "image": "kvizek/9evf/elettani5.jpg",
+      "options": ["Mert az áram túl gyors", "Mert az áram az izmokat görcsbe rántja", "Mert az áram csak a bőrt éri", "Mert az áram az agyat stimulálja"],
+      "correct": 1,
+      "explanation": "Az áram akaratlan izomösszehúzódást okoz, ami fájdalmas görcsöket vált ki."
+    },
+    {
+      "text": "Miért nem érezzük mindig, ha áramütést kapunk?",
+      "image": "kvizek/9evf/elettani6.jpg",
+      "options": ["Mert az áram túl lassú", "Mert az áram túl gyenge lehet", "Mert az áram csak a kezet éri", "Mert az áram csak kívül hat"],
+      "correct": 1,
+      "explanation": "Kis áramerősség esetén az áram nem mindig érzékelhető, de belső károkat okozhat."
+    },
+    {
+      "text": "Miért okozhat agykárosodást az áram?",
+      "image": "kvizek/9evf/elettani7.jpg",
+      "options": ["Mert az áram túl erős", "Mert az áram megzavarja az agy jeleit", "Mert az áram csak a bőrt éri", "Mert az áram túl gyors"],
+      "correct": 1,
+      "explanation": "Az áram megzavarhatja az agy elektromos jeleit, ami károsodást okozhat."
+    },
+    {
+      "text": "Miért számít az áram erőssége és időtartama?",
+      "image": "kvizek/9evf/elettani8.jpg",
+      "options": ["Mert az áram túl gyors", "Mert ezek meghatározzák a károsodás mértékét", "Mert az áram csak a kezet éri", "Mert az áram csak kívül hat"],
+      "correct": 1,
+      "explanation": "Az áram erőssége és időtartama befolyásolja a test károsodásának súlyosságát."
+    },
+    {
+      "text": "Miért nem ugyanaz a hatás minden embernél?",
+      "image": "kvizek/9evf/elettani9.jpg",
+      "options": ["Mert mindenki más testsúlyú", "Mert a test ellenállása eltér", "Mert az áram csak a kezet éri", "Mert az áram túl gyors"],
+      "correct": 1,
+      "explanation": "Az emberek testének ellenállása és fizikai állapota eltér, így az áram hatása is különböző."
+    },
+    {
+      "text": "Miért nem lehet 'hozzászokni' az áramhoz?",
+      "image": "kvizek/9evf/elettani10.jpg",
+      "options": ["Mert az áram túl gyors", "Mert az áram mindig káros", "Mert az áram csak kívül hat", "Mert az áram túl gyenge"],
+      "correct": 1,
+      "explanation": "Az áram élettani hatása kiszámíthatatlan, és a test nem tud alkalmazkodni hozzá."
+    },
+    {
+      "text": "Miért használják mégis az áramot gyógyításra?",
+      "image": "kvizek/9evf/elettani11.jpg",
+      "options": ["Mert az áram túl gyors", "Mert szabályozott körülmények között segít", "Mert az áram csak kívül hat", "Mert az áram túl gyenge"],
+      "correct": 1,
+      "explanation": "Szabályozott, alacsony áramot használnak pl. defibrillátorban a szívritmus helyreállítására."
+    }
+  ]
+}

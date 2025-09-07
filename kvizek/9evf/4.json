@@ -1,0 +1,83 @@
+{
+  "title": "Villamosságtan biztonságtechnikai alapismeretek - Érintésvédelem és áramütés elleni védelem",
+  "shuffleQuestions": true,
+  "questions": [
+    {
+      "text": "Miért kell ennyi féle védelem az áram ellen?",
+      "image": "kvizek/9evf/erintesvedelem1.jpg",
+      "options": ["Mert az áram túl gyors", "Mert különböző veszélyek ellen védenek", "Mert az áram csak kívül hat", "Mert az áram szigetel"],
+      "correct": 1,
+      "explanation": "Különböző helyzetekben különböző védelmi módszerekre van szükség az áramütés ellen."
+    },
+    {
+      "text": "Mi az a nullázás, és miért fontos?",
+      "image": "kvizek/9evf/erintesvedelem2.jpg",
+      "options": ["Mert az áramot gyorsítja", "Mert a fémrészeket a nullavezetékhez köti", "Mert az áramot leállítja", "Mert az áramot szigeteli"],
+      "correct": 1,
+      "explanation": "A nullázás a fémrészeket a nullavezetékhez köti, így csökkenti az áramütés kockázatát."
+    },
+    {
+      "text": "Miért nem elég csak burkolni a vezetékeket?",
+      "image": "kvizek/9evf/erintesvedelem3.jpg",
+      "options": ["Mert a burkolat túl vékony", "Mert a burkolat megsérülhet", "Mert a burkolat nem vezeti az áramot", "Mert a burkolat túl erős"],
+      "correct": 1,
+      "explanation": "A burkolat megsérülhet, ezért további védelemre van szükség."
+    },
+    {
+      "text": "Miért nem veszélyes a törpefeszültség?",
+      "image": "kvizek/9evf/erintesvedelem4.jpg",
+      "options": ["Mert a törpefeszültség túl gyors", "Mert túl alacsony az áramütéshez", "Mert a törpefeszültség szigetel", "Mert a törpefeszültség csak kívül hat"],
+      "correct": 1,
+      "explanation": "A törpefeszültség (pl. 12V) túl alacsony ahhoz, hogy áramütést okozzon."
+    },
+    {
+      "text": "Miért kell különbséget tenni aktív és passzív védelem között?",
+      "image": "kvizek/9evf/erintesvedelem5.jpg",
+      "options": ["Mert az aktív gyorsabb", "Mert különböző módon védenek", "Mert a passzív szigetel", "Mert az aktív csak kívül hat"],
+      "correct": 1,
+      "explanation": "Az aktív védelem (pl. FI-relé) automatikus, a passzív (pl. szigetelés) statikus."
+    },
+    {
+      "text": "Miért nem szabad földelni a kettős szigetelésű gépeket?",
+      "image": "kvizek/9evf/erintesvedelem6.jpg",
+      "options": ["Mert a szigetelés túl erős", "Mert a kettős szigetelés elég védelmet nyújt", "Mert a földelés gyorsítja az áramot", "Mert a földelés szigetel"],
+      "correct": 1,
+      "explanation": "A kettős szigetelésű gépek már önmagukban biztonságosak, így nem kell földelni őket."
+    },
+    {
+      "text": "Miért van külön védővezető és nullavezető?",
+      "image": "kvizek/9evf/erintesvedelem7.jpg",
+      "options": ["Mert a védővezető gyorsabb", "Mert különböző feladatuk van", "Mert a nullavezető szigetel", "Mert a védővezető csak kívül hat"],
+      "correct": 1,
+      "explanation": "A védővezető a biztonságot szolgálja, a nullavezető az áramkör része."
+    },
+    {
+      "text": "Miért kell IP-védettséget jelölni a készülékeken?",
+      "image": "kvizek/9evf/erintesvedelem8.jpg",
+      "options": ["Mert az IP gyorsítja az áramot", "Mert jelzi a víz és por elleni védelmet", "Mert az IP szigeteli a készüléket", "Mert az IP csak kívül hat"],
+      "correct": 1,
+      "explanation": "Az IP-védettség mutatja, mennyire védett a készülék víz és por ellen."
+    },
+    {
+      "text": "Miért nem elég csak 'óvatosnak lenni'?",
+      "image": "kvizek/9evf/erintesvedelem9.jpg",
+      "options": ["Mert az óvatosság gyorsabb", "Mert a hibák kiszámíthatatlanok", "Mert az óvatosság szigetel", "Mert az óvatosság csak kívül hat"],
+      "correct": 1,
+      "explanation": "Az emberi hibák és a technikai hibák miatt további védelem szükséges."
+    },
+    {
+      "text": "Miért kell a védelmi módokat szabvány szerint kialakítani?",
+      "image": "kvizek/9evf/erintesvedelem10.jpg",
+      "options": ["Mert a szabvány gyorsabb", "Mert a szabvány garantálja a biztonságot", "Mert a szabvány szigetel", "Mert a szabvány csak kívül hat"],
+      "correct": 1,
+      "explanation": "A szabványok biztosítják, hogy a védelem hatékony és megbízható legyen."
+    },
+    {
+      "text": "Miért nem használható minden védelem minden helyen?",
+      "image": "kvizek/9evf/erintesvedelem11.jpg",
+      "options": ["Mert a védelem túl gyors", "Mert a környezeti feltételek eltérnek", "Mert a védelem szigetel", "Mert a védelem csak kívül hat"],
+      "correct": 1,
+      "explanation": "A különböző környezetek (pl. nedves helyiség) különböző védelmi módokat igényelnek."
+    }
+  ]
+}
