@@ -1,0 +1,146 @@
+{
+  "title": "Elektromos Alkatrészek",
+  "shuffleQuestions": true,
+  "questions": [
+    {
+      "text": "Melyik alkatrész szolgál elektromos áram vezetésére?",
+      "image": "kvizek/alkatreszek/wire.svg",
+      "options": ["Elem", "Kapcsoló", "Vezeték", "Izzó"],
+      "correct": 2,
+      "explanation": "A vezeték elektromos áram vezetésére szolgál."
+    },
+    {
+      "text": "Melyik alkatrész biztosít elektromos energiát például távirányítókban?",
+      "image": "kvizek/alkatreszek/cell.svg",
+      "options": ["Kapcsoló", "Elem", "Voltmérő", "LED"],
+      "correct": 1,
+      "explanation": "Az elem elektromos energiát biztosít, gyakran használják távirányítókban."
+    },
+    {
+      "text": "Melyik alkatrész nyitja vagy zárja az áramkört?",
+      "image": "kvizek/alkatreszek/switch.svg",
+      "options": ["Kapcsoló", "Nyomógomb", "Izzó", "Dióda"],
+      "correct": 0,
+      "explanation": "A kapcsoló az áramkör nyitására vagy zárására szolgál."
+    },
+    {
+  "text": "Melyik alkatrész termel jelentős mennyiségű hőt és fényt áram hatására?",
+  "image": "kvizek/alkatreszek/bulb.svg",
+  "options": ["LED", "Izzó", "Kondenzátor", "Tranzisztor"],
+  "correct": 1,
+  "explanation": "Az izzószálas izzó működése során jelentős hő és fény keletkezik. A LED is termel hőt, de jóval kisebb mértékben, ezért energiatakarékosabb."
+},
+    {
+      "text": "Melyik műszerrel mérhető a feszültség?",
+      "image": "kvizek/alkatreszek/voltmeter.svg",
+      "options": ["Ampermérő", "Voltmérő", "Tekercs", "Biztosíték"],
+      "correct": 1,
+      "explanation": "A voltmérő feszültség mérésére szolgál."
+    },
+    {
+      "text": "Melyik alkatrész újratölthető elektromos energiát biztosít?",
+      "image": "kvizek/alkatreszek/battery.svg",
+      "options": ["Elem", "Akkumulátor", "Kondenzátor", "Dióda"],
+      "correct": 1,
+      "explanation": "Az akkumulátor újratölthető energiaforrás, például telefonokban."
+    },
+    {
+      "text": "Melyik alkatrész korlátozza az áramot?",
+      "image": "kvizek/alkatreszek/resistor.svg",
+      "options": ["Ellenállás", "Kapcsoló", "LED", "Fotódióda"],
+      "correct": 0,
+      "explanation": "Az ellenállás korlátozza az áramot, például feszültségosztókban."
+    },
+    {
+      "text": "Melyik műszerrel mérhető az áramerősség?",
+      "image": "kvizek/alkatreszek/ammeter.svg",
+      "options": ["Voltmérő", "Ampermérő", "Tranzisztor", "Biztosíték"],
+      "correct": 1,
+      "explanation": "Az ampermérő az áramerősség mérésére szolgál."
+    },
+    {
+      "text": "Melyik alkatrész tárol elektromos töltést?",
+      "image": "kvizek/alkatreszek/capacitor.svg",
+      "options": ["Kondenzátor", "Dióda", "Tekercs", "LED"],
+      "correct": 0,
+      "explanation": "A kondenzátor elektromos töltést tárol, például szűrőáramkörökben."
+    },
+    {
+      "text": "Melyik alkatrész csak egy irányban engedi az áramot?",
+      "image": "kvizek/alkatreszek/diode.svg",
+      "options": ["Dióda", "LED", "Kapcsoló", "Nyomógomb"],
+      "correct": 0,
+      "explanation": "A dióda egyirányú áramvezetést biztosít."
+    },
+    {
+      "text": "Melyik alkatrész bocsát ki fényt áram hatására?",
+      "image": "kvizek/alkatreszek/led.svg",
+      "options": ["Ellenállás", "LED", "Dióda", "Kondenzátor"],
+      "correct": 1,
+      "explanation": "A LED fényt bocsát ki, jelzőfényként használják."
+    },
+    {
+      "text": "Melyik alkatrész ideiglenesen zárja az áramkört?",
+      "image": "kvizek/alkatreszek/pushbutton.svg",
+      "options": ["Kapcsoló", "Nyomógomb", "LED", "Voltmérő"],
+      "correct": 1,
+      "explanation": "A nyomógomb ideiglenesen zárja az áramkört, például kapucsengőben."
+    },
+   {
+  "text": "Mennyi a lakossági fogyasztóknál használt hálózati feszültség átlagértéke Európában?",
+  "image": "kvizek/alkatreszek/ac_source.svg",
+  "options": ["12 V", "110 V", "230 V", "400 V"],
+  "correct": 2,
+  "explanation": "Európában a lakossági hálózati feszültség szabványos értéke 230 V, váltakozó áram formájában."
+},
+    {
+      "text": "Melyik alkatrész erősíti fel az elektromos jelet?",
+      "image": "kvizek/alkatreszek/transistor.svg",
+      "options": ["Tranzisztor", "Dióda", "LED", "Voltmérő"],
+      "correct": 0,
+      "explanation": "A tranzisztor jelek felerősítésére szolgál, például erősítőkben."
+    },
+    {
+      "text": "Melyik alkatrész védi az áramkört túláram ellen?",
+      "image": "kvizek/alkatreszek/fuse.svg",
+      "options": ["Biztosíték", "Kapcsoló", "Kondenzátor", "Ampermérő"],
+      "correct": 0,
+      "explanation": "A biztosíték túláram esetén elolvad, így védi az áramkört."
+    },
+    {
+      "text": "Melyik alkatrész ellenállása mechanikusan vagy elektronikusan szabályozható?",
+      "image": "kvizek/alkatreszek/potentiometer.svg",
+      "options": ["Ellenállás", "Változtatható ellenállás", "Kondenzátor", "Tranzisztor"],
+      "correct": 1,
+      "explanation": "A változtatható ellenállás például hangerőszabályzóként működik."
+    },
+    {
+      "text": "Melyik alkatrész ellenállása a fény intenzitásának megfelelően változik?",
+      "image": "kvizek/alkatreszek/ldr.svg",
+      "options": ["Fényérzékeny ellenállás", "Fotódióda", "LED", "Kapcsoló"],
+      "correct": 0,
+      "explanation": "A fényérzékeny ellenállás automatikus világításvezérléshez használható."
+    },
+    {
+      "text": "Melyik alkatrész alakítja át a feszültséget vagy áramerősséget?",
+      "image": "kvizek/alkatreszek/transformer.svg",
+      "options": ["Transzformátor", "Kondenzátor", "Dióda", "Tekercs"],
+      "correct": 0,
+      "explanation": "A transzformátor két tekercs segítségével alakítja át a feszültséget vagy áramot."
+    },
+    {
+      "text": "Melyik alkatrész alakítja át a fényenergiát elektromos árammá?",
+      "image": "kvizek/alkatreszek/photodiode.svg",
+      "options": ["Fotódióda", "LED", "Fényérzékeny ellenállás", "Kapcsoló"],
+      "correct": 0,
+      "explanation": "A fotódióda fényenergiát elektromos árammá alakít, például napelemekben."
+    },
+    {
+      "text": "Melyik alkatrész mágneses mezőt hoz létre áram hatására?",
+      "image": "kvizek/alkatreszek/coil.svg",
+      "options": ["Tekercs", "Kondenzátor", "Tranzisztor", "Voltmérő"],
+      "correct": 0,
+      "explanation": "A tekercs mágneses mezőt hoz létre, vagy energiát tárol szűrőáramkörökben."
+    }
+  ]
+}
