@@ -109,8 +109,15 @@ input[type="radio"] {
     <select id="quizSelector" onchange="enableStartButton()">
       <option value="">-- Válassz kvízt --</option>
     </select>
+<div id="questionCount" style="margin-bottom:10px; font-size:14px; color:#a0b4cc;"></div>
+   
+<select id="questionLimit" style="width:100%; padding:8px; margin-bottom:15px; background-color:#2c3a4f; border:1px solid #4a5a6f; border-radius:5px; color:#e6ecf3;">
+  <option value="">-- Válassz kérdésszámot --</option>
+</select>
 
-    <button id="startButton" onclick="loadSelectedQuiz()" disabled>▶️ Kvíz indítása</button>
+ <button id="startButton" onclick="loadSelectedQuiz()" disabled>▶️ Kvíz indítása</button>
+
+
 
     <div id="timer"></div>
 
@@ -145,40 +152,77 @@ input[type="radio"] {
       });
 
     function enableStartButton() {
-      selectedFile = document.getElementById("quizSelector").value;
-      document.getElementById("startButton").disabled = !selectedFile;
-    }
+  selectedFile = document.getElementById("quizSelector").value;
+  document.getElementById("startButton").disabled = !selectedFile;
+  document.getElementById("questionCount").textContent = "";
+  document.getElementById("questionLimit").innerHTML = '<option value="">-- Válassz kérdésszámot --</option>';
 
-    function loadSelectedQuiz() {
-      if (!selectedFile) return;
+  if (selectedFile) {
+    fetch("kvizek/" + selectedFile)
+      .then(res => res.json())
+      .then(data => {
+        const count = data.questions.length;
+        document.getElementById("questionCount").textContent = `📋 A kiválasztott kvíz ${count} kérdést tartalmaz.`;
 
-      document.getElementById("quizForm").style.display = "none";
-      document.getElementById("result").style.display = "none";
-      document.getElementById("result").innerHTML = "";
-      document.getElementById("questionArea").innerHTML = "";
-      document.getElementById("timer").textContent = "";
-      document.getElementById("adminIcon").style.display = "none";
+        for (let i = 5; i <= count; i += 5) {
+          const option = document.createElement("option");
+          option.value = i;
+          option.textContent = `${i} kérdés`;
+          document.getElementById("questionLimit").appendChild(option);
+        }
 
-      fetch("kvizek/" + selectedFile)
-        .then(res => res.json())
-        .then(data => {
-          quiz = data;
-          startQuizFromLoadedData();
-        });
-    }
+        // Ha nem osztható 5-tel, adjuk hozzá a maradékot is
+        if (count % 5 !== 0 && !document.querySelector(`#questionLimit option[value="${count}"]`)) {
+          const lastOption = document.createElement("option");
+          lastOption.value = count;
+          lastOption.textContent = `${count} kérdés`;
+          document.getElementById("questionLimit").appendChild(lastOption);
+        }
+      });
+  }
+}
+
+function loadSelectedQuiz() {
+  if (!selectedFile) return;
+
+  document.getElementById("quizForm").style.display = "none";
+  document.getElementById("result").style.display = "none";
+  document.getElementById("result").innerHTML = "";
+  document.getElementById("questionArea").innerHTML = "";
+  document.getElementById("timer").textContent = "";
+  document.getElementById("adminIcon").style.display = "none";
+  document.getElementById("questionCount").textContent = ""; // törlés előzőről
+
+  fetch("kvizek/" + selectedFile)
+    .then(res => res.json())
+    .then(data => {
+      quiz = data;
+      const count = quiz.questions.length;
+      document.getElementById("questionCount").textContent = `📋 Ez a kvíz ${count} kérdést tartalmaz.`;
+      startQuizFromLoadedData();
+    });
+}
 
     function startQuizFromLoadedData() {
-      document.getElementById("quizTitle").childNodes[0].textContent = quiz.title;
-      questions = quiz.shuffleQuestions
-        ? [...quiz.questions].sort(() => Math.random() - 0.5)
-        : quiz.questions;
-      current = 0;
-      score = 0;
-      feedback = "";
-      document.getElementById("quizForm").style.display = "block";
-      startTimer();
-      loadQuestion();
-    }
+  document.getElementById("quizTitle").childNodes[0].textContent = quiz.title;
+
+  let limit = parseInt(document.getElementById("questionLimit").value);
+  const maxAvailable = quiz.questions.length;
+  if (isNaN(limit) || limit < 5) limit = 5;
+  if (limit > maxAvailable) limit = maxAvailable;
+
+  questions = quiz.shuffleQuestions
+    ? [...quiz.questions].sort(() => Math.random() - 0.5).slice(0, limit)
+    : quiz.questions.slice(0, limit);
+
+  current = 0;
+  score = 0;
+  feedback = "";
+
+  document.getElementById("quizForm").style.display = "block";
+  startTimer();
+  loadQuestion();
+}
 
     function startTimer() {
       startTime = Date.now();
