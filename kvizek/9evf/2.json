@@ -17,7 +17,7 @@
       "explanation": "A víz csökkenti a bőr ellenállását, így növeli az áramütés kockázatát."
     },
     {
-      "text": "Miért nem véd meg minket teljesen a bőrünk?",
+      "text": "Miért nem véd meg minket a bőrünk áramütés esetén?",
       "image": "kvizek/9evf/ellenallas3.jpg",
       "options": ["Mert a bőr túl vékony", "Mert a bőr ellenállása nem elég magas", "Mert a bőr nem érzi az áramot", "Mert a bőr túl száraz"],
       "correct": 1,
@@ -38,26 +38,31 @@
       "explanation": "Ha az áram létfontosságú szerveken (pl. szíven) halad át, súlyosabb a károsodás."
     },
     {
-      "text": "Miért lehet veszélyes a fürdőszobai áramütés?",
+      "text": "Miért lehet veszélyesebb a fürdőszobai áramütés?",
       "image": "kvizek/9evf/ellenallas6.jpg",
       "options": ["Mert a fürdőszoba kicsi", "Mert a víz csökkenti a test ellenállását", "Mert a fürdőszoba szigetel", "Mert a fürdőszoba csendes"],
       "correct": 1,
       "explanation": "A víz csökkenti a test ellenállását, így növeli az áramütés kockázatát."
     },
     {
-      "text": "Miért nem érezzük az áramot, ha csak kis feszültség van?",
+      "text": "Miért nem érezzük az áram hatását ha egy 1,5 V-os elem két végét érintjük meg?",
       "image": "kvizek/9evf/ellenallas7.jpg",
-      "options": ["Mert a kis feszültség lassú", "Mert a test ellenállása túl magas", "Mert a kis feszültség nem hat a bőrre", "Mert a kis feszültség csak kívül hat"],
+      "options": ["Az emberi bőr tökéletes szigetelő, így az áram nem tud átfolyni rajta.", "Az 1,5 V feszültség túl alacsony ahhoz, hogy az emberi test ellenállásán jelentős áramerősséget hozzon létre, így nem éri el az idegrendszer érzékelési küszöbét.", "Az 1,5 V-os elem váltakozó áramot (AC) termel, amit az idegrendszer nem érzékel.", "Az 1,5 V-os elem nem termel elektromos áramot, ezért nem érezzük."],
       "correct": 1,
       "explanation": "Kis feszültség esetén a test ellenállása miatt az áram túl gyenge ahhoz, hogy érezzük."
     },
     {
-      "text": "Miért van különbség az egyenáram és váltakozó áram hatása között?",
-      "image": "kvizek/9evf/ellenallas8.jpg",
-      "options": ["Mert az egyenáram lassabb", "Mert a váltakozó áram az izmokat jobban stimulálja", "Mert az egyenáram nem hat a testre", "Mert a váltakozó áram gyengébb"],
-      "correct": 1,
-      "explanation": "A váltakozó áram az izmokat és idegeket erősebben stimulálja, mint az egyenáram."
-    },
+  "text": "Melyik áramforrás okozhat izomösszehúzódást a felsoroltak közül?",
+  "image": "kvizek/9evf/biztonsag11.jpg",
+  "options": [
+    "Hálózati áram a konnektorban",
+    "Elem egy távirányítóban",
+    "Statikus elektromosság a ruhákon",
+    "Napelem által termelt áram"
+  ],
+  "correct": 0,
+  "explanation": "A hálózati áram (230V) a konnektorban elég erős ahhoz, hogy izomösszehúzódást, sőt áramütést okozzon. Az elemek alacsony feszültsége, a statikus elektromosság és a napelemek által termelt áram általában nem elég erős ehhez."
+},
     {
       "text": "Miért nem lehet pontosan kiszámolni az áram hatását minden emberre?",
       "image": "kvizek/9evf/ellenallas9.jpg",
@@ -66,12 +71,17 @@
       "explanation": "A test ellenállása egyénenként változik, így az áram hatása kiszámíthatatlan."
     },
     {
-      "text": "Miért nem véd meg minket a cipőnk?",
-      "image": "kvizek/9evf/ellenallas10.jpg",
-      "options": ["Mert a cipő túl vékony", "Mert nem minden cipő szigetel", "Mert a cipő nem érzi az áramot", "Mert a cipő túl nedves"],
-      "correct": 1,
-      "explanation": "Csak a szigetelőanyagú cipő véd, de nem minden cipő szigetel megfelelően."
-    },
+  "text": "Melyik testrészünknek a legnagyobb az elektromos ellenállása?",
+  "image": "kvizek/9evf/biztonsag12.jpg",
+  "options": [
+    "A száraz bőr",
+    "A szív",
+    "A csontok",
+    "A vér"
+  ],
+  "correct": 0,
+  "explanation": "A száraz bőr rendelkezik a legnagyobb elektromos ellenállással a testrészek közül, mert kevésbé vezeti az áramot, mint a nedves szövetek vagy a vér. Az ellenállása körülbelül 100 000 ohm is lehet, míg a csontok, a vér és a szív jobb vezetők."
+},
     {
       "text": "Miért kell számolni a test belső ellenállásával is?",
       "image": "kvizek/9evf/ellenallas11.jpg",
