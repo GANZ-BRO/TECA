@@ -1,11 +1,11 @@
 {
-  "title": "Villamosságtan biztonságtechnikai alapismeretek",
+  "title": "Villamosságtan biztonságtechnikai alapismeretek - Elektromosság és eszközök, Biztonság és védelem",
   "shuffleQuestions": true,
   "questions": [
     {
       "text": "Miért van két lyuk a konnektorban, szerinted?",
       "image": "kvizek/9evf/eszkozok1.jpg",
-      "options": ["Csak dizájn miatt", "Az áramkörhöz két vezeték kell", "Hogy ne essen ki a dugó", "Mert így könnyebb takarítani"],
+      "options": ["Hogy menőbb legyen", "Az áramkörhöz két vezeték kell", "Hogy több dugó férjen bele", "Mert így könnyebb bedugni"],
       "correct": 1,
       "explanation": "A két lyuk a fázis- és nullavezetékhez csatlakozik, hogy az áramkör működjön."
     },
@@ -17,9 +17,9 @@
       "explanation": "A kapcsoló összeköti az áramkört, így az áram eljut a lámpához, és az világít."
     },
     {
-      "text": "Miért ciki, ha belenyúlsz a konnektorba?",
+      "text": "Miért veszélyes belenyúlni a konnektorba?",
       "image": "kvizek/9evf/eszkozok3.jpg",
-      "options": ["Mert koszos lesz az ujjad", "Mert áramütést kapsz", "Mert elromlik a konnektor", "Mert nem fér be az ujjad"],
+      "options": ["Mert koszos lesz az ujjad", "Mert áramütést kapsz", "Mert elromlik a konnektor", "Mert túl szoros a lyuk"],
       "correct": 1,
       "explanation": "A konnektorban áram van, ami durván megrázhat, ha belenyúlsz."
     },
@@ -59,23 +59,33 @@
       "explanation": "A villany lekapcsolása spórolja az áramot és csökkenti a tűzveszélyt."
     },
     {
-      "text": "Miért nem megy be néha a dugó a konnektorba?",
-      "image": "kvizek/9evf/eszkozok9.jpg",
-      "options": ["Mert a dugó túl nagy", "Mert gyerekbiztos védelem van rajta", "Mert a konnektor elromlott", "Mert a dugó rossz szögben van"],
-      "correct": 1,
-      "explanation": "A gyerekbiztos konnektorokat úgy tervezték, hogy nehezebb legyen beléjük nyúlni vagy dugót bedugni."
-    },
+  "text": "Hogyan működik a gyerekzár a konnektorban, hogy megakadályozza a hozzáférést?",
+  "image": "kvizek/9evf/eszkozok9.jpg",
+  "options": [
+    "A konnektor automatikusan kikapcsol",
+    "A csatlakozó nyílásokat mechanikus retesz blokkolja",
+    "A dugót mágneses erő tartja távol",
+    "A konnektor feszültségét csökkenti"
+  ],
+  "correct": 1,
+  "explanation": "A gyerekzár mechanikus retesszel blokkolja a konnektor nyílásait, így megakadályozza, hogy gyerekek tárgyakat dugjanak bele, csökkentve az áramütés kockázatát."
+},
+{
+  "text": "Hogyan járul hozzá a hosszabbító gyerekzára a biztonság növeléséhez?",
+  "image": "kvizek/9evf/eszkozok10.jpg",
+  "options": [
+    "Figyelmeztető jelzést ad túlterhelés esetén",
+    "Blokkolja a konnektorokhoz való hozzáférést",
+    "Automatikusan lekapcsolja az áramot, ha gyereket észlel",
+    "Szabályozza az áram erősségét"
+  ],
+  "correct": 1,
+  "explanation": "A hosszabbító gyerekzára mechanikusan blokkolja a konnektorok nyílásait, így megakadályozza, hogy gyerekek hozzáférjenek, növelve a biztonságot."
+},
     {
-      "text": "Na, szerinted mire jó a piros gomb a hosszabbítón?",
-      "image": "kvizek/9evf/eszkozok10.jpg",
-      "options": ["Dísznek", "Ki- és bekapcsolja az áramot", "Gyorsítja az áramot", "Összetartja a kábeleket"],
-      "correct": 1,
-      "explanation": "A piros gomb ki- és bekapcsolja az áramot a hosszabbítóban, így biztonságosabb a használata."
-    },
-    {
-      "text": "Miért gáz, ha vizes kézzel nyúlsz a konnektorhoz?",
+      "text": "Miért nem oké vizes kézzel matatni a konnektor körül?",
       "image": "kvizek/9evf/biztonsag1.jpg",
-      "options": ["Mert elázik a konnektor", "Mert a víz vezeti az áramot", "Mert a víz csúszóssá teszi a kezed", "Mert a konnektor koszos lesz"],
+      "options": ["Mert elázik a konnektor", "Mert a víz vezeti az áramot", "Mert a kezed csúszni fog", "Mert a konnektor nem működik vízben"],
       "correct": 1,
       "explanation": "A víz csökkenti a bőr ellenállását, így könnyebben kapsz áramütést."
     },
@@ -87,12 +97,17 @@
       "explanation": "A műanyag nem vezeti az áramot, ezért biztonságos megfogni."
     },
     {
-      "text": "Miért nem oké, ha a kábeleket rángatod?",
-      "image": "kvizek/9evf/biztonsag3.jpg",
-      "options": ["Mert a kábel elszakadhat", "Mert gyorsabb lesz az áram", "Mert a kábel túl erős", "Mert a kábel csúszik"],
-      "correct": 1,
-      "explanation": "A kábel rángatása megsértheti a szigetelést, ami áramütést vagy tüzet okozhat."
-    },
+  "text": "Mit kell ellenőrizni egy kölcsön kapott hosszabbítón, mielőtt használod?",
+  "image": "kvizek/9evf/biztonsag3.jpg",
+  "options": [
+    "A kábel szigetelésének épségét és a megfelelő hosszt",
+    "A hosszabbító színét és súlyát",
+    "A piros gomb helyét",
+    "A csatlakozók fényességét"
+  ],
+  "correct": 0,
+  "explanation": "A kölcsön kapott hosszabbító kábelének szigetelését ellenőrizni kell, hogy ne legyen rajta sérülés (pl. szakadás vagy kopás), mert ez áramütést vagy tüzet okozhat. A kábel hossza is fontos, mert ha túl hosszú és laza, botlásveszélyt okozhat, vagy nem biztonságos a használata."
+},
     {
       "text": "Miért durva, ha a hajszárítót a kádban használod?",
       "image": "kvizek/9evf/biztonsag4.jpg",
@@ -101,16 +116,16 @@
       "explanation": "A víz jól vezeti az áramot, így a hajszárító áramütést okozhat a kádban."
     },
     {
-      "text": "Miért kell szólni egy felnőttnek, mielőtt bedugsz valamit a konnektorba?",
-      "image": "kvizek/9evf/biztonsag5.jpg",
-      "options": ["Mert a felnőttek erősebbek", "Mert tudják, mi a biztonságos", "Mert a konnektor nehéz", "Mert a felnőttek gyorsabbak"],
-      "correct": 1,
-      "explanation": "A felnőttek tudják, hogyan kell biztonságosan bánni az árammal."
-    },
+  "text": "Szerinted melyik eszköz fogyaszt több áramot a háztartásban?",
+  "image": "kvizek/9evf/biztonsag5.jpg",
+  "options": ["A telefontöltő", "A hajszárító", "A LED lámpa", "A számítógép monitor"],
+  "correct": 1,
+  "explanation": "A hajszárító több áramot használ, mert általában 1000-2000 wattos teljesítménye van, míg a telefontöltő (5-20 watt), a LED lámpa (5-15 watt) és a monitor (20-50 watt) sokkal kevesebbet fogyaszt."
+},
     {
-      "text": "Miért hülyeség ceruzát dugni a konnektorba?",
+      "text": "Miért veszélyes ceruzát dugni a konnektorba?",
       "image": "kvizek/9evf/biztonsag6.jpg",
-      "options": ["Mert a ceruza eltörik", "Mert áramütést kaphatsz", "Mert a konnektor koszos lesz", "Mert a ceruza túl vékony"],
+      "options": ["Mert a ceruza eltörik", "Mert áramütést kaphatsz", "Mert a konnektor eldugul", "Mert a ceruza nem fér bele"],
       "correct": 1,
       "explanation": "A ceruza vezetheti az áramot, ami áramütést vagy tüzet okozhat."
     },
@@ -122,12 +137,12 @@
       "explanation": "A műanyag szigetelő, így megakadályozza, hogy az áram kiszökjön a kábelből."
     },
     {
-      "text": "Miért nem oké a konnektor közelében játszani?",
-      "image": "kvizek/9evf/biztonsag8.jpg",
-      "options": ["Mert a konnektor zajos", "Mert áramütést kaphatsz", "Mert a konnektor nehéz", "Mert a konnektor piszkos"],
-      "correct": 1,
-      "explanation": "A konnektor közelében játszani veszélyes, mert könnyen áramütést kaphatsz."
-    },
+  "text": "Szerinted melyik eszköz vezeti az áramot?",
+  "image": "kvizek/9evf/biztonsag8.jpg",
+  "options": ["A műanyag dugó", "A fém kanál", "A fa pálca", "A gumi karkötő"],
+  "correct": 1,
+  "explanation": "A fémek, mint például a kanálban lévő fém, jól vezetik az áramot, míg a műanyag, fa vagy gumi szigetelő anyagok, amik nem vezetik."
+},
     {
       "text": "Miért kattog a villanykapcsoló, amikor fel-le nyomod?",
       "image": "kvizek/9evf/biztonsag9.jpg",
