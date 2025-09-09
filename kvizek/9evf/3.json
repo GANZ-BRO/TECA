@@ -87,17 +87,17 @@
       "explanation": "Az áram hője és vegyi hatása sérti a vese szöveteit."
     },
     {
-      "text": "Miért nem látszik azonnal a károsodás?",
-      "image": "kvizek/9evf/aramutes8.jpg",
-      "options": [
-        "A belső szervek sérülése rejtett.",
-        "A bőr később mutatja a sérülést.",
-        "A károsodás csak órák múlva érezhető.",
-        "A test gyorsan helyreáll."
-      ],
-      "correct": 0,
-      "explanation": "Az áram belső szerveket sérthet, ami kívülről nem látható."
-    },
+  "text": "Miért nem látszik azonnal a károsodás?",
+  "image": "kvizek/9evf/aramutes8.jpg",
+  "options": [
+    "A belső szervek sérülése rejtett.",
+    "A bőr később mutatja a sérülést.",
+    "A test színe megváltozik.",
+    "A test gyorsan helyreáll."
+  ],
+  "correct": 0,
+  "explanation": "Az áram belső szerveket sérthet, például a szívet vagy izmokat, ami kívülről nem látható."
+},
     {
       "text": "Miért lehet halálos a kis áramerősség is?",
       "image": "kvizek/9evf/aramutes9.jpg",
