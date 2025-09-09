@@ -111,14 +111,16 @@ input[type="radio"] {
     </select>
 <div id="questionCount" style="margin-bottom:10px; font-size:14px; color:#a0b4cc;"></div>
    
-<select id="questionLimit" style="width:100%; padding:8px; margin-bottom:15px; background-color:#2c3a4f; border:1px solid #4a5a6f; border-radius:5px; color:#e6ecf3;">
+<select id="questionLimit" style="width:100%; padding:8px; margin-bottom:15px; background-color:#2c3a4f; border:1px solid #4a5a6f; border-radius:5px; color:#e6ecf3;text-align-last:center;">
   <option value="">-- Válassz kérdésszámot --</option>
 </select>
 
- <button id="startButton" onclick="loadSelectedQuiz()" disabled>▶️ Kvíz indítása</button>
 
 
-
+<div style="display: flex; gap: 10px; margin-bottom: 15px;">
+  <button id="practiceButton" onclick="loadSelectedQuiz('practice')">🧪 Gyakorlás</button>
+  <button id="testButton" onclick="loadSelectedQuiz('test')">🏆 Tudás próba</button>
+</div>
     <div id="timer"></div>
 
     <form id="quizForm" style="display:none;">
@@ -153,37 +155,48 @@ input[type="radio"] {
 
     function enableStartButton() {
   selectedFile = document.getElementById("quizSelector").value;
-  document.getElementById("startButton").disabled = !selectedFile;
-  document.getElementById("questionCount").textContent = "";
-  document.getElementById("questionLimit").innerHTML = '<option value="">-- Válassz kérdésszámot --</option>';
+  const questionLimit = document.getElementById("questionLimit");
+  const questionCount = document.getElementById("questionCount");
 
-  if (selectedFile) {
-    fetch("kvizek/" + selectedFile)
-      .then(res => res.json())
-      .then(data => {
-        const count = data.questions.length;
-        document.getElementById("questionCount").textContent = `📋 A kiválasztott kvíz ${count} kérdést tartalmaz.`;
-
-        for (let i = 5; i <= count; i += 5) {
-          const option = document.createElement("option");
-          option.value = i;
-          option.textContent = `${i} kérdés`;
-          document.getElementById("questionLimit").appendChild(option);
-        }
-
-        // Ha nem osztható 5-tel, adjuk hozzá a maradékot is
-        if (count % 5 !== 0 && !document.querySelector(`#questionLimit option[value="${count}"]`)) {
-          const lastOption = document.createElement("option");
-          lastOption.value = count;
-          lastOption.textContent = `${count} kérdés`;
-          document.getElementById("questionLimit").appendChild(lastOption);
-        }
-      });
+  questionLimit.innerHTML = '<option value="">-- Válassz kérdésszámot --</option>';
+  questionCount.textContent = "";
+  
+  if (!selectedFile) {
+    questionLimit.disabled = true;
+    return;
   }
+
+  fetch("kvizek/" + selectedFile)
+    .then(res => res.json())
+    .then(data => {
+      const count = data.questions.length;
+      questionCount.textContent = `📋 A kiválasztott kvíz ${count} kérdést tartalmaz.`;
+      questionLimit.disabled = false;
+
+      for (let i = 5; i <= count; i += 5) {
+        const option = document.createElement("option");
+        option.value = i;
+        option.textContent = `${i} kérdés`;
+        questionLimit.appendChild(option);
+      }
+
+      if (count % 5 !== 0 && !document.querySelector(`#questionLimit option[value="${count}"]`)) {
+        const lastOption = document.createElement("option");
+        lastOption.value = count;
+        lastOption.textContent = `${count} kérdés`;
+        questionLimit.appendChild(lastOption);
+      }
+
+      // Beállíthatunk egy alapértelmezett értéket is:
+      questionLimit.value = Math.min(10, count);
+    });
 }
 
-function loadSelectedQuiz() {
+let quizMode = "test"; // alapértelmezett
+
+function loadSelectedQuiz(mode) {
   if (!selectedFile) return;
+  quizMode = mode;
 
   document.getElementById("quizForm").style.display = "none";
   document.getElementById("result").style.display = "none";
@@ -191,14 +204,11 @@ function loadSelectedQuiz() {
   document.getElementById("questionArea").innerHTML = "";
   document.getElementById("timer").textContent = "";
   document.getElementById("adminIcon").style.display = "none";
-  document.getElementById("questionCount").textContent = ""; // törlés előzőről
 
   fetch("kvizek/" + selectedFile)
     .then(res => res.json())
     .then(data => {
       quiz = data;
-      const count = quiz.questions.length;
-      document.getElementById("questionCount").textContent = `📋 Ez a kvíz ${count} kérdést tartalmaz.`;
       startQuizFromLoadedData();
     });
 }
@@ -225,14 +235,15 @@ function loadSelectedQuiz() {
 }
 
     function startTimer() {
-      startTime = Date.now();
-      timerInterval = setInterval(() => {
-        const elapsed = Date.now() - startTime;
-        const minutes = Math.floor(elapsed / 60000);
-        const seconds = Math.floor((elapsed % 60000) / 1000);
-        document.getElementById("timer").textContent = `⏱️ Idő: ${minutes} perc ${seconds} másodperc`;
-      }, 1000);
-    }
+  startTime = Date.now();
+  timerInterval = setInterval(() => {
+    const elapsed = Date.now() - startTime;
+    const minutes = Math.floor(elapsed / 60000);
+    const seconds = Math.floor((elapsed % 60000) / 1000);
+    const modeIcon = quizMode === "practice" ? "🧪" : "🏆";
+    document.getElementById("timer").textContent = `⏱️ Idő: ${minutes} perc ${seconds} másodperc ${modeIcon}`;
+  }, 1000);
+}
 
     function stopTimer() {
       clearInterval(timerInterval);
@@ -277,16 +288,30 @@ function nextQuestion() {
   const userAnswer = q.shuffledOptions[val].text;
 
   if (val === q.shuffledCorrect) {
-    score++;
-    feedback += `<p><strong>${q.text}</strong><br>
+  score++;
+  feedback += `<p style="padding:10px; border-radius:5px;">
+    <strong>${q.text}</strong><br>
     <img src="pipa.png" alt="Helyes válasz" style="width:16px; height:16px; vertical-align:middle; margin-right:6px;">
-    Helyes válasz!<br>${q.explanation || ''}</p>`;
+    Válaszod helyes!<br>
+    <span style="color:#a6e3a1;">${q.explanation || ''}</span>
+  </p>`;
+} else {
+  const userAnswer = q.shuffledOptions[val].text;
+  if (quizMode === "practice") {
+    feedback += `<p style="padding:10px; border-radius:5px;">
+      <strong>${q.text}</strong><br>
+      <img src="hiba.png" alt="Hibás válasz" style="width:16px; height:16px; vertical-align:middle; margin-right:6px;">
+      A válaszod: <em style="color:#ffe680;">${userAnswer}</em> nem volt helyes!<br>
+      A helyes választ megtalálod, ha figyelembe veszed, hogy: <span style="color:#80cfff;">${q.explanation || 'ez a kérdés különös figyelmet igényel.'}</span>
+    </p>`;
   } else {
-    feedback += `<p><strong>${q.text}</strong><br>
-    <img src="hiba.png" alt="Hibás válasz" style="width:16px; height:16px; vertical-align:middle; margin-right:6px;">
-    A választott válasz: <em>${userAnswer}</em><br>
-    Próbáld meg újra, gondold át még egyszer!</p>`;
+    feedback += `<p style="padding:10px; border-radius:5px;">
+      <strong>${q.text}</strong><br>
+      <img src="hiba.png" alt="Hibás válasz" style="width:16px; height:16px; vertical-align:middle; margin-right:6px;">
+      Ez a válasz: <em style="color:#ffe680;">${userAnswer}</em> Helytelen!
+    </p>`;
   }
+}
 
   current++;
   if (current < questions.length) {
@@ -295,10 +320,15 @@ function nextQuestion() {
     stopTimer();
     document.getElementById("quizForm").style.display = "none";
     document.getElementById("result").style.display = "block";
-    document.getElementById("result").innerHTML =
-      `<h3>📊 Eredmény: ${score} / ${questions.length} helyes válasz</h3>` +
-      feedback +
-      `<button onclick="restartQuiz()">🔁 Újraindítás</button>`;
+    const modeLabel = quizMode === "practice"
+  ? "🧪Gyakorlás </p>"
+  : "🏆Ttudáspróba</p>";
+
+document.getElementById("result").innerHTML =
+  modeLabel +
+  `<h3>📊 Eredmény: ${score} / ${questions.length} helyes válasz</h3>` +
+  feedback +
+  `<button onclick="restartQuiz()">🔁 Újraindítás</button>`;
   }
 }
 
