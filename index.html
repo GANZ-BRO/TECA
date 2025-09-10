@@ -135,13 +135,14 @@ input[type="radio"] {
   <script>
     let current = 0;
     let score = 0;
-    let feedback = "";
+	  let feedback = "";
     let startTime;
     let timerInterval;
     let questions;
     let quiz;
-    let selectedFile = "";
-
+    let lastPracticeLimit = 0;
+	  let selectedFile = "";
+		
     fetch("kvizek/kvizlista.json")
       .then(res => res.json())
       .then(list => {
@@ -221,8 +222,12 @@ function loadSelectedQuiz(mode) {
   const maxAvailable = quiz.questions.length;
   if (isNaN(limit) || limit < 5) limit = 5;
   if (limit > maxAvailable) limit = maxAvailable;
+if (quizMode === "practice") {
+  lastPracticeLimit = limit;
+}
+  
 
-  if (quizMode === "test") {
+if (quizMode === "test") {
     const countKey = selectedFile ? `testAttempts_${selectedFile}` : "testAttempts_unknown";
     let attempts = parseInt(localStorage.getItem(countKey)) || 0;
 
@@ -239,8 +244,8 @@ function loadSelectedQuiz(mode) {
     localStorage.setItem(countKey, attempts);
 
     const info = attempts === 1
-      ? `<div style="margin-top:6px; font-size:14px; color:#a6e3a1; font-weight:bold;'>🏆 Ez az első tudáspróba ehhez a kvízhez.</div>`
-      : `<div style="margin-top:6px; font-size:14px; color:#ff9966; font-weight:bold;'>⚠️ Ez már a ${attempts}. tudáspróba ehhez a kvízhez. Az értékelés ennek megfelelően történik.</div>`;
+      ? `<div style="margin-top:6px; font-size:14px; color:#a6e3a1; font-weight:bold;'>🏆 Gatulálok az errdményhez.</div>`
+      : `<div style="margin-top:6px; font-size:14px; color:#ff9966; font-weight:bold;'>⚠️ Ez már a ${attempts}. tudáspróba volt a kvízhez.\nAz eredmény csak indokolt esetben fogadható el!</div>`;
 
     document.getElementById("questionCount").innerHTML += info;
   }
@@ -347,35 +352,46 @@ function nextQuestion() {
       const attempts = parseInt(localStorage.getItem(countKey)) || 1;
 
       modeLabel = attempts === 1
-  ? "<p style='color:#a6e3a1; font-weight:bold;'>🏆 Ez az első tudáspróba ehhez a kvízhez.</p>"
-  : `<p style='color:#ff9966; font-weight:bold;'>🏆 Ez már a ${attempts}. tudáspróba ehhez a kvízhez. </p>`;
+  ? "<p style='color:#a6e3a1; font-weight:bold;'>🏆 Gratulálok az eredményhez!</p>"
+  : `<p style='color:#ff9966; font-weight:bold;'>🏆 Ez már a ${attempts}. tudáspróba volt ehhez kvízhez. \nAz eredmény csak indokolt esetben fogadható el! </p>`;
     } else if (quizMode === "practice") {
       modeLabel = "<p style='color:#ffe680; font-weight:bold;'>🧪 Ez a kiértékelés gyakorló módban készült.</p>";
     }
 
-    document.getElementById("result").innerHTML =
-      modeLabel +
-      `<h3>📊 Eredmény: ${score} / ${questions.length} helyes válasz</h3>` +
-      feedback +
-      `<button onclick="restartQuiz()">🔁 Újraindítás</button>`;
+    let restartButton = "";
+if (quizMode === "practice") {
+  restartButton = `<button onclick="restartQuiz()">🔁 Újraindítás</button>`;
+}
+
+document.getElementById("result").innerHTML =
+  modeLabel +
+  `<h3>📊 Eredmény: ${score} / ${questions.length} helyes válasz</h3>` +
+  feedback +
+  restartButton;
   }
 }
 
 
     function restartQuiz() {
-      current = 0;
-      score = 0;
-      feedback = "";
-      document.getElementById("quizForm").style.display = "block";
-      document.getElementById("result").style.display = "none";
-      document.getElementById("result").innerHTML = "";
-      document.getElementById("adminIcon").style.display = "inline";
-      questions = quiz.shuffleQuestions
-        ? [...quiz.questions].sort(() => Math.random() - 0.5)
-        : quiz.questions;
-      startTimer();
-      loadQuestion();
-    }
+  if (quizMode === "practice") {
+    let limit = lastPracticeLimit || 5; // ha valamiért nincs mentve, legyen minimum 5
+    const maxAvailable = quiz.questions.length;
+    if (limit > maxAvailable) limit = maxAvailable;
+
+    questions = quiz.shuffleQuestions
+      ? [...quiz.questions].sort(() => Math.random() - 0.5).slice(0, limit)
+      : quiz.questions.slice(0, limit);
+
+    current = 0;
+    score = 0;
+    feedback = "";
+
+    document.getElementById("result").style.display = "none";
+    document.getElementById("quizForm").style.display = "block";
+    startTimer();
+    loadQuestion();
+  }
+}
   </script>
 
 </body>
