@@ -1,138 +1,138 @@
 {
-  "title": "Villamosságtan biztonságtechnikai alapismeretek - Vegyi és hőhatások",
+  "title": "A villamos áram élettani hatásai 2.",
   "shuffleQuestions": true,
   "questions": [
     {
-      "text": "Miért keletkezhet gáz a vérben áramütés után?",
+      "text": "Hogyan károsítja az áram hőhatása a testet?",
       "image": "kvizek/9evf/aramutes1.jpg",
       "options": [
-        "Az áram gázbuborékokat hoz létre a vérben.",
-        "A vér túlmelegszik és elpárolog.",
-        "A vér oxigént veszít az áramtól.",
-        "A vér színe megváltozik."
+        "Égési sérüléseket okoz a bőrön vagy a test belsejében.",
+        "A test csak kipirosodik, de nem sérül meg.",
+        "Csak a bőr színe változik meg.",
+        "A test teljesen kiszárad."
       ],
       "correct": 0,
-      "explanation": "Az áram buborékokat hozhat létre a vérben, ami veszélyes, mert elzárhatja az ereket."
+      "explanation": "Az áram hőhatása égési sérüléseket okoz a bőrön vagy a test belsejében, például az izmokban, hasonlóan ahhoz, mint amikor valami megég a tűzhelyen. Ez különbözik a vegyi hatástól, ami a testnedveket változtatja meg."
     },
     {
-      "text": "Miért veszélyes az egyenáram?",
-      "image": "kvizek/9evf/aramutes2.jpg",
-      "options": [
-        "Vegyi károsodást okoz a testben.",
-        "Gyorsabban halad át a testen.",
-        "Nem érezhető, így nem veszélyes.",
-        "Csak a bőr felszínét éri."
-      ],
-      "correct": 0,
-      "explanation": "Az egyenáram vegyi változásokat okozhat, például a szövetekben, ami káros."
-    },
+  "text": "Miért tekinthető veszélyesnek az elektromos áram vegyi hatása az emberi szervezetre?",
+  "image": "kvizek/9evf/aramutes2.jpg",
+  "options": [
+    "Mert az áram elektrolízist idézhet elő, ami felboríthatja a sejtek ionháztartását és károsíthatja a szöveteket.",
+    "Mert az áram vegyi reakcióval semlegesíti a vérben lévő baktériumokat.",
+    "Mert az áram csak a bőr felszínén hat, és nem jut el a belső szervekhez.",
+    "Mert az elektromos áram vegyi hatása kizárólag mesterséges anyagokra érvényes, az emberi testre nem."
+  ],
+  "correct": 0,
+  "explanation": "Az elektromos áram vegyi hatása elektrolízis révén felboríthatja a sejtek ionegyensúlyát, ami szövetkárosodáshoz vezethet. Ez különösen egyenáram esetén jelentős, mivel tartós ionvándorlást idézhet elő a testnedvekben."
+},
     {
-  "text": "Miért kell orvoshoz menni áramütés után, ha jól érezzük magunkat?",
+  "text": "Miért nem látható mindig az áram hőhatása áramütés után?",
   "image": "kvizek/9evf/aramutes3.jpg",
   "options": [
-    "Rejtett belső sérülések lehetnek.",
-    "A bőr mindig megég.",
-    "A test színe megváltozik.",
-    "A test elektromos marad."
+    "Mert a hőhatás belső szövetekben is keletkezhet, és nem mindig okoz látható égést a bőrön.",
+    "Mert az áram hőhatása csak akkor jelentkezik, ha az áram szikrázik.",
+    "Mert az áram mindig csak mechanikai hatást fejt ki, nem termel hőt.",
+    "Mert a test automatikusan semlegesíti az áram által keletkezett hőt."
   ],
   "correct": 0,
-  "explanation": "Az áram belső sérüléseket okozhat, például a szívben vagy izmokban, amit csak orvos tud ellenőrizni."
+  "explanation": "Az áram hőhatása gyakran a mélyebb szövetekben okoz károsodást, miközben a bőrön nem feltétlenül jelenik meg égés. Ezért az áramütés után a sérülés súlyossága nem mindig látható kívülről, különösen nagy feszültség vagy hosszabb behatás esetén."
 },
     {
-      "text": "Miért ég meg a bőr az áram belépési pontján?",
-      "image": "kvizek/9evf/aramutes4.jpg",
-      "options": [
-        "Az áram hőt termel, ami éget.",
-        "A bőr túl száraz és érzékeny.",
-        "A bőr vegyi anyagokat termel.",
-        "Az áram lassan halad a bőrön."
-      ],
-      "correct": 0,
-      "explanation": "Az áram hőt termel, ami megégeti a bőrt a belépési ponton."
-    },
-    {
-      "text": "Miért hasonlítják az áram hatását a tojásfehérjéhez?",
-      "image": "kvizek/9evf/aramutes5.jpg",
-      "options": [
-        "Az áram hője megsüti a szöveteket.",
-        "A szövetek átlátszóvá válnak.",
-        "A szövetek puhábbak lesznek.",
-        "A bőr színe megváltozik."
-      ],
-      "correct": 0,
-      "explanation": "Az áram hője megkeményíti a szöveteket, mint a tojásfehérjét sütéskor."
-    },
-    {
-      "text": "Miért tud az áram 'megfőzni' minket?",
-      "image": "kvizek/9evf/aramutes6.jpg",
-      "options": [
-        "A hője túlhevíti a szöveteket.",
-        "A testnedveket elpárologtatja.",
-        "A testet teljesen kiszárítja.",
-        "Csak a csontokat hevíti fel."
-      ],
-      "correct": 0,
-      "explanation": "Az áram hője túlhevíti a szöveteket, ami égési sérüléseket okoz."
-    },
-    {
-      "text": "Miért károsítja az áram a vesét?",
-      "image": "kvizek/9evf/aramutes7.jpg",
-      "options": [
-        "Hője és vegyi hatása károsítja a vesét.",
-        "Túl sok áramot vezet át a vese.",
-        "Elektromosan feltölti a vesét.",
-        "Nem kap elég oxigént a vese."
-      ],
-      "correct": 0,
-      "explanation": "Az áram hője és vegyi hatása sérti a vese szöveteit."
-    },
-    {
-  "text": "Miért nem látszik azonnal a károsodás?",
-  "image": "kvizek/9evf/aramutes8.jpg",
+  "text": "Hogyan károsíthatja az áram vegyi hatása a szívet?",
+  "image": "kvizek/9evf/aramutes4.jpg",
   "options": [
-    "A belső szervek sérülése rejtett.",
-    "A bőr később mutatja a sérülést.",
-    "A test színe megváltozik.",
-    "A test gyorsan helyreáll."
+    "Az elektrolízis felboríthatja a szívsejtek ionegyensúlyát, ami szívritmuszavart vagy szívleállást okozhat.",
+    "Az áram vegyi hatása kizárólag az izmokra hat, a szívre nem gyakorol közvetlen hatást.",
+    "A vegyi hatás csak a vérben lévő gázokat módosítja, a szív működését nem befolyásolja.",
+    "Az elektromos áram vegyi hatása csak mesterséges szív esetén jelentkezik."
   ],
   "correct": 0,
-  "explanation": "Az áram belső szerveket sérthet, például a szívet vagy izmokat, ami kívülről nem látható."
+  "explanation": "Az elektromos áram vegyi hatása elektrolízis révén megváltoztathatja a szívsejtek ionkoncentrációját, ami zavarhatja az elektromos impulzusok vezetését. Ez szívritmuszavart, fibrillációt vagy akár szívleállást is okozhat, különösen váltakozó áram esetén."
 },
     {
-      "text": "Miért lehet halálos a kis áramerősség is?",
+  "text": "Miért éghet meg a bőr az áram belépési pontján?",
+  "image": "kvizek/9evf/aramutes2.jpg",
+  "options": [
+    "Mert az elektromos áram koncentrált hőhatást fejt ki a belépési ponton, ami égési sérülést okozhat.",
+    "Mert a bőr az áram hatására automatikusan begyullad, függetlenül az áramerősségtől.",
+    "Mert az áram belépésekor mindig keletkezik láng, ami megégeti a bőrt.",
+    "Mert az elektromos áram csak a belépési ponton okoz sérülést, máshol nem."
+  ],
+  "correct": 0,
+  "explanation": "Mert az elektromos áram a belépési ponton koncentráltan halad át a szöveteken, ahol az ellenállás miatt hő keletkezik. Ez a hőhatás égési sérülést okozhat, különösen nagyfeszültségű vagy hosszabb ideig tartó áramütés esetén."
+},
+    {
+  "text": "Miért veszélyes az áram vegyi hatása a vesére?",
+  "image": "kvizek/9evf/aramutes5.jpg",
+  "options": [
+    "Mert az elektrolízis megváltoztathatja a vér ionösszetételét, ami károsíthatja a veseműködést.",
+    "Mert az elektromos áram közvetlenül elpárologtatja a vesében lévő folyadékot.",
+    "Mert az áram hatására a vese azonnal leáll, függetlenül az áramerősségtől.",
+    "Mert az elektromos áram kizárólag a májat érinti, a vesére nincs hatással."
+  ],
+  "correct": 0,
+  "explanation": "Mert az elektromos áram vegyi hatása elektrolízist idézhet elő a testnedvekben, ami megváltoztatja a vér ionösszetételét. Ez megterheli a vesét, amelynek feladata az ionháztartás szabályozása és a méreganyagok kiválasztása. Hosszabb vagy erősebb áramütés esetén ez súlyos vesekárosodáshoz vezethet."
+},
+    {
+  "text": "Hogyan véd az áram hőhatása ellen az FI-relé?",
+  "image": "kvizek/9evf/aramutes6.jpg",
+  "options": [
+    "Az FI-relé érzékeli a szivárgó áramot, és azonnal lekapcsolja az áramkört, így megelőzi a túlmelegedést.",
+    "Az FI-relé automatikusan csökkenti a feszültséget, ha túlmelegedést észlel.",
+    "Az FI-relé hőérzékelővel van ellátva, amely aktiválja a hűtőrendszert.",
+    "Az FI-relé csak akkor kapcsol le, ha már bekövetkezett az égési sérülés."
+  ],
+  "correct": 0,
+  "explanation": "Az FI-relé (áramvédő kapcsoló) úgy működik, hogy érzékeli, ha az áram egy része nem tér vissza a rendszerbe, például testzárlat vagy szivárgás miatt. Ilyenkor azonnal megszakítja az áramkört, így megelőzhető, hogy az áram hőhatása égési sérülést okozzon vagy túlmelegedést idézzen elő."
+},
+    {
+  "text": "Mit okozhat az egyenáram a testben hosszabb áramütés esetén?",
+  "image": "kvizek/9evf/aramutes7.jpg",
+  "options": [
+    "Jelentős hőhatást, amely mély szöveti égési sérüléseket okozhat, valamint károsíthatja a belső szerveket.",
+    "Csak enyhe bizsergést, mivel az egyenáram nem hat mélyen a szövetekre.",
+    "Azonnali eszméletvesztést, függetlenül az áramerősségtől.",
+    "Kizárólag a bőr felszíni rétegeit érinti, belső szervi hatása nincs."
+  ],
+  "correct": 0,
+  "explanation": "Az egyenáram hosszabb ideig tartó behatása jelentős hőtermelést okozhat a szövetekben, különösen az áram belépési és kilépési pontjain. Ez mély égési sérülésekhez vezethet, amelyek akár az izmokat, idegeket és belső szerveket is károsíthatják. Bár az egyenáram nem vált ki rángásokat, mint a váltakozó áram, mégis okozhat izomösszehúzódást, légzési nehézségeket és szívritmuszavart, ha az áram eléri az életfontosságú szerveket."
+},
+    {
+      "text": "Melyik áramtípus okoz nagyobb valószínűséggel izomgörcsöket?",
       "image": "kvizek/9evf/aramutes9.jpg",
       "options": [
-        "Megzavarhatja a szív működését.",
-        "Felhalmozódik a testben.",
-        "Teljesen megégeti a bőrt.",
-        "Lassú, de erős hatása van."
+        "A váltakozóáram.",
+        "Az egyenáram.",
+        "Mindkettő egyformán.",
+        "Egyik sem."
       ],
       "correct": 0,
-      "explanation": "Kis áramerősség is megzavarhatja a szív elektromos jeleit, ami halálos lehet."
+      "explanation": "A váltakozóáram (AC) gyors változása miatt nagyobb valószínűséggel okoz izomgörcsöket, mert jobban megzavarja az izmok elektromos jeleit, mint az egyenáram (DC)."
     },
     {
-  "text": "Miért nem lehet otthon eldönteni, hogy súlyos volt-e az áramütés?",
-  "image": "kvizek/9evf/aramutes10.jpg",
+  "text": "Mely létfontosságú szerveket károsíthatja leginkább az elektromos áram a testen való áthaladás során?",
+  "image": "kvizek/9evf/aramutes8.jpg",
   "options": [
-    "A belső sérülések nem láthatók.",
-    "A bőr színe megváltozik.",
-    "A test melegebb lesz.",
-    "Csak orvos mérheti az áramot."
+    "A szív, az idegrendszer és az izmok, mivel ezek elektromosan aktív szövetek, és érzékenyek az áram hatásaira.",
+    "Csak a bőr és a haj, mivel az elektromos áram nem hatol mélyre.",
+    "A csontok és a körmök, mivel ezek vezetik legjobban az áramot.",
+    "Kizárólag az emésztőrendszer, mivel az áram ott halad át leggyakrabban."
   ],
   "correct": 0,
-  "explanation": "Az áram belső sérüléseket okozhat, például a szívben vagy izmokban, amit otthon nem lehet észrevenni, ezért orvosi vizsgálat szükséges."
+  "explanation": "Az elektromos áram a testen való áthaladás során elsősorban a szívet, az idegrendszert és az izmokat károsíthatja. Ezek a szövetek elektromosan aktívak, így különösen érzékenyek az áram élettani hatásaira. A szívritmuszavar, légzésbénulás, izomgörcs és idegi károsodás gyakori következményei lehetnek az áramütésnek. Emellett a hőhatás mély szöveti égéseket is okozhat, különösen nagyfeszültség esetén."
 },
     {
-      "text": "Miért nem érezzük mindig a hőhatást?",
-      "image": "kvizek/9evf/aramutes11.jpg",
-      "options": [
-        "A belső szövetek előbb sérülnek.",
-        "A bőr túl vastag a hőhöz.",
-        "Az áram csak hideget okoz.",
-        "A hő csak a csontokat érinti."
-      ],
-      "correct": 0,
-      "explanation": "Az áram előbb károsítja a belső szöveteket, mint hogy a bőrön hőt érezzünk."
-    }
+  "text": "Hogyan mutatja a tojásfehérje kísérlet az áram hő- és vegyi hatását is?",
+  "image": "kvizek/9evf/tojasfeherje.jpg",
+  "options": [
+    "A tojásfehérje az áram hatására kifehéredik és megszilárdul, ami a hőhatást, valamint az elektrolízis során bekövetkező kémiai változást is szemlélteti.",
+    "A tojásfehérje az áram hatására elpárolog, így csak a hőhatás figyelhető meg.",
+    "A tojásfehérje kizárólag mechanikusan változik meg, az áram nem okoz benne semmilyen kémiai vagy hőhatást.",
+    "A tojásfehérje színe megváltozik, de ez csak optikai csalódás, nem valódi fizikai vagy kémiai reakció."
+  ],
+  "correct": 0,
+  "explanation": "A tojásfehérje kísérlet során az elektromos áram hőhatása miatt a fehérje kicsapódik, megszilárdul és kifehéredik — hasonlóan ahhoz, mint amikor főzzük. Emellett az áram vegyi hatása, például az elektrolízis, ionos változásokat idézhet elő a fehérjében, ami szintén hozzájárul a szerkezetének megváltozásához. Így a kísérlet egyszerre szemlélteti az elektromos áram hő- és vegyi hatását is."
+}
   ]
 }
