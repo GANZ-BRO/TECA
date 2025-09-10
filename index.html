@@ -111,6 +111,7 @@ input[type="radio"] {
     </select>
 <div id="questionCount" style="margin-bottom:10px; font-size:14px; color:#a0b4cc;"></div>
    
+
 <select id="questionLimit" style="width:100%; padding:8px; margin-bottom:15px; background-color:#2c3a4f; border:1px solid #4a5a6f; border-radius:5px; color:#e6ecf3;text-align-last:center;">
   <option value="">-- Válassz kérdésszámot --</option>
 </select>
@@ -221,6 +222,29 @@ function loadSelectedQuiz(mode) {
   if (isNaN(limit) || limit < 5) limit = 5;
   if (limit > maxAvailable) limit = maxAvailable;
 
+  if (quizMode === "test") {
+    const countKey = selectedFile ? `testAttempts_${selectedFile}` : "testAttempts_unknown";
+    let attempts = parseInt(localStorage.getItem(countKey)) || 0;
+
+    const message = attempts === 0
+      ? `🏆 A tudáspróba ${limit} kérdésből fog állni.\nEz az eredmény értékelésre kerül.\nBiztosan el akarod indítani?`
+      : `⚠️ Ez már a ${attempts + 1}. tudáspróba lesz ehhez a kvízhez.\nAz eredmény csak indokolt esetben fogadható el!\n(Ez a próba ${limit} kérdésből fog állni.)\nBiztosan el akarod indítani?`;
+
+    const confirmed = confirm(message);
+    if (!confirmed) {
+      return; // kilép, ha nem erősítette meg
+    }
+
+    attempts++;
+    localStorage.setItem(countKey, attempts);
+
+    const info = attempts === 1
+      ? `<div style="margin-top:6px; font-size:14px; color:#a6e3a1; font-weight:bold;'>🏆 Ez az első tudáspróba ehhez a kvízhez.</div>`
+      : `<div style="margin-top:6px; font-size:14px; color:#ff9966; font-weight:bold;'>⚠️ Ez már a ${attempts}. tudáspróba ehhez a kvízhez. Az értékelés ennek megfelelően történik.</div>`;
+
+    document.getElementById("questionCount").innerHTML += info;
+  }
+
   questions = quiz.shuffleQuestions
     ? [...quiz.questions].sort(() => Math.random() - 0.5).slice(0, limit)
     : quiz.questions.slice(0, limit);
@@ -275,7 +299,6 @@ function loadQuestion() {
   document.getElementById("questionArea").innerHTML = html;
 }
 
-
 function nextQuestion() {
   const selected = document.querySelector('input[name="answer"]:checked');
   if (!selected) {
@@ -288,30 +311,27 @@ function nextQuestion() {
   const userAnswer = q.shuffledOptions[val].text;
 
   if (val === q.shuffledCorrect) {
-  score++;
-  feedback += `<p style="padding:10px; border-radius:5px;">
-    <strong>${q.text}</strong><br>
-    <img src="pipa.png" alt="Helyes válasz" style="width:16px; height:16px; vertical-align:middle; margin-right:6px;">
-    Válaszod helyes!<br>
-    <span style="color:#a6e3a1;">${q.explanation || ''}</span>
-  </p>`;
-} else {
-  const userAnswer = q.shuffledOptions[val].text;
-  if (quizMode === "practice") {
-    feedback += `<p style="padding:10px; border-radius:5px;">
-      <strong>${q.text}</strong><br>
-      <img src="hiba.png" alt="Hibás válasz" style="width:16px; height:16px; vertical-align:middle; margin-right:6px;">
-      A válaszod: <em style="color:#ffe680;">${userAnswer}</em> nem volt helyes!<br>
-      A helyes választ megtalálod, ha figyelembe veszed, hogy: <span style="color:#80cfff;">${q.explanation || 'ez a kérdés különös figyelmet igényel.'}</span>
-    </p>`;
+    score++;
+    if (quizMode === "practice") {
+      feedback += `<p style="padding:10px; border-radius:5px;">
+        <strong>${q.text}</strong><br>
+        <img src="pipa.png" alt="Helyes válasz" style="width:16px; height:16px; vertical-align:middle; margin-right:6px;">
+        Válaszod helyes!<br>
+        <span style="color:#a6e3a1;">${q.explanation || ''}</span>
+      </p>`;
+    }
+    // Tudás próba módban nem jelenítünk meg visszajelzést a helyes válaszokra
   } else {
+    const correctAnswer = q.shuffledOptions[q.shuffledCorrect].text;
+
     feedback += `<p style="padding:10px; border-radius:5px;">
       <strong>${q.text}</strong><br>
       <img src="hiba.png" alt="Hibás válasz" style="width:16px; height:16px; vertical-align:middle; margin-right:6px;">
-      Ez a válasz: <em style="color:#ffe680;">${userAnswer}</em> Helytelen!
+      A válaszod: <em style="color:#ffe680;">${userAnswer}</em> nem volt helyes.<br>
+      A helyes válasz: <strong style="color:#a6e3a1;">${correctAnswer}</strong><br>
+      <span style="color:#a6e3a1;">${q.explanation || 'Ez a kérdés különös figyelmet igényel a megértéshez.'}</span>
     </p>`;
   }
-}
 
   current++;
   if (current < questions.length) {
@@ -320,17 +340,27 @@ function nextQuestion() {
     stopTimer();
     document.getElementById("quizForm").style.display = "none";
     document.getElementById("result").style.display = "block";
-    const modeLabel = quizMode === "practice"
-  ? "🧪Gyakorlás </p>"
-  : "🏆Ttudáspróba</p>";
 
-document.getElementById("result").innerHTML =
-  modeLabel +
-  `<h3>📊 Eredmény: ${score} / ${questions.length} helyes válasz</h3>` +
-  feedback +
-  `<button onclick="restartQuiz()">🔁 Újraindítás</button>`;
+    let modeLabel = "";
+    if (quizMode === "test") {
+      const countKey = selectedFile ? `testAttempts_${selectedFile}` : "testAttempts_unknown";
+      const attempts = parseInt(localStorage.getItem(countKey)) || 1;
+
+      modeLabel = attempts === 1
+  ? "<p style='color:#a6e3a1; font-weight:bold;'>🏆 Ez az első tudáspróba ehhez a kvízhez.</p>"
+  : `<p style='color:#ff9966; font-weight:bold;'>🏆 Ez már a ${attempts}. tudáspróba ehhez a kvízhez. </p>`;
+    } else if (quizMode === "practice") {
+      modeLabel = "<p style='color:#ffe680; font-weight:bold;'>🧪 Ez a kiértékelés gyakorló módban készült.</p>";
+    }
+
+    document.getElementById("result").innerHTML =
+      modeLabel +
+      `<h3>📊 Eredmény: ${score} / ${questions.length} helyes válasz</h3>` +
+      feedback +
+      `<button onclick="restartQuiz()">🔁 Újraindítás</button>`;
   }
 }
+
 
     function restartQuiz() {
       current = 0;
