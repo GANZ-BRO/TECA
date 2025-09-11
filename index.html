@@ -236,12 +236,14 @@ if (quizMode === "test") {
       : `⚠️ Ez már a ${attempts + 1}. tudáspróba lesz ehhez a kvízhez.\nAz eredmény csak indokolt esetben fogadható el!\n(Ez a próba ${limit} kérdésből fog állni.)\nBiztosan el akarod indítani?`;
 
     const confirmed = confirm(message);
-    if (!confirmed) {
-      return; // kilép, ha nem erősítette meg
-    }
+if (!confirmed) {
+  return; // kilép, ha nem erősítette meg
+}
 
-    attempts++;
-    localStorage.setItem(countKey, attempts);
+startTimer(); // csak itt indul el az óra, ha tényleg megerősítette
+
+attempts++;
+localStorage.setItem(countKey, attempts);
 
     const info = attempts === 1
       ? `<div style="margin-top:6px; font-size:14px; color:#a6e3a1; font-weight:bold;'>🏆 Gatulálok az errdményhez.</div>`
@@ -259,8 +261,12 @@ if (quizMode === "test") {
   feedback = "";
 
   document.getElementById("quizForm").style.display = "block";
-  startTimer();
-  loadQuestion();
+
+if (quizMode === "practice") {
+  startTimer(); // gyakorlás módban automatikusan indul
+}
+
+loadQuestion();
 }
 
     function startTimer() {
