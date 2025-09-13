@@ -1,6 +1,7 @@
 {
   "title": "Tesztkvíz – Alap kérdések",
   "shuffleQuestions": true,
+  "gyakorlasmod": false,
   "questions": [
     {
       "text": "Mi Magyarország fővárosa?",
