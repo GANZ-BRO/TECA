@@ -225,14 +225,29 @@ function loadSelectedQuiz(mode) {
     function startQuizFromLoadedData() {
   //document.getElementById("quizTitle").childNodes[0].textContent = quiz.title;
 
-  let limit = parseInt(document.getElementById("questionLimit").value);
-  const maxAvailable = quiz.questions.length;
+  if (!quiz || !quiz.questions || !Array.isArray(quiz.questions)) {
+  alert("⚠️ A kvíz adatai nem érhetők el. Előbb válassz ki egy kvízt!");
+  return;
+}
+
+const maxAvailable = quiz.questions.length;
+const gyakorlasmod = quiz.gyakorlasmod !== false;
+
+let limit;
+
+if (quizMode === "test") {
+  limit = gyakorlasmod ? 5 : maxAvailable;
+} else {
+  limit = parseInt(document.getElementById("questionLimit").value);
   if (isNaN(limit) || limit < 5) limit = 5;
   if (limit > maxAvailable) limit = maxAvailable;
-if (quizMode === "practice") {
   lastPracticeLimit = limit;
 }
-  
+
+if (quizMode === "practice" && !gyakorlasmod) {
+  alert("⚠️ Ez a kvíz nem indítható gyakorlás módban. Csak tudáspróba engedélyezett.");
+  return;
+}
 
 if (quizMode === "test") {
     const countKey = selectedFile ? `testAttempts_${selectedFile}` : "testAttempts_unknown";
@@ -240,7 +255,7 @@ if (quizMode === "test") {
 
     const message = attempts === 0
       ? `🏆 A tudáspróba ${limit} kérdésből fog állni.\nEz az eredmény értékelésre kerül.\nBiztosan el akarod indítani?`
-      : `⚠️ Ez már a ${attempts + 1}. tudáspróbád lesz ehhez a kvízhez.\nAz eredmény csak indokolt esetben fogadható el!\n(Ez a próba ${limit} kérdésből fog állni.)\nBiztosan el akarod indítani?`;
+      : `⚠️ Ez már a ${attempts + 1}. tudáspróbád lesz ehhez a kvízhez.\nAz eredmény csak indokolt esetben fogadható el!\nBiztosan el akarod indítani?`;
 
     const confirmed = confirm(message);
 if (!confirmed) {
