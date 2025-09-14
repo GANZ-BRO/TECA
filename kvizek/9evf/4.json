@@ -1,83 +1,73 @@
 {
-  "title": "Villamosságtan biztonságtechnikai alapismeretek - Érintésvédelem és áramütés elleni védelem",
+  "title": "Védelmi osztályok és IP-kódok",
   "shuffleQuestions": true,
+  "gyakorlasmod": true,
   "questions": [
     {
-      "text": "Miért kell ennyi féle védelem az áram ellen?",
-      "image": "kvizek/9evf/erintesvedelem1.jpg",
-      "options": ["Mert az áram túl gyors", "Mert különböző veszélyek ellen védenek", "Mert az áram csak kívül hat", "Mert az áram szigetel"],
-      "correct": 1,
-      "explanation": "Különböző helyzetekben különböző védelmi módszerekre van szükség az áramütés ellen."
+      "text": "Melyik védelmi osztályba tartoznak azok a készülékek, amelyek kettős vagy megerősített szigeteléssel rendelkeznek?",
+      "options": ["0", "I", "II", "III"],
+      "correct": 2,
+      "explanation": "A II. érintésvédelmi osztályú készülékek kettős szigeteléssel vannak ellátva, és nem igényelnek védőföldelést."
     },
     {
-      "text": "Mi az a nullázás, és miért fontos?",
-      "image": "kvizek/9evf/erintesvedelem2.jpg",
-      "options": ["Mert az áramot gyorsítja", "Mert a fémrészeket a nullavezetékhez köti", "Mert az áramot leállítja", "Mert az áramot szigeteli"],
-      "correct": 1,
-      "explanation": "A nullázás a fémrészeket a nullavezetékhez köti, így csökkenti az áramütés kockázatát."
+      "text": "Milyen védelem jellemzi a III. védelmi osztályú készülékeket?",
+      "options": ["Védőföldelés", "Kettős szigetelés", "Törpefeszültségű táplálás", "Nincs védelem"],
+      "correct": 2,
+      "explanation": "A III. védelmi osztályú berendezések SELV (Safety Extra Low Voltage) vagy PELV (Protective Extra Low Voltage) rendszerrel működnek, ami törpefeszültségű táplálást jelent."
     },
     {
-      "text": "Miért nem elég csak burkolni a vezetékeket?",
-      "image": "kvizek/9evf/erintesvedelem3.jpg",
-      "options": ["Mert a burkolat túl vékony", "Mert a burkolat megsérülhet", "Mert a burkolat nem vezeti az áramot", "Mert a burkolat túl erős"],
+      "text": "Az alábbiak közül melyik osztályba tartozik a legtöbb háztartási gép, például a hűtő és a mosógép?",
+      "options": ["0", "I", "II", "III"],
       "correct": 1,
-      "explanation": "A burkolat megsérülhet, ezért további védelemre van szükség."
+      "explanation": "A legtöbb háztartási gép I. érintésvédelmi osztályú, amelyeknél a fém burkolatot védőföldelés köti össze a hálózattal."
     },
     {
-      "text": "Miért nem veszélyes a törpefeszültség?",
-      "image": "kvizek/9evf/erintesvedelem4.jpg",
-      "options": ["Mert a törpefeszültség túl gyors", "Mert túl alacsony az áramütéshez", "Mert a törpefeszültség szigetel", "Mert a törpefeszültség csak kívül hat"],
-      "correct": 1,
-      "explanation": "A törpefeszültség (pl. 12V) túl alacsony ahhoz, hogy áramütést okozzon."
+      "text": "Melyik védelmi osztályba soroljuk azokat a berendezéseket, amelyek kizárólag alacsony feszültséggel működnek, mint például a mobiltelefon-töltők?",
+      "options": ["I", "II", "III", "IV"],
+      "correct": 2,
+      "explanation": "A III. védelmi osztályú berendezések törpefeszültséggel működnek, ezért a legtöbb hordozható elektronikai eszköz ide tartozik."
     },
     {
-      "text": "Miért kell különbséget tenni aktív és passzív védelem között?",
-      "image": "kvizek/9evf/erintesvedelem5.jpg",
-      "options": ["Mert az aktív gyorsabb", "Mert különböző módon védenek", "Mert a passzív szigetel", "Mert az aktív csak kívül hat"],
+      "text": "Milyen védelmet nyújt az I. érintésvédelmi osztály?",
+      "options": ["Kettős szigetelés", "Védőföldelés", "Törpefeszültségű táplálás", "Nincs védelem"],
       "correct": 1,
-      "explanation": "Az aktív védelem (pl. FI-relé) automatikus, a passzív (pl. szigetelés) statikus."
+      "explanation": "Az I. védelmi osztályú berendezések fém burkolatait a védőföldeléssel kötik össze, ami védelmet nyújt áramütés ellen."
     },
     {
-      "text": "Miért nem szabad földelni a kettős szigetelésű gépeket?",
-      "image": "kvizek/9evf/erintesvedelem6.jpg",
-      "options": ["Mert a szigetelés túl erős", "Mert a kettős szigetelés elég védelmet nyújt", "Mert a földelés gyorsítja az áramot", "Mert a földelés szigetel"],
-      "correct": 1,
-      "explanation": "A kettős szigetelésű gépek már önmagukban biztonságosak, így nem kell földelni őket."
+      "text": "Melyik védelmi osztályba tartozik egy olyan készülék, amelynek fém burkolata nincs földelve, és csak alap szigeteléssel rendelkezik?",
+      "options": ["0", "I", "II", "III"],
+      "correct": 0,
+      "explanation": "A 0. védelmi osztályba tartozó készülékeknek csak alapszigetelése van, és nincs védőföldelése."
     },
     {
-      "text": "Miért van külön védővezető és nullavezető?",
-      "image": "kvizek/9evf/erintesvedelem7.jpg",
-      "options": ["Mert a védővezető gyorsabb", "Mert különböző feladatuk van", "Mert a nullavezető szigetel", "Mert a védővezető csak kívül hat"],
-      "correct": 1,
-      "explanation": "A védővezető a biztonságot szolgálja, a nullavezető az áramkör része."
+      "text": "Melyik védelmi osztály a legbiztonságosabb?",
+      "options": ["0", "I", "II", "III"],
+      "correct": 2,
+      "explanation": "A III. érintésvédelmi osztályú készülékek a legbiztonságosabbak, mert alacsony feszültségen működnek, így minimális az áramütés veszélye."
     },
     {
-      "text": "Miért kell IP-védettséget jelölni a készülékeken?",
-      "image": "kvizek/9evf/erintesvedelem8.jpg",
-      "options": ["Mert az IP gyorsítja az áramot", "Mert jelzi a víz és por elleni védelmet", "Mert az IP szigeteli a készüléket", "Mert az IP csak kívül hat"],
+      "text": "Mit jelent az IP-kódban a második számjegy?",
+      "options": ["A por elleni védelem szintjét", "A víz elleni védelem szintjét", "A készülék teljesítményét", "A készülék méretét"],
       "correct": 1,
-      "explanation": "Az IP-védettség mutatja, mennyire védett a készülék víz és por ellen."
+      "explanation": "Az IP-kód második számjegye a folyadékok (víz) behatolása elleni védelmet jelöli."
     },
     {
-      "text": "Miért nem elég csak 'óvatosnak lenni'?",
-      "image": "kvizek/9evf/erintesvedelem9.jpg",
-      "options": ["Mert az óvatosság gyorsabb", "Mert a hibák kiszámíthatatlanok", "Mert az óvatosság szigetel", "Mert az óvatosság csak kívül hat"],
-      "correct": 1,
-      "explanation": "Az emberi hibák és a technikai hibák miatt további védelem szükséges."
+      "text": "Egy IP67-es készülék milyen védelemmel rendelkezik?",
+      "options": ["Porálló és fröccsenő víz ellen védett", "Részlegesen porálló és vízbe meríthető", "Teljesen porálló és vízbe meríthető", "Csak vízbe meríthető, de nem porálló"],
+      "correct": 2,
+      "explanation": "Az IP67-es kód teljes pormentességet (6) és ideiglenes vízbemerítés elleni védelmet (7) jelent."
     },
     {
-      "text": "Miért kell a védelmi módokat szabvány szerint kialakítani?",
-      "image": "kvizek/9evf/erintesvedelem10.jpg",
-      "options": ["Mert a szabvány gyorsabb", "Mert a szabvány garantálja a biztonságot", "Mert a szabvány szigetel", "Mert a szabvány csak kívül hat"],
+      "text": "Milyen IP-kódú készülék ajánlott a fürdőszobába, ahol fröccsenő víz is előfordulhat?",
+      "options": ["IP20", "IP44", "IP67", "IP68"],
       "correct": 1,
-      "explanation": "A szabványok biztosítják, hogy a védelem hatékony és megbízható legyen."
+      "explanation": "Az IP44-es védettség megfelelő védelmet nyújt a fröccsenő víz ellen, ami jellemzően a fürdőszobákban fordul elő."
     },
     {
-      "text": "Miért nem használható minden védelem minden helyen?",
-      "image": "kvizek/9evf/erintesvedelem11.jpg",
-      "options": ["Mert a védelem túl gyors", "Mert a környezeti feltételek eltérnek", "Mert a védelem szigetel", "Mert a védelem csak kívül hat"],
-      "correct": 1,
-      "explanation": "A különböző környezetek (pl. nedves helyiség) különböző védelmi módokat igényelnek."
+      "text": "Mit jelent az IP-kódban az 'X' betű?",
+      "options": ["A készülék kísérleti fázisban van", "A védelem a teszt során megbukott", "A védettség az adott tényezőre nincs tesztelve", "A kód hibásan van megadva"],
+      "correct": 2,
+      "explanation": "Az 'X' betű azt jelzi, hogy az adott védettség (szilárd anyag vagy víz) nincs tesztelve vagy megadva."
     }
   ]
 }

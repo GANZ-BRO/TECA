@@ -75,16 +75,16 @@
   "explanation": "Mert az elektromos áram vegyi hatása elektrolízist idézhet elő a testnedvekben, ami megváltoztatja a vér ionösszetételét. Ez megterheli a vesét, amelynek feladata az ionháztartás szabályozása és a méreganyagok kiválasztása. Hosszabb vagy erősebb áramütés esetén ez súlyos vesekárosodáshoz vezethet."
 },
     {
-  "text": "Hogyan véd az áram hőhatása ellen az FI-relé?",
-  "image": "kvizek/9evf/aramutes6.jpg",
+  "text": "Miért veszélyes, ha az elektromos áram az agyon halad át?",
+  "image": "kvizek/9evf/aramutes10.jpg",
   "options": [
-    "Az FI-relé érzékeli a szivárgó áramot, és azonnal lekapcsolja az áramkört, így megelőzi a túlmelegedést.",
-    "Az FI-relé automatikusan csökkenti a feszültséget, ha túlmelegedést észlel.",
-    "Az FI-relé hőérzékelővel van ellátva, amely aktiválja a hűtőrendszert.",
-    "Az FI-relé csak akkor kapcsol le, ha már bekövetkezett az égési sérülés."
+    "Mert az áram megzavarhatja az idegi impulzusokat, ami eszméletvesztéshez vagy bénuláshoz vezethet.",
+    "Mert az áram kizárólag a koponyacsontot károsítja, az agyra nincs hatással.",
+    "Mert az elektromos áram csak a bőrön okoz égést, az agy nem vezető közeg.",
+    "Mert az áram hatására az agy automatikusan kikapcsolja a fájdalomérzetet."
   ],
   "correct": 0,
-  "explanation": "Az FI-relé (áramvédő kapcsoló) úgy működik, hogy érzékeli, ha az áram egy része nem tér vissza a rendszerbe, például testzárlat vagy szivárgás miatt. Ilyenkor azonnal megszakítja az áramkört, így megelőzhető, hogy az áram hőhatása égési sérülést okozzon vagy túlmelegedést idézzen elő."
+  "explanation": "Az agy elektromosan aktív szerv, amely idegi impulzusokkal irányítja a test működését. Ha az elektromos áram áthalad rajta, megzavarhatja az impulzusokat, ami eszméletvesztést, bénulást vagy akár légzésleállást is okozhat. Ezért különösen veszélyes, ha az áram az agyon keresztül halad."
 },
     {
   "text": "Mit okozhat az egyenáram a testben hosszabb áramütés esetén?",
