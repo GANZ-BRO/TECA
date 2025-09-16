@@ -42,7 +42,7 @@
     {
       "text": "Melyik védelmi osztály a legbiztonságosabb?",
       "options": ["0", "I", "II", "III"],
-      "correct": 2,
+      "correct": 3,
       "explanation": "A III. érintésvédelmi osztályú készülékek a legbiztonságosabbak, mert alacsony feszültségen működnek, így minimális az áramütés veszélye."
     },
     {
