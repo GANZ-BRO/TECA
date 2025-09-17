@@ -1,26 +1,16 @@
 [
-  { "file": "9evf/0.json", "title": "9. évf. -  Villamos alapismeretek" },
-  { "file": "9evf/1.json", "title": "9. évf. -  Az áram élettani hatásai" },
-	{ "file": "9evf/2.json", "title": "9. évf. -  Az emberi test ellenállása" },
-	{ "file": "9evf/3.json", "title": "9. évf. -  Az áram élettani hatásai 2." },
-	{ "file": "9evf/4.json", "title": "9. évf. -  Védelmi osztályok és IP-kódok" },
-	{ "file": "9evf/5.json", "title": "9. évf. -  Feszültségmentesítés és biztonságos munkavégzés" },
-	{ "file": "9evf/6.json", "title": "9. évf. -  Mentés és elsősegély villamos baleset esetén" },
-	{ "file": "villbiztech/villbiztech.json", "title": "10. évf. - Villamos Biztonságtechnika" },
-  { "file": "villbiztech/erintesved.json", "title": "10. évf.- Érintésvédelem" },
-
-  { "file": "alkatreszek/alkatreszek1.json", "title": "10. évf.- Elektronikai alkatrészek – 1. szint" },
-
-
-  { "file": "alkatreszek/alkatreszek2.json", "title": "10. évf.- Elektronikai alkatrészek – 2. szint" },
-
-
-  { "file": "alkatreszek/alkatreszek3.json", "title": "10. évf.- Elektronikai alkatrészek – 3. szint" },
-
-{ "file": "alkatreszek/alkatreszek.json", "title": "10. évf.- Elektromos Alkatrészek TZ" },
-
-
-{ "file": "minta/minta.json", "title": "Mintakvíz – Alap kérdések" }
-
-
+  { "file": "9evf/0.json", "title": "9. évf. - Villamos alapismeretek", "valaszthato": 0 },
+  { "file": "9evf/1.json", "title": "9. évf. - Az áram élettani hatásai", "valaszthato": 0 },
+  { "file": "9evf/2.json", "title": "9. évf. - Az emberi test ellenállása", "valaszthato": 0 },
+  { "file": "9evf/3.json", "title": "9. évf. - Az áram élettani hatásai 2.", "valaszthato": 0 },
+  { "file": "9evf/4.json", "title": "9. évf. - Védelmi osztályok és IP-kódok", "valaszthato": 1 },
+  { "file": "9evf/5.json", "title": "9. évf. - Feszültségmentesítés és biztonságos munkavégzés", "valaszthato": 0 },
+  { "file": "9evf/6.json", "title": "9. évf. - Mentés és elsősegély villamos baleset esetén", "valaszthato": 0 },
+  { "file": "villbiztech/villbiztech.json", "title": "10. évf. - Villamos Biztonságtechnika", "valaszthato": 0 },
+  { "file": "villbiztech/erintesved.json", "title": "10. évf.- Érintésvédelem", "valaszthato": 0 },
+  { "file": "alkatreszek/alkatreszek1.json", "title": "10. évf.- Elektronikai alkatrészek – 1. szint", "valaszthato": 1 },
+  { "file": "alkatreszek/alkatreszek2.json", "title": "10. évf.- Elektronikai alkatrészek – 2. szint", "valaszthato": 1 },
+  { "file": "alkatreszek/alkatreszek3.json", "title": "10. évf.- Elektronikai alkatrészek – 3. szint", "valaszthato": 1 },
+  { "file": "alkatreszek/alkatreszek.json", "title": "10. évf.- Elektromos Alkatrészek TZ", "valaszthato": 1 },
+  { "file": "minta/minta.json", "title": "Mintakvíz – Alap kérdések", "valaszthato": 0 }
 ]
