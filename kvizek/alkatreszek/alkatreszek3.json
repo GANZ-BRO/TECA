@@ -1,0 +1,239 @@
+{
+  "title": "Elektronikai alkatrészek  – 3. szint",
+  "shuffleQuestions": true,
+  "gyakorlasmod": true,
+  "questions": [
+    // Hálózati áramforrás
+    {
+      "text": "Mi a neve, ha a jele: <img src='kvizek/alkatreszek/ac_source.svg' alt='Hálózati áramforrás szimbólum' class='question-symbol'>?",
+      "image": "kvizek/alkatreszek/ac_source.svg",
+      "options": ["Hálózati áramforrás", "Tranzisztor", "Biztosíték", "Transzformátor"],
+      "correct": 0,
+      "explanation": "A szimbólum a Hálózati áramforrást jelöli, amely váltakozó feszültséget biztosít az áramkör számára."
+    },
+    {
+      "text": "Mi a jele, ha a neve: Hálózati áramforrás?",
+      "image": "",
+      "options": ["<img src='kvizek/alkatreszek/ac_source.svg' alt='Hálózati áramforrás szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/transistor.svg' alt='Tranzisztor szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/fuse.svg' alt='Biztosíték szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/transformer.svg' alt='Transzformátor szimbólum' class='question-symbol'>"],
+      "correct": 0,
+      "explanation": "A Hálózati áramforrás jele a megadott szimbólum."
+    },
+    {
+      "text": "Mi a leírása, ha a neve: Hálózati áramforrás?",
+      "image": "",
+      "options": ["Váltakozó feszültséget biztosít az áramkör számára", "Felerősíti a jelet", "Védi az áramkört a túláramtól az olvadással", "Feszültség vagy áramerősség átalakítására szolgál két tekercs segítségével"],
+      "correct": 0,
+      "explanation": "A Hálózati áramforrás váltakozó feszültséget biztosít az áramkör számára."
+    },
+    {
+      "text": "Hol találkozunk vele, ha a neve: Hálózati áramforrás?",
+      "image": "",
+      "options": ["230V-os konnektor", "Erősítő áramkör", "Mérőmüszerek védelmére", "Tápegységek"],
+      "correct": 0,
+      "explanation": "A Hálózati áramforrást 230V-os konnektorban használják."
+    },
+    // Tranzisztor
+    {
+      "text": "Mi az alkatrész neve, ha a jele: <img src='kvizek/alkatreszek/transistor.svg' alt='Tranzisztor szimbólum' class='question-symbol'>?",
+      "image": "kvizek/alkatreszek/transistor.svg",
+      "options": ["Tranzisztor", "Hálózati áramforrás", "Biztosíték", "Transzformátor"],
+      "correct": 0,
+      "explanation": "A szimbólum a Tranzisztort jelöli, amely felerősíti a jelet."
+    },
+    {
+      "text": "Mi az alkatrész jele, ha a neve: Tranzisztor?",
+      "image": "",
+      "options": ["<img src='kvizek/alkatreszek/transistor.svg' alt='Tranzisztor szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/ac_source.svg' alt='Hálózati áramforrás szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/fuse.svg' alt='Biztosíték szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/transformer.svg' alt='Transzformátor szimbólum' class='question-symbol'>"],
+      "correct": 0,
+      "explanation": "A Tranzisztor jele a megadott szimbólum."
+    },
+    {
+      "text": "Mi az alkatrész leírása, ha a neve: Tranzisztor?",
+      "image": "",
+      "options": ["Felerősíti a jelet", "Váltakozó feszültséget biztosít az áramkör számára", "Védi az áramkört a túláramtól az olvadással", "Feszültség vagy áramerősség átalakítására szolgál két tekercs segítségével"],
+      "correct": 0,
+      "explanation": "A Tranzisztor felerősíti a jelet."
+    },
+    {
+      "text": "Hol használják az alkatrészt, ha a neve: Tranzisztor?",
+      "image": "",
+      "options": ["Erősítő áramkör", "230V-os konnektor", "Mérőmüszerek védelmére", "Tápegységek"],
+      "correct": 0,
+      "explanation": "A Tranzisztort erősítő áramkörökben használják."
+    },
+    // Biztosíték
+    {
+      "text": "Mi az alkatrész neve, ha a jele: <img src='kvizek/alkatreszek/fuse.svg' alt='Biztosíték szimbólum' class='question-symbol'>?",
+      "image": "kvizek/alkatreszek/fuse.svg",
+      "options": ["Biztosíték", "Hálózati áramforrás", "Tranzisztor", "Transzformátor"],
+      "correct": 0,
+      "explanation": "A szimbólum a Biztosítékot jelöli, amely védi az áramkört a túláramtól az olvadással."
+    },
+    {
+      "text": "Mi az alkatrész jele, ha a neve: Biztosíték?",
+      "image": "",
+      "options": ["<img src='kvizek/alkatreszek/fuse.svg' alt='Biztosíték szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/ac_source.svg' alt='Hálózati áramforrás szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/transistor.svg' alt='Tranzisztor szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/transformer.svg' alt='Transzformátor szimbólum' class='question-symbol'>"],
+      "correct": 0,
+      "explanation": "A Biztosíték jele a megadott szimbólum."
+    },
+    {
+      "text": "Mi az alkatrész leírása, ha a neve: Biztosíték?",
+      "image": "",
+      "options": ["Védi az áramkört a túláramtól az olvadással", "Váltakozó feszültséget biztosít az áramkör számára", "Felerősíti a jelet", "Feszültség vagy áramerősség átalakítására szolgál két tekercs segítségével"],
+      "correct": 0,
+      "explanation": "A Biztosíték védi az áramkört a túláramtól az olvadással."
+    },
+    {
+      "text": "Hol használják az alkatrészt, ha a neve: Biztosíték?",
+      "image": "",
+      "options": ["Mérőmüszerek védelmére", "230V-os konnektor", "Erősítő áramkör", "Tápegységek"],
+      "correct": 0,
+      "explanation": "A Biztosítékot mérőműszerek védelmére használják."
+    },
+    // Változtatható ellenállás
+    {
+      "text": "Mi az alkatrész neve, ha a jele: <img src='kvizek/alkatreszek/potentiometer.svg' alt='Változtatható ellenállás szimbólum' class='question-symbol'>?",
+      "image": "kvizek/alkatreszek/potentiometer.svg",
+      "options": ["Változtatható ellenállás", "Hálózati áramforrás", "Tranzisztor", "Biztosíték"],
+      "correct": 0,
+      "explanation": "A szimbólum a Változtatható ellenállást jelöli, amelynek ellenállása mechanikusan vagy elektronikusan szabályozható."
+    },
+    {
+      "text": "Mi az alkatrész jele, ha a neve: Változtatható ellenállás?",
+      "image": "",
+      "options": ["<img src='kvizek/alkatreszek/potentiometer.svg' alt='Változtatható ellenállás szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/ac_source.svg' alt='Hálózati áramforrás szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/transistor.svg' alt='Tranzisztor szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/fuse.svg' alt='Biztosíték szimbólum' class='question-symbol'>"],
+      "correct": 0,
+      "explanation": "A Változtatható ellenállás jele a megadott szimbólum."
+    },
+    {
+      "text": "Mi az alkatrész leírása, ha a neve: Változtatható ellenállás?",
+      "image": "",
+      "options": ["Az ellenállás értéke mechanikusan vagy elektronikusan szabályozható", "Váltakozó feszültséget biztosít az áramkör számára", "Felerősíti a jelet", "Védi az áramkört a túláramtól az olvadással"],
+      "correct": 0,
+      "explanation": "A Változtatható ellenállás ellenállása mechanikusan vagy elektronikusan szabályozható."
+    },
+    {
+      "text": "Hol használják az alkatrészt, ha a neve: Változtatható ellenállás?",
+      "image": "",
+      "options": ["Hangerőszabályzó", "230V-os konnektor", "Erősítő áramkör", "Mérőmüszerek védelmére"],
+      "correct": 0,
+      "explanation": "A Változtatható ellenállást hangerőszabályzóként használják."
+    },
+    // Fényérzékeny ellenállás
+    {
+      "text": "Mi az alkatrész neve, ha a jele: <img src='kvizek/alkatreszek/ldr.svg' alt='Fényérzékeny ellenállás szimbólum' class='question-symbol'>?",
+      "image": "kvizek/alkatreszek/ldr.svg",
+      "options": ["Fényérzékeny ellenállás", "Hálózati áramforrás", "Tranzisztor", "Biztosíték"],
+      "correct": 0,
+      "explanation": "A szimbólum a Fényérzékeny ellenállást jelöli, amelynek ellenállása a fény intenzitásának megfelelően változik."
+    },
+    {
+      "text": "Mi az alkatrész jele, ha a neve: Fényérzékeny ellenállás?",
+      "image": "",
+      "options": ["<img src='kvizek/alkatreszek/ldr.svg' alt='Fényérzékeny ellenállás szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/ac_source.svg' alt='Hálózati áramforrás szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/transistor.svg' alt='Tranzisztor szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/fuse.svg' alt='Biztosíték szimbólum' class='question-symbol'>"],
+      "correct": 0,
+      "explanation": "A Fényérzékeny ellenállás jele a megadott szimbólum."
+    },
+    {
+      "text": "Mi az alkatrész leírása, ha a neve: Fényérzékeny ellenállás?",
+      "image": "",
+      "options": ["Ellenállása a fény intenzitásának megfelelően változik", "Váltakozó feszültséget biztosít az áramkör számára", "Felerősíti a jelet", "Védi az áramkört a túláramtól az olvadással"],
+      "correct": 0,
+      "explanation": "A Fényérzékeny ellenállás ellenállása a fény intenzitásának megfelelően változik."
+    },
+    {
+      "text": "Hol használják az alkatrészt, ha a neve: Fényérzékeny ellenállás?",
+      "image": "",
+      "options": ["Automatikus világításvezérléshez", "230V-os konnektor", "Erősítő áramkör", "Mérőmüszerek védelmére"],
+      "correct": 0,
+      "explanation": "A Fényérzékeny ellenállást automatikus világításvezérléshez használják."
+    },
+    // Transzformátor
+    {
+      "text": "Mi az alkatrész neve, ha a jele: <img src='kvizek/alkatreszek/transformer.svg' alt='Transzformátor szimbólum' class='question-symbol'>?",
+      "image": "kvizek/alkatreszek/transformer.svg",
+      "options": ["Transzformátor", "Hálózati áramforrás", "Tranzisztor", "Biztosíték"],
+      "correct": 0,
+      "explanation": "A szimbólum a Transzformátort jelöli, amely feszültség vagy áramerősség átalakítására szolgál két tekercs segítségével."
+    },
+    {
+      "text": "Mi az alkatrész jele, ha a neve: Transzformátor?",
+      "image": "",
+      "options": ["<img src='kvizek/alkatreszek/transformer.svg' alt='Transzformátor szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/ac_source.svg' alt='Hálózati áramforrás szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/transistor.svg' alt='Tranzisztor szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/fuse.svg' alt='Biztosíték szimbólum' class='question-symbol'>"],
+      "correct": 0,
+      "explanation": "A Transzformátor jele a megadott szimbólum."
+    },
+    {
+      "text": "Mi az alkatrész leírása, ha a neve: Transzformátor?",
+      "image": "",
+      "options": ["Feszültség vagy áramerősség átalakítására szolgál két tekercs segítségével", "Váltakozó feszültséget biztosít az áramkör számára", "Felerősíti a jelet", "Védi az áramkört a túláramtól az olvadással"],
+      "correct": 0,
+      "explanation": "A Transzformátor feszültség vagy áramerősség átalakítására szolgál két tekercs segítségével."
+    },
+    {
+      "text": "Hol használják az alkatrészt, ha a neve: Transzformátor?",
+      "image": "",
+      "options": ["Tápegységek", "230V-os konnektor", "Erősítő áramkör", "Mérőmüszerek védelmére"],
+      "correct": 0,
+      "explanation": "A Transzformátort tápegységekben használják."
+    },
+    // Fotódióda
+    {
+      "text": "Mi az alkatrész neve, ha a jele: <img src='kvizek/alkatreszek/photodiode.svg' alt='Fotódióda szimbólum' class='question-symbol'>?",
+      "image": "kvizek/alkatreszek/photodiode.svg",
+      "options": ["Fotódióda", "Hálózati áramforrás", "Tranzisztor", "Biztosíték"],
+      "correct": 0,
+      "explanation": "A szimbólum a Fotódiódát jelöli, amely fényenergiát elektromos árammá alakít át."
+    },
+    {
+      "text": "Mi az alkatrész jele, ha a neve: Fotódióda?",
+      "image": "",
+      "options": ["<img src='kvizek/alkatreszek/photodiode.svg' alt='Fotódióda szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/ac_source.svg' alt='Hálózati áramforrás szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/transistor.svg' alt='Tranzisztor szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/fuse.svg' alt='Biztosíték szimbólum' class='question-symbol'>"],
+      "correct": 0,
+      "explanation": "A Fotódióda jele a megadott szimbólum."
+    },
+    {
+      "text": "Mi az alkatrész leírása, ha a neve: Fotódióda?",
+      "image": "",
+      "options": ["Fényenergiát elektromos árammá alakít át", "Váltakozó feszültséget biztosít az áramkör számára", "Felerősíti a jelet", "Védi az áramkört a túláramtól az olvadással"],
+      "correct": 0,
+      "explanation": "A Fotódióda fényenergiát elektromos árammá alakít át."
+    },
+    {
+      "text": "Hol használják az alkatrészt, ha a neve: Fotódióda?",
+      "image": "",
+      "options": ["Vonalkódolvasókba, napelemekbe", "230V-os konnektor", "Erősítő áramkör", "Mérőmüszerek védelmére"],
+      "correct": 0,
+      "explanation": "A Fotódiódát vonalkódolvasókban és napelemekben használják."
+    },
+    // Tekercs
+    {
+      "text": "Mi az alkatrész neve, ha a jele: <img src='kvizek/alkatreszek/coil.svg' alt='Tekercs szimbólum' class='question-symbol'>?",
+      "image": "kvizek/alkatreszek/coil.svg",
+      "options": ["Tekercs", "Hálózati áramforrás", "Tranzisztor", "Biztosíték"],
+      "correct": 0,
+      "explanation": "A szimbólum a Tekercset jelöli, amely mágneses mezőt hoz létre áram hatására, vagy tárolja az energiát."
+    },
+    {
+      "text": "Mi az alkatrész jele, ha a neve: Tekercs?",
+      "image": "",
+      "options": ["<img src='kvizek/alkatreszek/coil.svg' alt='Tekercs szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/ac_source.svg' alt='Hálózati áramforrás szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/transistor.svg' alt='Tranzisztor szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/fuse.svg' alt='Biztosíték szimbólum' class='question-symbol'>"],
+      "correct": 0,
+      "explanation": "A Tekercs jele a megadott szimbólum."
+    },
+    {
+      "text": "Mi az alkatrész leírása, ha a neve: Tekercs?",
+      "image": "",
+      "options": ["Mágneses mezőt hoz létre áram hatására, vagy tárolja az energiát", "Váltakozó feszültséget biztosít az áramkör számára", "Felerősíti a jelet", "Védi az áramkört a túláramtól az olvadással"],
+      "correct": 0,
+      "explanation": "A Tekercs mágneses mezőt hoz létre áram hatására, vagy tárolja az energiát."
+    },
+    {
+      "text": "Hol használják az alkatrészt, ha a neve: Tekercs?",
+      "image": "",
+      "options": ["Szűrőáramkörök", "230V-os konnektor", "Erősítő áramkör", "Mérőmüszerek védelmére"],
+      "correct": 0,
+      "explanation": "A Tekercset szűrőáramkörökben használják."
+    }
+  ]
+}

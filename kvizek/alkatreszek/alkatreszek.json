@@ -1,6 +1,7 @@
 {
   "title": "Elektromos Alkatrészek",
   "shuffleQuestions": true,
+  "gyakorlasmod": false,
   "questions": [
     {
       "text": "Melyik alkatrész szolgál elektromos áram vezetésére?",
