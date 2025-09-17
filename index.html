@@ -132,280 +132,150 @@ input[type="radio"] {
     <div id="result"></div>
   </div>
 
-  <script>
-    let current = 0;
-    let score = 0;
-	  let feedback = "";
-    let startTime;
-    let timerInterval;
-    let questions;
-    let quiz;
-    let lastPracticeLimit = 0;
-	  let selectedFile = "";
-		
-    fetch("kvizek/kvizlista.json")
-      .then(res => res.json())
-      .then(list => {
-        const selector = document.getElementById("quizSelector");
-        list.forEach(kviz => {
-          const option = document.createElement("option");
-          option.value = kviz.file;
-          option.textContent = kviz.title;
-          selector.appendChild(option);
-        });
-      });
+<script>
+  let current = 0;
+  let score = 0;
+  let feedback = "";
+  let startTime;
+  let timerInterval;
+  let questions;
+  let quiz;
+  let lastPracticeLimit = 0;
+  let selectedFile = "";
 
-    function enableStartButton() {
-  selectedFile = document.getElementById("quizSelector").value;
-  const questionLimit = document.getElementById("questionLimit");
-  const questionCount = document.getElementById("questionCount");
-
-  questionLimit.innerHTML = '<option value="">-- Válassz kérdésszámot --</option>';
-  questionCount.textContent = "";
-  
-  if (!selectedFile) {
-    questionLimit.disabled = true;
-    return;
-  }
-
-  fetch("kvizek/" + selectedFile)
+  // Kvizlista betöltése és szűrés a valaszthato mező alapján
+  fetch("kvizek/kvizlista.json")
     .then(res => res.json())
-    .then(data => {
-      const count = data.questions.length;
-      questionCount.innerHTML = `
-  <div style="margin-bottom:4px; font-size:15px; color:#e6ecf3; font-weight:bold;">
-    📘  ${data.title}
-  </div>
-  <div style="font-size:14px; color:#a0b4cc;">
-    📋 A kiválasztott kvíz ${count} kérdést tartalmaz.
-  </div>
-`;
-      questionLimit.disabled = false;
-
-      for (let i = 5; i <= count; i += 5) {
+    .then(list => {
+      // Csak a valaszthato: 1 kvízeket használjuk
+      const selectableQuizzes = list.filter(kviz => kviz.valaszthato === 1);
+      const selector = document.getElementById("quizSelector");
+      selectableQuizzes.forEach(kviz => {
         const option = document.createElement("option");
-        option.value = i;
-        option.textContent = `${i} kérdés`;
-        questionLimit.appendChild(option);
-      }
+        option.value = kviz.file;
+        option.textContent = kviz.title;
+        selector.appendChild(option);
+      });
+    })
+    .catch(error => console.error('Hiba a kvízlista betöltésekor:', error));
 
-      if (count % 5 !== 0 && !document.querySelector(`#questionLimit option[value="${count}"]`)) {
-        const lastOption = document.createElement("option");
-        lastOption.value = count;
-        lastOption.textContent = `${count} kérdés`;
-        questionLimit.appendChild(lastOption);
-      }
+  function enableStartButton() {
+    selectedFile = document.getElementById("quizSelector").value;
+    const questionLimit = document.getElementById("questionLimit");
+    const questionCount = document.getElementById("questionCount");
 
-      // Beállíthatunk egy alapértelmezett értéket is:
-      questionLimit.value = Math.min(10, count);
-    });
-}
-
-let quizMode = "test"; // alapértelmezett
-
-function loadSelectedQuiz(mode) {
-  if (!selectedFile) return;
-  quizMode = mode;
-
-  document.getElementById("quizForm").style.display = "none";
-  document.getElementById("result").style.display = "none";
-  document.getElementById("result").innerHTML = "";
-  document.getElementById("questionArea").innerHTML = "";
-  document.getElementById("timer").textContent = "";
-  document.getElementById("adminIcon").style.display = "none";
-
-  fetch("kvizek/" + selectedFile)
-    .then(res => res.json())
-    .then(data => {
-      quiz = data;
-      startQuizFromLoadedData();
-    });
-}
-
-    function startQuizFromLoadedData() {
-  //document.getElementById("quizTitle").childNodes[0].textContent = quiz.title;
-
-  if (!quiz || !quiz.questions || !Array.isArray(quiz.questions)) {
-  alert("⚠️ A kvíz adatai nem érhetők el. Előbb válassz ki egy kvízt!");
-  return;
-}
-
-const maxAvailable = quiz.questions.length;
-const gyakorlasmod = quiz.gyakorlasmod !== false;
-
-let limit;
-
-if (quizMode === "test") {
-  limit = gyakorlasmod ? 5 : maxAvailable;
-} else {
-  limit = parseInt(document.getElementById("questionLimit").value);
-  if (isNaN(limit) || limit < 5) limit = 5;
-  if (limit > maxAvailable) limit = maxAvailable;
-  lastPracticeLimit = limit;
-}
-
-if (quizMode === "practice" && !gyakorlasmod) {
-  alert("⚠️ Ez a kvíz nem indítható gyakorlás módban. Csak tudáspróba engedélyezett.");
-  return;
-}
-
-if (quizMode === "test") {
-    const countKey = selectedFile ? `testAttempts_${selectedFile}` : "testAttempts_unknown";
-    let attempts = parseInt(localStorage.getItem(countKey)) || 0;
-
-    const message = attempts === 0
-      ? `🏆 A tudáspróba ${limit} kérdésből fog állni.\nEz az eredmény értékelésre kerül.\nBiztosan el akarod indítani?`
-      : `⚠️ Ez már a ${attempts + 1}. tudáspróbád lesz ehhez a kvízhez.\nAz eredmény csak indokolt esetben fogadható el!\nBiztosan el akarod indítani?`;
-
-    const confirmed = confirm(message);
-if (!confirmed) {
-  return; // kilép, ha nem erősítette meg
-}
-
-startTimer(); // csak itt indul el az óra, ha tényleg megerősítette
-
-attempts++;
-localStorage.setItem(countKey, attempts);
-
-    const info = attempts === 1
-      ? `<div style="margin-top:6px; font-size:14px; color:#a6e3a1; font-weight:bold;'>🏆 Gatulálok az errdményhez.</div>`
-      : `<div style="margin-top:6px; font-size:14px; color:#ff9966; font-weight:bold;'>⚠️ Ez már a ${attempts}. tudáspróbád volt a kvízhez.\nAz eredmény csak indokolt esetben fogadható el!</div>`;
-
-    document.getElementById("questionCount").innerHTML += info;
-  }
-
-  questions = quiz.shuffleQuestions
-    ? [...quiz.questions].sort(() => Math.random() - 0.5).slice(0, limit)
-    : quiz.questions.slice(0, limit);
-
-  current = 0;
-  score = 0;
-  feedback = "";
-
-  document.getElementById("quizForm").style.display = "block";
-
-if (quizMode === "practice") {
-  startTimer(); // gyakorlás módban automatikusan indul
-}
-
-loadQuestion();
-}
-
-    function startTimer() {
-  startTime = Date.now();
-  timerInterval = setInterval(() => {
-    const elapsed = Date.now() - startTime;
-    const minutes = Math.floor(elapsed / 60000);
-    const seconds = Math.floor((elapsed % 60000) / 1000);
-    const modeIcon = quizMode === "practice" ? "🧪" : "🏆";
-    document.getElementById("timer").textContent = `⏱️ Idő: ${minutes} perc ${seconds} másodperc ${modeIcon}`;
-  }, 1000);
-}
-
-    function stopTimer() {
-  clearInterval(timerInterval);
-  timerInterval = null;
-}
-
-    function shuffleOptions(q) {
-      const shuffled = q.options.map((opt, i) => ({ text: opt, originalIndex: i }));
-      for (let i = shuffled.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-      }
-      q.shuffledOptions = shuffled;
-      q.shuffledCorrect = shuffled.findIndex(opt => opt.originalIndex === q.correct);
+    questionLimit.innerHTML = '<option value="">-- Válassz kérdésszámot --</option>';
+    questionCount.textContent = "";
+    
+    if (!selectedFile) {
+      questionLimit.disabled = true;
+      return;
     }
 
-function loadQuestion() {
-  const q = questions[current];
-  shuffleOptions(q);
-  let html = `<p><strong>${current + 1}. kérdés:</strong> ${q.text}</p>`;
+    fetch("kvizek/" + selectedFile)
+      .then(res => res.json())
+      .then(data => {
+        const count = data.questions.length;
+        questionCount.innerHTML = `
+    <div style="margin-bottom:4px; font-size:15px; color:#e6ecf3; font-weight:bold;">
+      📘  ${data.title}
+    </div>
+    <div style="font-size:14px; color:#a0b4cc;">
+      📋 A kiválasztott kvíz ${count} kérdést tartalmaz.
+    </div>
+  `;
+        questionLimit.disabled = false;
 
-  if (q.image) {
-    html += `<img src="${q.image}" alt="Kérdés képe" style="max-width:100%; margin-bottom:10px; border-radius:5px;">`;
+        for (let i = 5; i <= count; i += 5) {
+          const option = document.createElement("option");
+          option.value = i;
+          option.textContent = `${i} kérdés`;
+          questionLimit.appendChild(option);
+        }
+
+        if (count % 5 !== 0 && !document.querySelector(`#questionLimit option[value="${count}"]`)) {
+          const lastOption = document.createElement("option");
+          lastOption.value = count;
+          lastOption.textContent = `${count} kérdés`;
+          questionLimit.appendChild(lastOption);
+        }
+
+        // Beállíthatunk egy alapértelmezett értéket is:
+        questionLimit.value = Math.min(10, count);
+      });
   }
 
-  q.shuffledOptions.forEach((opt, i) => {
-    html += `<label><input type="radio" name="answer" value="${i}"> ${opt.text}</label>`;
-  });
+  let quizMode = "test"; // alapértelmezett
 
-  document.getElementById("questionArea").innerHTML = html;
-}
+  function loadSelectedQuiz(mode) {
+    if (!selectedFile) return;
+    quizMode = mode;
 
-function nextQuestion() {
-  const selected = document.querySelector('input[name="answer"]:checked');
-  if (!selected) {
-    alert("Kérlek, válassz egy lehetőséget!");
-    return;
-  }
-
-  const val = parseInt(selected.value);
-  const q = questions[current];
-  const userAnswer = q.shuffledOptions[val].text;
-
-  if (val === q.shuffledCorrect) {
-    score++;
-    if (quizMode === "practice") {
-      feedback += `<p style="padding:10px; border-radius:5px;">
-        <strong>${q.text}</strong><br>
-        <img src="pipa.png" alt="Helyes válasz" style="width:16px; height:16px; vertical-align:middle; margin-right:6px;">
-        Válaszod helyes!<br>
-        <span style="color:#a6e3a1;">${q.explanation || ''}</span>
-      </p>`;
-    }
-    // Tudás próba módban nem jelenítünk meg visszajelzést a helyes válaszokra
-  } else {
-    const correctAnswer = q.shuffledOptions[q.shuffledCorrect].text;
-
-    feedback += `<p style="padding:10px; border-radius:5px;">
-      <strong>${q.text}</strong><br>
-      <img src="hiba.png" alt="Hibás válasz" style="width:16px; height:16px; vertical-align:middle; margin-right:6px;">
-      A válaszod: <em style="color:#ffe680;">${userAnswer}</em> nem volt helyes.<br>
-      A helyes válasz: <strong style="color:#a6e3a1;">${correctAnswer}</strong><br>
-      <span style="color:#a6e3a1;">${q.explanation || 'Ez a kérdés különös figyelmet igényel a megértéshez.'}</span>
-    </p>`;
-  }
-
-  current++;
-  if (current < questions.length) {
-    loadQuestion();
-  } else {
-    stopTimer();
     document.getElementById("quizForm").style.display = "none";
-    document.getElementById("result").style.display = "block";
+    document.getElementById("result").style.display = "none";
+    document.getElementById("result").innerHTML = "";
+    document.getElementById("questionArea").innerHTML = "";
+    document.getElementById("timer").textContent = "";
+    document.getElementById("adminIcon").style.display = "none";
 
-    let modeLabel = "";
+    fetch("kvizek/" + selectedFile)
+      .then(res => res.json())
+      .then(data => {
+        quiz = data;
+        startQuizFromLoadedData();
+      });
+  }
+
+  // A további függvények (startQuizFromLoadedData, startTimer, stopTimer, shuffleOptions, loadQuestion, nextQuestion, restartQuiz) változatlanok maradnak
+  function startQuizFromLoadedData() {
+    if (!quiz || !quiz.questions || !Array.isArray(quiz.questions)) {
+      alert("⚠️ A kvíz adatai nem érhetők el. Előbb válassz ki egy kvízt!");
+      return;
+    }
+
+    const maxAvailable = quiz.questions.length;
+    const gyakorlasmod = quiz.gyakorlasmod !== false;
+
+    let limit;
+
+    if (quizMode === "test") {
+      limit = gyakorlasmod ? 5 : maxAvailable;
+    } else {
+      limit = parseInt(document.getElementById("questionLimit").value);
+      if (isNaN(limit) || limit < 5) limit = 5;
+      if (limit > maxAvailable) limit = maxAvailable;
+      lastPracticeLimit = limit;
+    }
+
+    if (quizMode === "practice" && !gyakorlasmod) {
+      alert("⚠️ Ez a kvíz nem indítható gyakorlás módban. Csak tudáspróba engedélyezett.");
+      return;
+    }
+
     if (quizMode === "test") {
       const countKey = selectedFile ? `testAttempts_${selectedFile}` : "testAttempts_unknown";
-      const attempts = parseInt(localStorage.getItem(countKey)) || 1;
+      let attempts = parseInt(localStorage.getItem(countKey)) || 0;
 
-      modeLabel = attempts === 1
-  ? "<p style='color:#a6e3a1; font-weight:bold;'>🏆 Gratulálok az eredményhez!</p>"
-  : `<p style='color:#ff9966; font-weight:bold;'>🏆 Ez már a ${attempts}. tudáspróba volt ehhez kvízhez. \nAz eredmény csak indokolt esetben fogadható el! </p>`;
-    } else if (quizMode === "practice") {
-      modeLabel = "<p style='color:#ffe680; font-weight:bold;'>🧪 Ez a kiértékelés gyakorló módban készült.</p>";
+      const message = attempts === 0
+        ? `🏆 A tudáspróba ${limit} kérdésből fog állni.\nEz az eredmény értékelésre kerül.\nBiztosan el akarod indítani?`
+        : `⚠️ Ez már a ${attempts + 1}. tudáspróbád lesz ehhez a kvízhez.\nAz eredmény csak indokolt esetben fogadható el!\nBiztosan el akarod indítani?`;
+
+      const confirmed = confirm(message);
+      if (!confirmed) {
+        return; // kilép, ha nem erősítette meg
+      }
+
+      startTimer(); // csak itt indul el az óra, ha tényleg megerősítette
+
+      attempts++;
+      localStorage.setItem(countKey, attempts);
+
+      const info = attempts === 1
+        ? `<div style="margin-top:6px; font-size:14px; color:#a6e3a1; font-weight:bold;">🏆 Gratulálok az eredményhez.</div>`
+        : `<div style="margin-top:6px; font-size:14px; color:#ff9966; font-weight:bold;">⚠️ Ez már a ${attempts}. tudáspróbád volt a kvízhez.\nAz eredmény csak indokolt esetben fogadható el!</div>`;
+
+      document.getElementById("questionCount").innerHTML += info;
     }
-
-    let restartButton = "";
-if (quizMode === "practice") {
-  restartButton = `<button onclick="restartQuiz()">🔁 Újraindítás</button>`;
-}
-
-document.getElementById("result").innerHTML =
-  modeLabel +
-  `<h3>📊 Eredmény: ${score} / ${questions.length} helyes válasz</h3>` +
-  feedback +
-  restartButton;
-  }
-}
-
-
-    function restartQuiz() {
-  if (quizMode === "practice") {
-    let limit = lastPracticeLimit || 5; // ha valamiért nincs mentve, legyen minimum 5
-    const maxAvailable = quiz.questions.length;
-    if (limit > maxAvailable) limit = maxAvailable;
 
     questions = quiz.shuffleQuestions
       ? [...quiz.questions].sort(() => Math.random() - 0.5).slice(0, limit)
@@ -415,14 +285,145 @@ document.getElementById("result").innerHTML =
     score = 0;
     feedback = "";
 
-    document.getElementById("result").style.display = "none";
     document.getElementById("quizForm").style.display = "block";
-    document.getElementById("timer").textContent = "0:00";
-startTimer();
+
+    if (quizMode === "practice") {
+      startTimer(); // gyakorlás módban automatikusan indul
+    }
+
     loadQuestion();
   }
-}
-  </script>
+
+  function startTimer() {
+    startTime = Date.now();
+    timerInterval = setInterval(() => {
+      const elapsed = Date.now() - startTime;
+      const minutes = Math.floor(elapsed / 60000);
+      const seconds = Math.floor((elapsed % 60000) / 1000);
+      const modeIcon = quizMode === "practice" ? "🧪" : "🏆";
+      document.getElementById("timer").textContent = `⏱️ Idő: ${minutes} perc ${seconds} másodperc ${modeIcon}`;
+    }, 1000);
+  }
+
+  function stopTimer() {
+    clearInterval(timerInterval);
+    timerInterval = null;
+  }
+
+  function shuffleOptions(q) {
+    const shuffled = q.options.map((opt, i) => ({ text: opt, originalIndex: i }));
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    q.shuffledOptions = shuffled;
+    q.shuffledCorrect = shuffled.findIndex(opt => opt.originalIndex === q.correct);
+  }
+
+  function loadQuestion() {
+    const q = questions[current];
+    shuffleOptions(q);
+    let html = `<p><strong>${current + 1}. kérdés:</strong> ${q.text}</p>`;
+
+    if (q.image) {
+      html += `<img src="${q.image}" alt="Kérdés képe" style="max-width:100%; margin-bottom:10px; border-radius:5px;">`;
+    }
+
+    q.shuffledOptions.forEach((opt, i) => {
+      html += `<label><input type="radio" name="answer" value="${i}"> ${opt.text}</label>`;
+    });
+
+    document.getElementById("questionArea").innerHTML = html;
+  }
+
+  function nextQuestion() {
+    const selected = document.querySelector('input[name="answer"]:checked');
+    if (!selected) {
+      alert("Kérlek, válassz egy lehetőséget!");
+      return;
+    }
+
+    const val = parseInt(selected.value);
+    const q = questions[current];
+    const userAnswer = q.shuffledOptions[val].text;
+
+    if (val === q.shuffledCorrect) {
+      score++;
+      if (quizMode === "practice") {
+        feedback += `<p style="padding:10px; border-radius:5px;">
+          <strong>${q.text}</strong><br>
+          <img src="pipa.png" alt="Helyes válasz" style="width:16px; height:16px; vertical-align:middle; margin-right:6px;">
+          Válaszod helyes!<br>
+          <span style="color:#a6e3a1;">${q.explanation || ''}</span>
+        </p>`;
+      }
+    } else {
+      const correctAnswer = q.shuffledOptions[q.shuffledCorrect].text;
+
+      feedback += `<p style="padding:10px; border-radius:5px;">
+        <strong>${q.text}</strong><br>
+        <img src="hiba.png" alt="Hibás válasz" style="width:16px; height:16px; vertical-align:middle; margin-right:6px;">
+        A válaszod: <em style="color:#ffe680;">${userAnswer}</em> nem volt helyes.<br>
+        A helyes válasz: <strong style="color:#a6e3a1;">${correctAnswer}</strong><br>
+        <span style="color:#a6e3a1;">${q.explanation || 'Ez a kérdés különös figyelmet igényel a megértéshez.'}</span>
+      </p>`;
+    }
+
+    current++;
+    if (current < questions.length) {
+      loadQuestion();
+    } else {
+      stopTimer();
+      document.getElementById("quizForm").style.display = "none";
+      document.getElementById("result").style.display = "block";
+
+      let modeLabel = "";
+      if (quizMode === "test") {
+        const countKey = selectedFile ? `testAttempts_${selectedFile}` : "testAttempts_unknown";
+        const attempts = parseInt(localStorage.getItem(countKey)) || 1;
+
+        modeLabel = attempts === 1
+          ? "<p style='color:#a6e3a1; font-weight:bold;'>🏆 Gratulálok az eredményhez!</p>"
+          : `<p style='color:#ff9966; font-weight:bold;'>🏆 Ez már a ${attempts}. tudáspróba volt ehhez kvízhez. \nAz eredmény csak indokolt esetben fogadható el! </p>`;
+      } else if (quizMode === "practice") {
+        modeLabel = "<p style='color:#ffe680; font-weight:bold;'>🧪 Ez a kiértékelés gyakorló módban készült.</p>";
+      }
+
+      let restartButton = "";
+      if (quizMode === "practice") {
+        restartButton = `<button onclick="restartQuiz()">🔁 Újraindítás</button>`;
+      }
+
+      document.getElementById("result").innerHTML =
+        modeLabel +
+        `<h3>📊 Eredmény: ${score} / ${questions.length} helyes válasz</h3>` +
+        feedback +
+        restartButton;
+    }
+  }
+
+  function restartQuiz() {
+    if (quizMode === "practice") {
+      let limit = lastPracticeLimit || 5; // ha valamiért nincs mentve, legyen minimum 5
+      const maxAvailable = quiz.questions.length;
+      if (limit > maxAvailable) limit = maxAvailable;
+
+      questions = quiz.shuffleQuestions
+        ? [...quiz.questions].sort(() => Math.random() - 0.5).slice(0, limit)
+        : quiz.questions.slice(0, limit);
+
+      current = 0;
+      score = 0;
+      feedback = "";
+
+      document.getElementById("result").style.display = "none";
+      document.getElementById("quizForm").style.display = "block";
+      document.getElementById("timer").textContent = "0:00";
+      startTimer();
+      loadQuestion();
+    }
+  }
+</script>
 
 </body>
 </html>
