@@ -3,8 +3,8 @@
   "shuffleQuestions": true,
   "gyakorlasmod": true,
   "questions": [
-    // Akkumulátor
     {
+      "_comment": "Akkumulátor - Kérdés a szimbólumról",
       "text": "Mi az alkatrész neve, ha a jele: <img src='kvizek/alkatreszek/battery.svg' alt='Akkumulátor szimbólum' class='question-symbol'>?",
       "image": "kvizek/alkatreszek/battery.svg",
       "options": ["Akkumulátor", "Ellenállás", "Kondenzátor", "Dióda"],
@@ -12,6 +12,7 @@
       "explanation": "A szimbólum az Akkumulátort jelöli, amely újratölthető elektromos energiát biztosít."
     },
     {
+      "_comment": "Akkumulátor - Kérdés a jelről",
       "text": "Mi az alkatrész jele, ha a neve: Akkumulátor?",
       "image": "",
       "options": ["<img src='kvizek/alkatreszek/battery.svg' alt='Akkumulátor szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/resistor.svg' alt='Ellenállás szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/capacitor.svg' alt='Kondenzátor szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/diode.svg' alt='Dióda szimbólum' class='question-symbol'>"],
@@ -19,6 +20,7 @@
       "explanation": "Az Akkumulátor jele a megadott szimbólum."
     },
     {
+      "_comment": "Akkumulátor - Kérdés a leírásról",
       "text": "Mi az alkatrész leírása, ha a neve: Akkumulátor?",
       "image": "",
       "options": ["Újratölthető elektromos energiát biztosít", "Áramot korlátozza", "Elektromos töltést tárol", "Egyirányú áramot enged"],
@@ -26,14 +28,15 @@
       "explanation": "Az Akkumulátor újratölthető elektromos energiát biztosít."
     },
     {
+      "_comment": "Akkumulátor - Kérdés a használatról",
       "text": "Hol használják az alkatrészt, ha a neve: Akkumulátor?",
       "image": "",
       "options": ["Okostelefonokban és laptopokban", "Feszültségosztó", "Szűrőáramkör", "Tápegység"],
       "correct": 0,
       "explanation": "Az Akkumulátort okostelefonokban és laptopokban használják."
     },
-    // Ellenállás
     {
+      "_comment": "Ellenállás - Kérdés a szimbólumról",
       "text": "Mi az alkatrész neve, ha a jele: <img src='kvizek/alkatreszek/resistor.svg' alt='Ellenállás szimbólum' class='question-symbol'>?",
       "image": "kvizek/alkatreszek/resistor.svg",
       "options": ["Ellenállás", "Akkumulátor", "Kondenzátor", "Dióda"],
@@ -41,6 +44,7 @@
       "explanation": "A szimbólum az Ellenállást jelöli, amely áramot korlátozza."
     },
     {
+      "_comment": "Ellenállás - Kérdés a jelről",
       "text": "Mi az alkatrész jele, ha a neve: Ellenállás?",
       "image": "",
       "options": ["<img src='kvizek/alkatreszek/resistor.svg' alt='Ellenállás szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/battery.svg' alt='Akkumulátor szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/capacitor.svg' alt='Kondenzátor szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/diode.svg' alt='Dióda szimbólum' class='question-symbol'>"],
@@ -48,6 +52,7 @@
       "explanation": "Az Ellenállás jele a megadott szimbólum."
     },
     {
+      "_comment": "Ellenállás - Kérdés a leírásról",
       "text": "Mi az alkatrész leírása, ha a neve: Ellenállás?",
       "image": "",
       "options": ["Áramot korlátozza", "Újratölthető elektromos energiát biztosít", "Elektromos töltést tárol", "Egyirányú áramot enged"],
@@ -55,14 +60,15 @@
       "explanation": "Az Ellenállás áramot korlátozza."
     },
     {
+      "_comment": "Ellenállás - Kérdés a használatról",
       "text": "Hol használják az alkatrészt, ha a neve: Ellenállás?",
       "image": "",
       "options": ["Feszültségosztó", "Okostelefonokban és laptopokban", "Szűrőáramkör", "Tápegység"],
       "correct": 0,
       "explanation": "Az Ellenállást feszültségosztóként használják."
     },
-    // Ampermérő
     {
+      "_comment": "Ampermérő - Kérdés a szimbólumról",
       "text": "Mi az alkatrész neve, ha a jele: <img src='kvizek/alkatreszek/ammeter.svg' alt='Ampermérő szimbólum' class='question-symbol'>?",
       "image": "kvizek/alkatreszek/ammeter.svg",
       "options": ["Ampermérő", "Akkumulátor", "Kondenzátor", "Dióda"],
@@ -70,6 +76,7 @@
       "explanation": "A szimbólum az Ampermérőt jelöli, amely áramerősség mérésére szolgáló műszer."
     },
     {
+      "_comment": "Ampermérő - Kérdés a jelről",
       "text": "Mi az alkatrész jele, ha a neve: Ampermérő?",
       "image": "",
       "options": ["<img src='kvizek/alkatreszek/ammeter.svg' alt='Ampermérő szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/battery.svg' alt='Akkumulátor szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/capacitor.svg' alt='Kondenzátor szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/diode.svg' alt='Dióda szimbólum' class='question-symbol'>"],
@@ -77,6 +84,7 @@
       "explanation": "Az Ampermérő jele a megadott szimbólum."
     },
     {
+      "_comment": "Ampermérő - Kérdés a leírásról",
       "text": "Mi az alkatrész leírása, ha a neve: Ampermérő?",
       "image": "",
       "options": ["Áramerősség mérésére szolgáló műszer", "Újratölthető elektromos energiát biztosít", "Elektromos töltést tárol", "Egyirányú áramot enged"],
@@ -84,14 +92,15 @@
       "explanation": "Az Ampermérő áramerősség mérésére szolgáló műszer."
     },
     {
+      "_comment": "Ampermérő - Kérdés a használatról",
       "text": "Hol használják az alkatrészt, ha a neve: Ampermérő?",
       "image": "",
       "options": ["Motor áramfelvételének vizsgálata", "Okostelefonokban és laptopokban", "Szűrőáramkör", "Tápegység"],
       "correct": 0,
       "explanation": "Az Ampermérőt motor áramfelvételének vizsgálatára használják."
     },
-    // Kondenzátor
     {
+      "_comment": "Kondenzátor - Kérdés a szimbólumról",
       "text": "Mi az alkatrész neve, ha a jele: <img src='kvizek/alkatreszek/capacitor.svg' alt='Kondenzátor szimbólum' class='question-symbol'>?",
       "image": "kvizek/alkatreszek/capacitor.svg",
       "options": ["Kondenzátor", "Akkumulátor", "Ellenállás", "Dióda"],
@@ -99,6 +108,7 @@
       "explanation": "A szimbólum a Kondenzátort jelöli, amely elektromos töltést tárol."
     },
     {
+      "_comment": "Kondenzátor - Kérdés a jelről",
       "text": "Mi az alkatrész jele, ha a neve: Kondenzátor?",
       "image": "",
       "options": ["<img src='kvizek/alkatreszek/capacitor.svg' alt='Kondenzátor szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/battery.svg' alt='Akkumulátor szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/resistor.svg' alt='Ellenállás szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/diode.svg' alt='Dióda szimbólum' class='question-symbol'>"],
@@ -106,6 +116,7 @@
       "explanation": "A Kondenzátor jele a megadott szimbólum."
     },
     {
+      "_comment": "Kondenzátor - Kérdés a leírásról",
       "text": "Mi az alkatrész leírása, ha a neve: Kondenzátor?",
       "image": "",
       "options": ["Elektromos töltést tárol", "Újratölthető elektromos energiát biztosít", "Áramot korlátozza", "Egyirányú áramot enged"],
@@ -113,14 +124,15 @@
       "explanation": "A Kondenzátor elektromos töltést tárol."
     },
     {
+      "_comment": "Kondenzátor - Kérdés a használatról",
       "text": "Hol használják az alkatrészt, ha a neve: Kondenzátor?",
       "image": "",
       "options": ["Szűrőáramkör", "Okostelefonokban és laptopokban", "Feszültségosztó", "Tápegység"],
       "correct": 0,
       "explanation": "A Kondenzátort szűrőáramkörökben használják."
     },
-    // Dióda
     {
+      "_comment": "Dióda - Kérdés a szimbólumról",
       "text": "Mi az alkatrész neve, ha a jele: <img src='kvizek/alkatreszek/diode.svg' alt='Dióda szimbólum' class='question-symbol'>?",
       "image": "kvizek/alkatreszek/diode.svg",
       "options": ["Dióda", "Akkumulátor", "Ellenállás", "Kondenzátor"],
@@ -128,6 +140,7 @@
       "explanation": "A szimbólum a Diódát jelöli, amely egyirányú áramot enged."
     },
     {
+      "_comment": "Dióda - Kérdés a jelről",
       "text": "Mi az alkatrész jele, ha a neve: Dióda?",
       "image": "",
       "options": ["<img src='kvizek/alkatreszek/diode.svg' alt='Dióda szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/battery.svg' alt='Akkumulátor szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/resistor.svg' alt='Ellenállás szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/capacitor.svg' alt='Kondenzátor szimbólum' class='question-symbol'>"],
@@ -135,6 +148,7 @@
       "explanation": "A Dióda jele a megadott szimbólum."
     },
     {
+      "_comment": "Dióda - Kérdés a leírásról",
       "text": "Mi az alkatrész leírása, ha a neve: Dióda?",
       "image": "",
       "options": ["Egyirányú áramot enged", "Újratölthető elektromos energiát biztosít", "Áramot korlátozza", "Elektromos töltést tárol"],
@@ -142,14 +156,15 @@
       "explanation": "A Dióda egyirányú áramot enged."
     },
     {
+      "_comment": "Dióda - Kérdés a használatról",
       "text": "Hol használják az alkatrészt, ha a neve: Dióda?",
       "image": "",
       "options": ["Tápegység", "Okostelefonokban és laptopokban", "Feszültségosztó", "Szűrőáramkör"],
       "correct": 0,
       "explanation": "A Diódát tápegységekben használják."
     },
-    // LED
     {
+      "_comment": "LED - Kérdés a szimbólumról",
       "text": "Mi az alkatrész neve, ha a jele: <img src='kvizek/alkatreszek/led.svg' alt='LED szimbólum' class='question-symbol'>?",
       "image": "kvizek/alkatreszek/led.svg",
       "options": ["LED", "Akkumulátor", "Ellenállás", "Kondenzátor"],
@@ -157,6 +172,7 @@
       "explanation": "A szimbólum a LED-et jelöli, amely fényt bocsát ki áram hatására."
     },
     {
+      "_comment": "LED - Kérdés a jelről",
       "text": "Mi az alkatrész jele, ha a neve: LED?",
       "image": "",
       "options": ["<img src='kvizek/alkatreszek/led.svg' alt='LED szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/battery.svg' alt='Akkumulátor szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/resistor.svg' alt='Ellenállás szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/capacitor.svg' alt='Kondenzátor szimbólum' class='question-symbol'>"],
@@ -164,6 +180,7 @@
       "explanation": "A LED jele a megadott szimbólum."
     },
     {
+      "_comment": "LED - Kérdés a leírásról",
       "text": "Mi az alkatrész leírása, ha a neve: LED?",
       "image": "",
       "options": ["Fényt bocsát ki áram hatására", "Újratölthető elektromos energiát biztosít", "Áramot korlátozza", "Elektromos töltést tárol"],
@@ -171,14 +188,15 @@
       "explanation": "A LED fényt bocsát ki áram hatására."
     },
     {
+      "_comment": "LED - Kérdés a használatról",
       "text": "Hol használják az alkatrészt, ha a neve: LED?",
       "image": "",
       "options": ["Jelzőfények", "Okostelefonokban és laptopokban", "Feszültségosztó", "Szűrőáramkör"],
       "correct": 0,
       "explanation": "A LED-et jelzőfényekként használják."
     },
-    // Nyomógomb
     {
+      "_comment": "Nyomógomb - Kérdés a szimbólumról",
       "text": "Mi az alkatrész neve, ha a jele: <img src='kvizek/alkatreszek/pushbutton.svg' alt='Nyomógomb szimbólum' class='question-symbol'>?",
       "image": "kvizek/alkatreszek/pushbutton.svg",
       "options": ["Nyomógomb", "Akkumulátor", "Ellenállás", "Kondenzátor"],
@@ -186,6 +204,7 @@
       "explanation": "A szimbólum a Nyomógombot jelöli, amely ideiglenesen zárja az áramkört."
     },
     {
+      "_comment": "Nyomógomb - Kérdés a jelről",
       "text": "Mi az alkatrész jele, ha a neve: Nyomógomb?",
       "image": "",
       "options": ["<img src='kvizek/alkatreszek/pushbutton.svg' alt='Nyomógomb szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/battery.svg' alt='Akkumulátor szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/resistor.svg' alt='Ellenállás szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/capacitor.svg' alt='Kondenzátor szimbólum' class='question-symbol'>"],
@@ -193,6 +212,7 @@
       "explanation": "A Nyomógomb jele a megadott szimbólum."
     },
     {
+      "_comment": "Nyomógomb - Kérdés a leírásról",
       "text": "Mi az alkatrész leírása, ha a neve: Nyomógomb?",
       "image": "",
       "options": ["Ideiglenesen zárja az áramkört", "Újratölthető elektromos energiát biztosít", "Áramot korlátozza", "Elektromos töltést tárol"],
@@ -200,6 +220,7 @@
       "explanation": "A Nyomógomb ideiglenesen zárja az áramkört."
     },
     {
+      "_comment": "Nyomógomb - Kérdés a használatról",
       "text": "Hol használják az alkatrészt, ha a neve: Nyomógomb?",
       "image": "",
       "options": ["Kapucsengőkben használják", "Okostelefonokban és laptopokban", "Feszültségosztó", "Szűrőáramkör"],

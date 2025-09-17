@@ -3,8 +3,8 @@
   "shuffleQuestions": true,
   "gyakorlasmod": true,
   "questions": [
-    // Vezeték
     {
+      "_comment": "Vezeték - Kérdés a szimbólumról",
       "text": "Mi az alkatrész neve, ha a jele: <img src='kvizek/alkatreszek/wire.svg' alt='Vezeték szimbólum' class='question-symbol'>?",
       "image": "kvizek/alkatreszek/wire.svg",
       "options": ["Vezeték", "Ellenállás", "Kapcsoló", "Izzó"],
@@ -12,6 +12,7 @@
       "explanation": "A szimbólum a Vezetéket jelöli, amely elektromos áram vezetésére szolgál."
     },
     {
+      "_comment": "Vezeték - Kérdés a jelről",
       "text": "Mi az alkatrész jele, ha a neve: Vezeték?",
       "image": "",
       "options": ["<img src='kvizek/alkatreszek/wire.svg' alt='Vezeték szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/resistor.svg' alt='Ellenállás szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/switch.svg' alt='Kapcsoló szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/bulb.svg' alt='Izzó szimbólum' class='question-symbol'>"],
@@ -19,6 +20,7 @@
       "explanation": "A Vezeték jele a megadott szimbólum."
     },
     {
+      "_comment": "Vezeték - Kérdés a leírásról",
       "text": "Mi az alkatrész leírása, ha a neve: Vezeték?",
       "image": "",
       "options": ["Elektromos áram vezetésére szolgál", "Feszültség mérésére szolgáló műszer", "Áramkör nyitására vagy zárására szolgál", "Fényt és hőt termel áram hatására"],
@@ -26,14 +28,15 @@
       "explanation": "A Vezeték elektromos áram vezetésére szolgál."
     },
     {
+      "_comment": "Vezeték - Kérdés a használatról",
       "text": "Hol használják az alkatrészt, ha a neve: Vezeték?",
       "image": "",
       "options": ["Áramkörök összekötésére", "Távirányítókban", "Lámpák be- és kikapcsolására", "Régi típusú lámpákban"],
       "correct": 0,
       "explanation": "A Vezetéket áramkörök összekötésére használják."
     },
-    // Elem
     {
+      "_comment": "Elem - Kérdés a szimbólumról",
       "text": "Mi az alkatrész neve, ha a jele: <img src='kvizek/alkatreszek/cell.svg' alt='Elem szimbólum' class='question-symbol'>?",
       "image": "kvizek/alkatreszek/cell.svg",
       "options": ["Elem", "Vezeték", "Kapcsoló", "Voltmérő"],
@@ -41,6 +44,7 @@
       "explanation": "A szimbólum az Elemet jelöli, amely elektromos energiát biztosít."
     },
     {
+      "_comment": "Elem - Kérdés a jelről",
       "text": "Mi az alkatrész jele, ha a neve: Elem?",
       "image": "",
       "options": ["<img src='kvizek/alkatreszek/cell.svg' alt='Elem szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/wire.svg' alt='Vezeték szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/switch.svg' alt='Kapcsoló szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/voltmeter.svg' alt='Voltmérő szimbólum' class='question-symbol'>"],
@@ -48,6 +52,7 @@
       "explanation": "Az Elem jele a megadott szimbólum."
     },
     {
+      "_comment": "Elem - Kérdés a leírásról",
       "text": "Mi az alkatrész leírása, ha a neve: Elem?",
       "image": "",
       "options": ["Elektromos energiát biztosít", "Elektromos áram vezetésére szolgál", "Feszültség mérésére szolgáló műszer", "Áramkör nyitására vagy zárására szolgál"],
@@ -55,14 +60,15 @@
       "explanation": "Az Elem elektromos energiát biztosít."
     },
     {
+      "_comment": "Elem - Kérdés a használatról",
       "text": "Hol használják az alkatrészt, ha a neve: Elem?",
       "image": "",
       "options": ["Távirányítókban", "Áramkörök összekötésére", "Lámpák be- és kikapcsolására", "Tápegység kimenetének ellenőrzése"],
       "correct": 0,
       "explanation": "Az Elemet távirányítókban használják."
     },
-    // Kapcsoló
     {
+      "_comment": "Kapcsoló - Kérdés a szimbólumról",
       "text": "Mi az alkatrész neve, ha a jele: <img src='kvizek/alkatreszek/switch.svg' alt='Kapcsoló szimbólum' class='question-symbol'>?",
       "image": "kvizek/alkatreszek/switch.svg",
       "options": ["Kapcsoló", "Vezeték", "Elem", "Izzó"],
@@ -70,6 +76,7 @@
       "explanation": "A szimbólum a Kapcsolót jelöli, amely áramkör nyitására vagy zárására szolgál."
     },
     {
+      "_comment": "Kapcsoló - Kérdés a jelről",
       "text": "Mi az alkatrész jele, ha a neve: Kapcsoló?",
       "image": "",
       "options": ["<img src='kvizek/alkatreszek/switch.svg' alt='Kapcsoló szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/wire.svg' alt='Vezeték szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/cell.svg' alt='Elem szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/bulb.svg' alt='Izzó szimbólum' class='question-symbol'>"],
@@ -77,6 +84,7 @@
       "explanation": "A Kapcsoló jele a megadott szimbólum."
     },
     {
+      "_comment": "Kapcsoló - Kérdés a leírásról",
       "text": "Mi az alkatrész leírása, ha a neve: Kapcsoló?",
       "image": "",
       "options": ["Áramkör nyitására vagy zárására szolgál", "Elektromos áram vezetésére szolgál", "Elektromos energiát biztosít", "Fényt és hőt termel áram hatására"],
@@ -84,14 +92,15 @@
       "explanation": "A Kapcsoló áramkör nyitására vagy zárására szolgál."
     },
     {
+      "_comment": "Kapcsoló - Kérdés a használatról",
       "text": "Hol használják az alkatrészt, ha a neve: Kapcsoló?",
       "image": "",
       "options": ["Lámpák be- és kikapcsolására", "Áramkörök összekötésére", "Távirányítókban", "Régi típusú lámpákban"],
       "correct": 0,
       "explanation": "A Kapcsolót lámpák be- és kikapcsolására használják."
     },
-    // Izzó
     {
+      "_comment": "Izzó - Kérdés a szimbólumról",
       "text": "Mi az alkatrész neve, ha a jele: <img src='kvizek/alkatreszek/bulb.svg' alt='Izzó szimbólum' class='question-symbol'>?",
       "image": "kvizek/alkatreszek/bulb.svg",
       "options": ["Izzó", "Vezeték", "Kapcsoló", "Voltmérő"],
@@ -99,6 +108,7 @@
       "explanation": "A szimbólum az Izzót jelöli, amely fényt és hőt termel áram hatására."
     },
     {
+      "_comment": "Izzó - Kérdés a jelről",
       "text": "Mi az alkatrész jele, ha a neve: Izzó?",
       "image": "",
       "options": ["<img src='kvizek/alkatreszek/bulb.svg' alt='Izzó szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/wire.svg' alt='Vezeték szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/switch.svg' alt='Kapcsoló szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/voltmeter.svg' alt='Voltmérő szimbólum' class='question-symbol'>"],
@@ -106,6 +116,7 @@
       "explanation": "Az Izzó jele a megadott szimbólum."
     },
     {
+      "_comment": "Izzó - Kérdés a leírásról",
       "text": "Mi az alkatrész leírása, ha a neve: Izzó?",
       "image": "",
       "options": ["Fényt és hőt termel áram hatására", "Elektromos áram vezetésére szolgál", "Áramkör nyitására vagy zárására szolgál", "Feszültség mérésére szolgáló műszer"],
@@ -113,14 +124,15 @@
       "explanation": "Az Izzó fényt és hőt termel áram hatására."
     },
     {
+      "_comment": "Izzó - Kérdés a használatról",
       "text": "Hol használják az alkatrészt, ha a neve: Izzó?",
       "image": "",
       "options": ["Régi típusú lámpákban", "Áramkörök összekötésére", "Távirányítókban", "Tápegység kimenetének ellenőrzése"],
       "correct": 0,
       "explanation": "Az Izzót régi típusú lámpákban használják."
     },
-    // Voltmérő
     {
+      "_comment": "Voltmérő - Kérdés a szimbólumról",
       "text": "Mi az alkatrész neve, ha a jele: <img src='kvizek/alkatreszek/voltmeter.svg' alt='Voltmérő szimbólum' class='question-symbol'>?",
       "image": "kvizek/alkatreszek/voltmeter.svg",
       "options": ["Voltmérő", "Vezeték", "Kapcsoló", "Izzó"],
@@ -128,6 +140,7 @@
       "explanation": "A szimbólum a Voltmérőt jelöli, amely feszültség mérésére szolgáló műszer."
     },
     {
+      "_comment": "Voltmérő - Kérdés a jelről",
       "text": "Mi az alkatrész jele, ha a neve: Voltmérő?",
       "image": "",
       "options": ["<img src='kvizek/alkatreszek/voltmeter.svg' alt='Voltmérő szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/wire.svg' alt='Vezeték szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/switch.svg' alt='Kapcsoló szimbólum' class='question-symbol'>", "<img src='kvizek/alkatreszek/bulb.svg' alt='Izzó szimbólum' class='question-symbol'>"],
@@ -135,6 +148,7 @@
       "explanation": "A Voltmérő jele a megadott szimbólum."
     },
     {
+      "_comment": "Voltmérő - Kérdés a leírásról",
       "text": "Mi az alkatrész leírása, ha a neve: Voltmérő?",
       "image": "",
       "options": ["Feszültség mérésére szolgáló műszer", "Elektromos áram vezetésére szolgál", "Áramkör nyitására vagy zárására szolgál", "Fényt és hőt termel áram hatására"],
@@ -142,6 +156,7 @@
       "explanation": "A Voltmérő feszültség mérésére szolgáló műszer."
     },
     {
+      "_comment": "Voltmérő - Kérdés a használatról",
       "text": "Hol használják az alkatrészt, ha a neve: Voltmérő?",
       "image": "",
       "options": ["Tápegység kimenetének ellenőrzése", "Áramkörök összekötésére", "Távirányítókban", "Régi típusú lámpákban"],
