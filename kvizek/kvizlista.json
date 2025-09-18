@@ -11,6 +11,6 @@
   { "file": "alkatreszek/alkatreszek1.json", "title": "10. évf.- Elektronikai alkatrészek – 1. szint", "valaszthato": 1 },
   { "file": "alkatreszek/alkatreszek2.json", "title": "10. évf.- Elektronikai alkatrészek – 2. szint", "valaszthato": 1 },
   { "file": "alkatreszek/alkatreszek3.json", "title": "10. évf.- Elektronikai alkatrészek – 3. szint", "valaszthato": 1 },
-  { "file": "alkatreszek/alkatreszek.json", "title": "10. évf.- Elektromos Alkatrészek TZ", "valaszthato": 1 },
+  { "file": "alkatreszek/alkatreszek.json", "title": "10. évf.- Elektromos Alkatrészek TZ", "valaszthato": 0 },
   { "file": "minta/minta.json", "title": "Mintakvíz – Alap kérdések", "valaszthato": 0 }
 ]
