@@ -5,77 +5,77 @@
     {
       "text": "Miért nem elég csak kikapcsolni a villanyt?",
       "image": "kvizek/9evf/feszultseg1.jpg",
-      "options": ["Mert a villany túl gyors", "Mert maradhat feszültség a rendszerben", "Mert a villany szigetel", "Mert a villany csak kívül hat"],
+      "options": ["Mert a kikapcsolás eltávolítja a földelést", "Mert maradhat feszültség a rendszerben", "Mert a kapcsoló nem mindig megbízható", "Mert a vezetékek még forróak lehetnek"],
       "correct": 1,
       "explanation": "A kikapcsolás nem garantálja, hogy a rendszer teljesen feszültségmentes."
     },
     {
       "text": "Miért kell reteszelni a kapcsolót?",
       "image": "kvizek/9evf/feszultseg2.jpg",
-      "options": ["Mert a kapcsoló túl gyors", "Mert megakadályozza a véletlen visszakapcsolást", "Mert a kapcsoló szigetel", "Mert a kapcsoló csak kívül hat"],
+      "options": ["Mert a reteszelés javítja az áramkör teljesítményét", "Mert megakadályozza a véletlen visszakapcsolást", "Mert a kapcsoló így szigetel a legjobban", "Mert csökkenti a kapcsoló mechanikai kopását"],
       "correct": 1,
       "explanation": "A reteszelés biztosítja, hogy a kapcsoló ne legyen véletlenül visszakapcsolva."
     },
     {
       "text": "Miért veszélyes a visszakapcsolás?",
       "image": "kvizek/9evf/feszultseg3.jpg",
-      "options": ["Mert a visszakapcsolás túl gyors", "Mert áramütést okozhat", "Mert a visszakapcsolás szigetel", "Mert a visszakapcsolás csak kívül hat"],
+      "options": ["Mert a hirtelen áramlöket károsíthatja a berendezéseket", "Mert áramütést okozhat", "Mert tüzet okozhat a hálózatban", "Mert a túlterhelés miatt leold a biztosíték"],
       "correct": 1,
       "explanation": "A véletlen visszakapcsolás áramütést okozhat a dolgozóknak."
     },
     {
       "text": "Miért kell ellenőrizni a feszültségmentes állapotot?",
       "image": "kvizek/9evf/feszultseg4.jpg",
-      "options": ["Mert a feszültség túl gyors", "Mert biztosítja a biztonságos munkát", "Mert a feszültség szigetel", "Mert a feszültség csak kívül hat"],
+      "options": ["Mert a műszeres mérés kötelező minden művelet előtt", "Mert biztosítja a biztonságos munkát", "Mert a rendszer így hatékonyabban működik", "Mert a feszültség ellenőrzése csökkenti a fogyasztást"],
       "correct": 1,
       "explanation": "A feszültségmentes állapot ellenőrzése garantálja, hogy nincs áram a rendszerben."
     },
     {
       "text": "Miért nem látható szabad szemmel a feszültség?",
       "image": "kvizek/9evf/feszultseg5.jpg",
-      "options": ["Mert a feszültség túl gyors", "Mert az áram láthatatlan", "Mert a feszültség szigetel", "Mert a feszültség csak kívül hat"],
+      "options": ["Mert a feszültség csak infravörös sugárzásban látható", "Mert az áram láthatatlan", "Mert a feszültség csak a hőmérséklet változásával érzékelhető", "Mert a feszültség csak egy elvont fogalom"],
       "correct": 1,
       "explanation": "Az áram és a feszültség nem látható, csak műszerrel ellenőrizhető."
     },
     {
       "text": "Miért nem elég a fázisceruza?",
       "image": "kvizek/9evf/feszultseg6.jpg",
-      "options": ["Mert a fázisceruza túl gyors", "Mert nem mindig pontos", "Mert a fázisceruza szigetel", "Mert a fázisceruza csak kívül hat"],
+      "options": ["Mert csak alacsony feszültséget érzékel", "Mert nem mindig pontos", "Mert csak váltóáramnál működik", "Mert a fázisceruza csak a fázist mutatja, a nullát nem"],
       "correct": 1,
       "explanation": "A fázisceruza nem mindig megbízható, ezért pontosabb műszer szükséges."
     },
     {
       "text": "Miért kell földelni és rövidre zárni a berendezést?",
       "image": "kvizek/9evf/feszultseg7.jpg",
-      "options": ["Mert a földelés túl gyors", "Mert elvezeti a maradék áramot", "Mert a földelés szigetel", "Mert a földelés csak kívül hat"],
+      "options": ["Mert a földelés növeli a rendszer teljesítményét", "Mert elvezeti a maradék áramot", "Mert a rövidzárlat megóvja a berendezést a túlfeszültségtől", "Mert így csökkenthető az elektromágneses sugárzás"],
       "correct": 1,
       "explanation": "A földelés és rövidre zárás elvezeti a maradék áramot, így biztonságos a munka."
     },
     {
       "text": "Miért kell figyelni a közeli feszültség alatt álló részekre?",
       "image": "kvizek/9evf/feszultseg8.jpg",
-      "options": ["Mert a részek túl gyorsak", "Mert áramütést okozhatnak", "Mert a részek szigetelnek", "Mert a részek csak kívül hatnak"],
+      "options": ["Mert a közeli részek befolyásolhatják a szerszámok működését", "Mert áramütést okozhatnak", "Mert a hirtelen hőmérsékletváltozás kárt okozhat", "Mert a feszültség alatt álló részek mágneses teret gerjesztenek"],
       "correct": 1,
       "explanation": "A közeli feszültség alatt álló részek áramütést okozhatnak, ha megérintik őket."
     },
     {
       "text": "Miért kell figyelmeztető táblákat kihelyezni?",
       "image": "kvizek/9evf/feszultseg9.jpg",
-      "options": ["Mert a táblák túl gyorsak", "Mert figyelmeztetik a dolgozókat", "Mert a táblák szigetelnek", "Mert a táblák csak kívül hatnak"],
+      "options": ["Mert a táblák jogi előírások miatt szükségesek", "Mert figyelmeztetik a dolgozókat", "Mert megakadályozzák a jogosulatlan hozzáférést a területhez", "Mert a táblák növelik a berendezések élettartamát"],
       "correct": 1,
       "explanation": "A táblák figyelmeztetik a dolgozókat a veszélyre, így növelik a biztonságot."
     },
     {
       "text": "Miért kell szigetelt eszközt használni?",
       "image": "kvizek/9evf/feszultseg10.jpg",
-      "options": ["Mert az eszköz túl gyors", "Mert csökkenti az áramütés kockázatát", "Mert az eszköz szigetel", "Mert az eszköz csak kívül hat"],
+      "options": ["Mert a szigetelt eszközök tartósabbak", "Mert csökkenti az áramütés kockázatát", "Mert megakadályozzák a statikus feltöltődést", "Mert a szigetelés javítja a szerszámok fogását"],
       "correct": 1,
       "explanation": "A szigetelt eszközök nem vezetik az áramot, így biztonságosabbak."
     },
     {
       "text": "Miért nem lehet minden munkát feszültségmentesíteni?",
       "image": "kvizek/9evf/feszultseg11.jpg",
-      "options": ["Mert a munka túl gyors", "Mert bizonyos rendszerek működniük kell", "Mert a munka szigetel", "Mert a munka csak kívül hat"],
+      "options": ["Mert a feszültségmentesítés túl sok időt vesz igénybe", "Mert bizonyos rendszerek működniük kell", "Mert a modern rendszerek nem igényelnek feszültségmentesítést", "Mert a feszültségmentesítéshez speciális engedély szükséges"],
       "correct": 1,
       "explanation": "Bizonyos rendszerek (pl. kórházi gépek) nem kapcsolhatók ki teljesen."
     }
