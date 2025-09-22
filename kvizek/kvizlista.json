@@ -2,7 +2,7 @@
   { "file": "9evf/0.json", "title": "9. évf. - Villamos alapismeretek", "valaszthato": 0 },
   { "file": "9evf/1.json", "title": "9. évf. - Az áram élettani hatásai", "valaszthato": 0 },
   { "file": "9evf/2.json", "title": "9. évf. - Az emberi test ellenállása", "valaszthato": 0 },
-  { "file": "9evf/3.json", "title": "9. évf. - Az áram élettani hatásai 2.", "valaszthato": 0 },
+  { "file": "9evf/3.json", "title": "9. évf. - Az áram élettani hatásai 2.", "valaszthato": 1 },
   { "file": "9evf/4.json", "title": "9. évf. - Védelmi osztályok és IP-kódok", "valaszthato": 1 },
   { "file": "9evf/5.json", "title": "9. évf. - Feszültségmentesítés és biztonságos munkavégzés", "valaszthato": 1 },
   { "file": "9evf/6.json", "title": "9. évf. - Mentés és elsősegély villamos baleset esetén", "valaszthato": 1 },
