@@ -1,5 +1,5 @@
 {
-  "title": "Villamosságtan biztonságtechnikai alapismeretek - Feszültségmentesítés és biztonságos munkavégzés",
+  "title": "Feszültségmentesítés és elsősegély villamos baleset esetén",
   "shuffleQuestions": true,
   "questions": [
     {
@@ -17,13 +17,6 @@
       "explanation": "A reteszelés biztosítja, hogy a kapcsoló ne legyen véletlenül visszakapcsolva."
     },
     {
-      "text": "Miért veszélyes a visszakapcsolás?",
-      "image": "kvizek/9evf/feszultseg3.jpg",
-      "options": ["Mert a hirtelen áramlöket károsíthatja a berendezéseket", "Mert áramütést okozhat", "Mert tüzet okozhat a hálózatban", "Mert a túlterhelés miatt leold a biztosíték"],
-      "correct": 1,
-      "explanation": "A véletlen visszakapcsolás áramütést okozhat a dolgozóknak."
-    },
-    {
       "text": "Miért kell ellenőrizni a feszültségmentes állapotot?",
       "image": "kvizek/9evf/feszultseg4.jpg",
       "options": ["Mert a műszeres mérés kötelező minden művelet előtt", "Mert biztosítja a biztonságos munkát", "Mert a rendszer így hatékonyabban működik", "Mert a feszültség ellenőrzése csökkenti a fogyasztást"],
@@ -38,25 +31,11 @@
       "explanation": "Az áram és a feszültség nem látható, csak műszerrel ellenőrizhető."
     },
     {
-      "text": "Miért nem elég a fázisceruza?",
-      "image": "kvizek/9evf/feszultseg6.jpg",
-      "options": ["Mert csak alacsony feszültséget érzékel", "Mert nem mindig pontos", "Mert csak váltóáramnál működik", "Mert a fázisceruza csak a fázist mutatja, a nullát nem"],
-      "correct": 1,
-      "explanation": "A fázisceruza nem mindig megbízható, ezért pontosabb műszer szükséges."
-    },
-    {
-      "text": "Miért kell földelni és rövidre zárni a berendezést?",
+      "text": "Mi a feszültségmentesítés első három lépése a munkavégzés megkezdése előtt?",
       "image": "kvizek/9evf/feszultseg7.jpg",
-      "options": ["Mert a földelés növeli a rendszer teljesítményét", "Mert elvezeti a maradék áramot", "Mert a rövidzárlat megóvja a berendezést a túlfeszültségtől", "Mert így csökkenthető az elektromágneses sugárzás"],
-      "correct": 1,
-      "explanation": "A földelés és rövidre zárás elvezeti a maradék áramot, így biztonságos a munka."
-    },
-    {
-      "text": "Miért kell figyelni a közeli feszültség alatt álló részekre?",
-      "image": "kvizek/9evf/feszultseg8.jpg",
-      "options": ["Mert a közeli részek befolyásolhatják a szerszámok működését", "Mert áramütést okozhatnak", "Mert a hirtelen hőmérsékletváltozás kárt okozhat", "Mert a feszültség alatt álló részek mágneses teret gerjesztenek"],
-      "correct": 1,
-      "explanation": "A közeli feszültség alatt álló részek áramütést okozhatnak, ha megérintik őket."
+      "options": ["Kikapcsolás, reteszelés, feszültségmentesítés ellenőrzése", "Hívás, elválasztás, dokumentálás", "Visszakapcsolás, földelés, kiengedés", "Leszigetelés, jelölés, ellenőrzés"],
+      "correct": 0,
+      "explanation": "A feszültségmentesítés első három lépése a feszültség alatti részek leválasztása, a kapcsoló reteszelése és a feszültségmentes állapot ellenőrzése."
     },
     {
       "text": "Miért kell figyelmeztető táblákat kihelyezni?",
@@ -66,18 +45,46 @@
       "explanation": "A táblák figyelmeztetik a dolgozókat a veszélyre, így növelik a biztonságot."
     },
     {
-      "text": "Miért kell szigetelt eszközt használni?",
-      "image": "kvizek/9evf/feszultseg10.jpg",
-      "options": ["Mert a szigetelt eszközök tartósabbak", "Mert csökkenti az áramütés kockázatát", "Mert megakadályozzák a statikus feltöltődést", "Mert a szigetelés javítja a szerszámok fogását"],
+      "text": "Miért nem szabad rögtön megfogni az áramütött embert?",
+      "image": "kvizek/9evf/mentes1.jpg",
+      "options": ["Mert a sérült ruházata vezetheti az áramot", "Mert az áram rád is átterjedhet", "Mert a sérült testén is lehet maradékfeszültség", "Mert a sérült izomzata görcsösen összehúzódhat"],
       "correct": 1,
-      "explanation": "A szigetelt eszközök nem vezetik az áramot, így biztonságosabbak."
+      "explanation": "Az áramütött ember érintése áramütést okozhat a mentőnek is."
     },
     {
-      "text": "Miért nem lehet minden munkát feszültségmentesíteni?",
-      "image": "kvizek/9evf/feszultseg11.jpg",
-      "options": ["Mert a feszültségmentesítés túl sok időt vesz igénybe", "Mert bizonyos rendszerek működniük kell", "Mert a modern rendszerek nem igényelnek feszültségmentesítést", "Mert a feszültségmentesítéshez speciális engedély szükséges"],
+      "text": "Miért kell először kikapcsolni az áramot?",
+      "image": "kvizek/9evf/mentes2.jpg",
+      "options": ["Mert a kikapcsolás csökkenti a fogyasztást", "Mert biztonságossá teszi a mentést", "Mert a hirtelen áramszünet sokkolja a sérültet", "Mert a kikapcsolással megóvhatjuk a berendezéseket"],
       "correct": 1,
-      "explanation": "Bizonyos rendszerek (pl. kórházi gépek) nem kapcsolhatók ki teljesen."
+      "explanation": "Az áram kikapcsolása megszünteti az áramütés veszélyét a mentés során."
+    },
+    {
+      "text": "Miért kell szigetelő eszközt használni mentéshez?",
+      "image": "kvizek/9evf/mentes4.jpg",
+      "options": ["Mert a szigetelő eszköz nem vezeti a hőt", "Mert megvédi a mentőt az áramtól", "Mert a szigetelés javítja a mentés hatékonyságát", "Mert a szigetelő eszközök jobban bírják a terhelést"],
+      "correct": 1,
+      "explanation": "A szigetelő eszköz (pl. fa vagy műanyag) nem vezeti az áramot, így biztonságos."
+    },
+    {
+      "text": "Miért kell azonnal elsősegélyt nyújtani?",
+      "image": "kvizek/9evf/mentes5.jpg",
+      "options": ["Mert az elsősegély segít a sérültnek felmelegedni", "Mert életet menthet", "Mert az azonnali segítségnyújtás jogi kötelezettség", "Mert az elsősegélynyújtás csökkenti a sokk kockázatát"],
+      "correct": 1,
+      "explanation": "Az azonnali elsősegély növeli a túlélés esélyét áramütés után."
+    },
+    {
+      "text": "Miért kell stabil oldalfekvésbe helyezni a sérültet?",
+      "image": "kvizek/9evf/mentes6.jpg",
+      "options": ["Mert az oldalfekvés megkönnyíti a légzést", "Mert biztosítja a légutak szabadságát", "Mert a stabil oldalfekvés csökkenti a szédülést", "Mert ez a legkényelmesebb pozíció eszméletlen állapotban"],
+      "correct": 1,
+      "explanation": "A stabil oldalfekvés megakadályozza a fulladást, ha a sérült eszméletlen."
+    },
+    {
+      "text": "Miért kell mentőt hívni akkor is, ha 'jól van' valaki?",
+      "image": "kvizek/9evf/mentes8.jpg",
+      "options": ["Mert a mentők gyorsabban stabilizálják az állapotot", "Mert rejtett sérülések lehetnek", "Mert a mentő tudja a legjobb utat a kórházba", "Mert a sérültnek szüksége van az orvosi vizsgálatra a baleset után"],
+      "correct": 1,
+      "explanation": "Az áramütés rejtett belső sérüléseket okozhat, amit orvosnak kell ellenőriznie."
     }
   ]
 }

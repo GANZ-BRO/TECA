@@ -1,84 +1,127 @@
 {
-  "title": "Villamosságtan biztonságtechnikai alapismeretek - Mentés és elsősegély villamos baleset esetén",
+  "title": "Villamosságtan - Áram és Feszültség",
   "shuffleQuestions": true,
+  "gyakorlasmod": true,
   "questions": [
     {
-      "text": "Miért nem szabad rögtön megfogni az áramütött embert?",
-      "image": "kvizek/9evf/mentes1.jpg",
-      "options": ["Mert a sérült ruházata vezetheti az áramot", "Mert az áram rád is átterjedhet", "Mert a sérült testén is lehet maradékfeszültség", "Mert a sérült izomzata görcsösen összehúzódhat"],
+      "text": "Mi az elektromos áram?",
+      "image": "kvizek/alapok/aram.jpg",
+      "options": [
+        "Az atomok rendezetlen mozgása",
+        "Az elektronok rendezett mozgása",
+        "Az atomok rezgése",
+        "Az elektronok nyugvó állapota"
+      ],
       "correct": 1,
-      "explanation": "Az áramütött ember érintése áramütést okozhat a mentőnek is."
+      "explanation": "Az elektromos áram az elektromos töltések, jellemzően az elektronok, rendezett mozgása."
     },
     {
-      "text": "Miért kell először kikapcsolni az áramot?",
-      "image": "kvizek/9evf/mentes2.jpg",
-      "options": ["Mert a kikapcsolás csökkenti a fogyasztást", "Mert biztonságossá teszi a mentést", "Mert a hirtelen áramszünet sokkolja a sérültet", "Mert a kikapcsolással megóvhatjuk a berendezéseket"],
+      "text": "Mi a feszültség?",
+      "image": "kvizek/alapok/feszultseg.jpg",
+      "options": [
+        "Az áram erőssége",
+        "Az elektromos töltések közötti potenciálkülönbség",
+        "A vezető hossza",
+        "Az elektronok sebessége"
+      ],
       "correct": 1,
-      "explanation": "Az áram kikapcsolása megszünteti az áramütés veszélyét a mentés során."
+      "explanation": "A feszültség az elektromos töltések közötti potenciálkülönbség, ami hajtja az áramot."
     },
     {
-      "text": "Miért nem elég csak elrántani valakit?",
-      "image": "kvizek/9evf/mentes3.jpg",
-      "options": ["Mert az erőteljes elrántás gerincsérülést okozhat", "Mert az áram továbbra is folyhat", "Mert az elrántás csak akkor hatékony, ha a sérült eszméleténél van", "Mert a mozdulat túl hirtelen ahhoz, hogy hatékony legyen"],
+      "text": "Melyik paraméter méri az elektromos áram 'erősségét'?",
+      "image": "kvizek/alapok/arammerosseg.jpg",
+      "options": [
+        "Feszültség (V)",
+        "Áramerősség (A)",
+        "Ellenállás (Ω)",
+        "Teljesítmény (W)"
+      ],
       "correct": 1,
-      "explanation": "Az elrántás nem szünteti meg az áramforrást, így a veszély megmarad."
+      "explanation": "Az áramerősség írja le, hogy egységnyi idő alatt mennyi elektromos töltés halad át a vezető keresztmetszetén."
     },
     {
-      "text": "Miért kell szigetelő eszközt használni mentéshez?",
-      "image": "kvizek/9evf/mentes4.jpg",
-      "options": ["Mert a szigetelő eszköz nem vezeti a hőt", "Mert megvédi a mentőt az áramtól", "Mert a szigetelés javítja a mentés hatékonyságát", "Mert a szigetelő eszközök jobban bírják a terhelést"],
-      "correct": 1,
-      "explanation": "A szigetelő eszköz (pl. fa vagy műanyag) nem vezeti az áramot, így biztonságos."
+      "text": "Melyik paraméter felelős azért, hogy 'nyomást gyakoroljon' az elektronokra?",
+      "image": "kvizek/alapok/feszultseg2.jpg",
+      "options": [
+        "Ellenállás (Ω)",
+        "Áramerősség (A)",
+        "Feszültség (V)",
+        "Teljesítmény (W)"
+      ],
+      "correct": 2,
+      "explanation": "A feszültség az az elektromos potenciálkülönbség, ami hajtja az áramot az áramkörben, mint a nyomás egy vízvezetékben."
     },
     {
-      "text": "Miért kell azonnal elsősegélyt nyújtani?",
-      "image": "kvizek/9evf/mentes5.jpg",
-      "options": ["Mert az elsősegély segít a sérültnek felmelegedni", "Mert életet menthet", "Mert az azonnali segítségnyújtás jogi kötelezettség", "Mert az elsősegélynyújtás csökkenti a sokk kockázatát"],
-      "correct": 1,
-      "explanation": "Az azonnali elsősegély növeli a túlélés esélyét áramütés után."
+      "text": "Mi az áramerősség mértékegysége?",
+      "image": "kvizek/alapok/amper.jpg",
+      "options": [
+        "Volt (V)",
+        "Ohm (Ω)",
+        "Amper (A)",
+        "Watt (W)"
+      ],
+      "correct": 2,
+      "explanation": "Az Amper az elektromos áramerősség mértékegysége."
     },
     {
-      "text": "Miért kell stabil oldalfekvésbe helyezni a sérültet?",
-      "image": "kvizek/9evf/mentes6.jpg",
-      "options": ["Mert az oldalfekvés megkönnyíti a légzést", "Mert biztosítja a légutak szabadságát", "Mert a stabil oldalfekvés csökkenti a szédülést", "Mert ez a legkényelmesebb pozíció eszméletlen állapotban"],
-      "correct": 1,
-      "explanation": "A stabil oldalfekvés megakadályozza a fulladást, ha a sérült eszméletlen."
+      "text": "Mi a feszültség mértékegysége?",
+      "image": "kvizek/alapok/volt.jpg",
+      "options": [
+        "Volt (V)",
+        "Ohm (Ω)",
+        "Amper (A)",
+        "Watt (W)"
+      ],
+      "correct": 0,
+      "explanation": "A Volt a feszültség mértékegysége."
     },
     {
-      "text": "Miért kell újraélesztést kezdeni légzéskimaradás esetén?",
-      "image": "kvizek/9evf/mentes7.jpg",
-      "options": ["Mert az újraélesztés serkenti a vérkeringést", "Mert helyreállíthatja a légzést és keringést", "Mert a szívmasszázs helyettesíti a tüdő funkcióját", "Mert az újraélesztés csökkenti az agyi károsodás kockázatát"],
+      "text": "Mi okozza a feszültséget egy áramkörben?",
+      "image": "kvizek/alapok/feszultseg_okozta.jpg",
+      "options": [
+        "Az elektronok egyenletes áramlása.",
+        "Az elektromos töltések (elektronok) egy helyen való felhalmozódása.",
+        "Az áramkör anyaga.",
+        "Az áramerősség változása."
+      ],
       "correct": 1,
-      "explanation": "Az újraélesztés visszaállíthatja a szív és a légzés működését."
+      "explanation": "A feszültséget az elektromos töltések felhalmozódása okozza, amely potenciálkülönbséget hoz létre."
     },
     {
-      "text": "Miért kell mentőt hívni akkor is, ha 'jól van' valaki?",
-      "image": "kvizek/9evf/mentes8.jpg",
-      "options": ["Mert a mentők gyorsabban stabilizálják az állapotot", "Mert rejtett sérülések lehetnek", "Mert a mentő tudja a legjobb utat a kórházba", "Mert a sérültnek szüksége van az orvosi vizsgálatra a baleset után"],
-      "correct": 1,
-      "explanation": "Az áramütés rejtett belső sérüléseket okozhat, amit orvosnak kell ellenőriznie."
+      "text": "Ha az elektromos áramot egy csőben folyó vízhez hasonlítjuk, mi felel meg a feszültségnek?",
+      "image": "kvizek/alapok/viz_analógia.jpg",
+      "options": [
+        "A csőben lévő nyomás.",
+        "A víz áramlási sebessége.",
+        "A cső átmérője.",
+        "A víz hőmérséklete."
+      ],
+      "correct": 0,
+      "explanation": "A víznyomás hasonló a feszültséghez, mivel mindkettő 'hajtóerőt' biztosít az áramláshoz."
     },
     {
-      "text": "Miért fontos a 112-es szám ismerete?",
-      "image": "kvizek/9evf/mentes9.jpg",
-      "options": ["Mert a 112 a leggyorsabb módja a mentőhívásnak", "Mert ez az egységes segélyhívószám", "Mert a 112 a katasztrófavédelem száma is", "Mert a 112 segít a helyszín beazonosításában"],
+      "text": "Melyik állítás igaz az elektromos áram mozgási sebességére?",
+      "image": "kvizek/alapok/aram_sebessege.jpg",
+      "options": [
+        "Az elektronok szinte fénysebességgel haladnak.",
+        "Az elektronok lassan, pár millimétert másodpercenként haladnak.",
+        "A sebességük állandó minden körülmények között.",
+        "Az áram sebessége egyenesen arányos az ellenállással."
+      ],
       "correct": 1,
-      "explanation": "A 112-es szám Európában a segélyhívószám, amely gyors segítséget biztosít."
+      "explanation": "A valóságban az elektronok lassan sodródnak a vezetőben, de a 'jel' (az elektromos mező) terjedése szinte fénysebességgel történik."
     },
     {
-      "text": "Miért kell EKG vizsgálat áramütés után?",
-      "image": "kvizek/9evf/mentes10.jpg",
-      "options": ["Mert az EKG kimutatja a belső vérzéseket", "Mert ellenőrzi a szív működését", "Mert az EKG megmutatja a sérült általános állapotát", "Mert az EKG segít a megfelelő gyógyszeres kezelés kiválasztásában"],
-      "correct": 1,
-      "explanation": "Az EKG kimutatja az áramütés által okozott szívritmuszavarokat."
-    },
-    {
-      "text": "Miért kell utólag ellenőrizni a hálózatot?",
-      "image": "kvizek/9evf/mentes11.jpg",
-      "options": ["Mert a hálózat ellenőrzése jogi kötelezettség", "Mert a hiba megismétlődhet", "Mert az ellenőrzés segít a felelős megtalálásában", "Mert az áramütés okozhat sérülést a hálózatban"],
-      "correct": 1,
-      "explanation": "A hálózat ellenőrzése megakadályozza a további baleseteket."
+      "text": "Mi az a jelenség, amikor a töltött részecskék rendezett mozgásban vannak?",
+      "image": "kvizek/alapok/jelenseg.jpg",
+      "options": [
+        "Elektrosztatikus mező",
+        "Mágneses fluxus",
+        "Feszültség",
+        "Elektromos áram"
+      ],
+      "correct": 3,
+      "explanation": "A rendezett mozgásban lévő töltött részecskék elektromos áramot alkotnak."
     }
   ]
-
 }
