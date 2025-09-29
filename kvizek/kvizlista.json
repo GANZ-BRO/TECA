@@ -1,16 +1,16 @@
 [
-  { "file": "9evf/0.json", "title": "9. évf. - Villamos alapismeretek", "valaszthato": 0 },
-  { "file": "9evf/1.json", "title": "9. évf. - Az áram élettani hatásai", "valaszthato": 0 },
-  { "file": "9evf/2.json", "title": "9. évf. - Az emberi test ellenállása", "valaszthato": 0 },
+  { "file": "9evf/0.json", "title": "9. évf. - Villamos alapismeretek", "valaszthato": 1 },
+  { "file": "9evf/1.json", "title": "9. évf. - Az áram élettani hatásai", "valaszthato": 1 },
+  { "file": "9evf/2.json", "title": "9. évf. - Az emberi test ellenállása", "valaszthato": 1 },
   { "file": "9evf/3.json", "title": "9. évf. - Az áram élettani hatásai 2.", "valaszthato": 1 },
   { "file": "9evf/4.json", "title": "9. évf. - Védelmi osztályok és IP-kódok", "valaszthato": 1 },
   { "file": "9evf/5.json", "title": "9. évf. - Feszültségmentesítés és elsősegély villamos baleset esetén", "valaszthato": 1 },
   { "file": "9evf/6.json", "title": "9. évf. - Áram és Feszültség", "valaszthato": 1 },
-  { "file": "villbiztech/villbiztech.json", "title": "10. évf. - Villamos Biztonságtechnika", "valaszthato": 0 },
-  { "file": "villbiztech/erintesved.json", "title": "10. évf.- Érintésvédelem", "valaszthato": 0 },
+  { "file": "villbiztech/villbiztech.json", "title": "10. évf. - Villamos Biztonságtechnika", "valaszthato": 1 },
+  { "file": "villbiztech/erintesved.json", "title": "10. évf.- Érintésvédelem", "valaszthato": 1 },
   { "file": "alkatreszek/alkatreszek1.json", "title": "10. évf.- Elektronikai alkatrészek – 1. szint", "valaszthato": 1 },
   { "file": "alkatreszek/alkatreszek2.json", "title": "10. évf.- Elektronikai alkatrészek – 2. szint", "valaszthato": 1 },
   { "file": "alkatreszek/alkatreszek3.json", "title": "10. évf.- Elektronikai alkatrészek – 3. szint", "valaszthato": 1 },
   { "file": "alkatreszek/alkatreszek.json", "title": "10. évf.- Elektromos Alkatrészek TZ", "valaszthato": 1 },
-  { "file": "minta/minta.json", "title": "Mintakvíz – Alap kérdések", "valaszthato": 0 }
+  { "file": "minta/minta.json", "title": "Mintakvíz – Alap kérdések", "valaszthato": 1 }
 ]
