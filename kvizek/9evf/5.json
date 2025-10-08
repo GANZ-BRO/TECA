@@ -3,13 +3,6 @@
   "shuffleQuestions": true,
   "questions": [
     {
-      "text": "Miért nem elég csak kikapcsolni a villanyt?",
-      "image": "kvizek/9evf/feszultseg1.jpg",
-      "options": ["Mert a kikapcsolás eltávolítja a földelést", "Mert maradhat feszültség a rendszerben", "Mert a kapcsoló nem mindig megbízható", "Mert a vezetékek még forróak lehetnek"],
-      "correct": 1,
-      "explanation": "A kikapcsolás nem garantálja, hogy a rendszer teljesen feszültségmentes."
-    },
-    {
       "text": "Miért kell reteszelni a kapcsolót?",
       "image": "kvizek/9evf/feszultseg2.jpg",
       "options": ["Mert a reteszelés javítja az áramkör teljesítményét", "Mert megakadályozza a véletlen visszakapcsolást", "Mert a kapcsoló így szigetel a legjobban", "Mert csökkenti a kapcsoló mechanikai kopását"],
@@ -23,13 +16,7 @@
       "correct": 1,
       "explanation": "A feszültségmentes állapot ellenőrzése garantálja, hogy nincs áram a rendszerben."
     },
-    {
-      "text": "Miért nem látható szabad szemmel a feszültség?",
-      "image": "kvizek/9evf/feszultseg5.jpg",
-      "options": ["Mert a feszültség csak infravörös sugárzásban látható", "Mert az áram láthatatlan", "Mert a feszültség csak a hőmérséklet változásával érzékelhető", "Mert a feszültség csak egy elvont fogalom"],
-      "correct": 1,
-      "explanation": "Az áram és a feszültség nem látható, csak műszerrel ellenőrizhető."
-    },
+ 
     {
       "text": "Mi a feszültségmentesítés első három lépése a munkavégzés megkezdése előtt?",
       "image": "kvizek/9evf/feszultseg7.jpg",
@@ -52,7 +39,7 @@
       "explanation": "Az áramütött ember érintése áramütést okozhat a mentőnek is."
     },
     {
-      "text": "Miért kell először kikapcsolni az áramot?",
+      "text": "Villamos baleset esetén miért kell először lekapcsolni az áramot?",
       "image": "kvizek/9evf/mentes2.jpg",
       "options": ["Mert a kikapcsolás csökkenti a fogyasztást", "Mert biztonságossá teszi a mentést", "Mert a hirtelen áramszünet sokkolja a sérültet", "Mert a kikapcsolással megóvhatjuk a berendezéseket"],
       "correct": 1,
