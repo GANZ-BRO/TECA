@@ -1,77 +1,117 @@
 {
   "title": "Feszültségmentesítés és elsősegély villamos baleset esetén",
-  "shuffleQuestions": true,
+  "shuffleQuestions": false,
   "questions": [
     {
-      "text": "Miért kell reteszelni a kapcsolót?",
-      "image": "kvizek/9evf/feszultseg2.jpg",
-      "options": ["Mert a reteszelés javítja az áramkör teljesítményét", "Mert megakadályozza a véletlen visszakapcsolást", "Mert a kapcsoló így szigetel a legjobban", "Mert csökkenti a kapcsoló mechanikai kopását"],
-      "correct": 1,
-      "explanation": "A reteszelés biztosítja, hogy a kapcsoló ne legyen véletlenül visszakapcsolva."
-    },
-    {
-      "text": "Miért kell ellenőrizni a feszültségmentes állapotot?",
-      "image": "kvizek/9evf/feszultseg4.jpg",
-      "options": ["Mert a műszeres mérés kötelező minden művelet előtt", "Mert biztosítja a biztonságos munkát", "Mert a rendszer így hatékonyabban működik", "Mert a feszültség ellenőrzése csökkenti a fogyasztást"],
-      "correct": 1,
-      "explanation": "A feszültségmentes állapot ellenőrzése garantálja, hogy nincs áram a rendszerben."
-    },
- 
-    {
       "text": "Mi a feszültségmentesítés első három lépése a munkavégzés megkezdése előtt?",
-      "image": "kvizek/9evf/feszultseg7.jpg",
-      "options": ["Kikapcsolás, reteszelés, feszültségmentesítés ellenőrzése", "Hívás, elválasztás, dokumentálás", "Visszakapcsolás, földelés, kiengedés", "Leszigetelés, jelölés, ellenőrzés"],
+      "options": [
+        "Kikapcsolás, reteszelés, feszültségmentesítés ellenőrzése",
+        "Hívás, elválasztás, dokumentálás",
+        "Visszakapcsolás, földelés, kiengedés",
+        "Leszigetelés, jelölés, ellenőrzés"
+      ],
       "correct": 0,
-      "explanation": "A feszültségmentesítés első három lépése a feszültség alatti részek leválasztása, a kapcsoló reteszelése és a feszültségmentes állapot ellenőrzése."
+      "explanation": "A helyes sorrend Kikapcsolás, reteszelés, feszültségmentesítés ellenőrzése."
     },
     {
-      "text": "Miért kell figyelmeztető táblákat kihelyezni?",
-      "image": "kvizek/9evf/feszultseg9.jpg",
-      "options": ["Mert a táblák jogi előírások miatt szükségesek", "Mert figyelmeztetik a dolgozókat", "Mert megakadályozzák a jogosulatlan hozzáférést a területhez", "Mert a táblák növelik a berendezések élettartamát"],
+      "text": "Mi a reteszelés legfontosabb funkciója a feszültségmentesítés során?",
+      "options": [
+        "Javítja az áramkör teljesítményét.",
+        "Megakadályozza a véletlen vagy illetéktelen visszakapcsolást.",
+        "Csökkenti a kapcsoló mechanikai kopását.",
+        "Jelzi a feszültség pontos értékét."
+      ],
       "correct": 1,
-      "explanation": "A táblák figyelmeztetik a dolgozókat a veszélyre, így növelik a biztonságot."
+      "explanation": "A reteszelés (pl. lakattal való lezárás) fizikailag megakadályozza, hogy bárki véletlenül visszakapcsolja az áramot, amíg a munkavégzés tart."
     },
     {
-      "text": "Miért nem szabad rögtön megfogni az áramütött embert?",
-      "image": "kvizek/9evf/mentes1.jpg",
-      "options": ["Mert a sérült ruházata vezetheti az áramot", "Mert az áram rád is átterjedhet", "Mert a sérült testén is lehet maradékfeszültség", "Mert a sérült izomzata görcsösen összehúzódhat"],
+      "text": "Miért kell ellenőrizni a feszültségmentes állapotot a kikapcsolás után?",
+      "options": [
+        "Mert a műszeres mérés kötelező minden művelet előtt",
+        "Mert biztosítja a biztonságos munkát",
+        "Mert a rendszer így hatékonyabban működik",
+        "Mert a feszültség ellenőrzése csökkenti a fogyasztást"
+      ],
       "correct": 1,
-      "explanation": "Az áramütött ember érintése áramütést okozhat a mentőnek is."
+      "explanation": "Az ellenőrzés garantálja, hogy a feltételezés (nincs áram) helyes, és a környezet valóban biztonságos a további teendőkhöz."
     },
     {
-      "text": "Villamos baleset esetén miért kell először lekapcsolni az áramot?",
-      "image": "kvizek/9evf/mentes2.jpg",
-      "options": ["Mert a kikapcsolás csökkenti a fogyasztást", "Mert biztonságossá teszi a mentést", "Mert a hirtelen áramszünet sokkolja a sérültet", "Mert a kikapcsolással megóvhatjuk a berendezéseket"],
+      "text": "Miért nem szabad közvetlenül megfogni az áramütést épp elszenvedő embert?",
+      "options": [
+        "Mert a sérült ruházata vezetheti az áramot",
+        "Mert az áram rád is átterjedhet",
+        "Mert a sérült testén is lehet maradékfeszültség",
+        "Mert a sérült izomzata görcsösen összehúzódhat"
+      ],
       "correct": 1,
-      "explanation": "Az áram kikapcsolása megszünteti az áramütés veszélyét a mentés során."
+      "explanation": "Ha a sérült még kapcsolatban van az áramforrással, a teste vezeti az áramot. Ha hozzáérsz, te is az áramkör részévé válsz."
     },
     {
-      "text": "Miért kell szigetelő eszközt használni mentéshez?",
-      "image": "kvizek/9evf/mentes4.jpg",
-      "options": ["Mert a szigetelő eszköz nem vezeti a hőt", "Mert megvédi a mentőt az áramtól", "Mert a szigetelés javítja a mentés hatékonyságát", "Mert a szigetelő eszközök jobban bírják a terhelést"],
-      "correct": 1,
-      "explanation": "A szigetelő eszköz (pl. fa vagy műanyag) nem vezeti az áramot, így biztonságos."
+      "text": "Milyen tárgyat használhatsz a sérült biztonságos eltávolítására az áramforrástól, ha nem tudod azonnal áramtalanítani?",
+      "options": [
+        "Egy fém seprűnyelet.",
+        "Egy nedves faágat.",
+        "Egy műanyag seprűnyelet vagy száraz fa ágat.",
+        "A saját kezedet, ha fa karkötöt viselsz."
+      ],
+      "correct": 2,
+      "explanation": "A műanyag és a száraz fa rosszul vezeti az áramot (szigetelő), ezért alkalmasak a sérült biztonságos elmozdítására."
     },
     {
-      "text": "Miért kell azonnal elsősegélyt nyújtani?",
-      "image": "kvizek/9evf/mentes5.jpg",
-      "options": ["Mert az elsősegély segít a sérültnek felmelegedni", "Mert életet menthet", "Mert az azonnali segítségnyújtás jogi kötelezettség", "Mert az elsősegélynyújtás csökkenti a sokk kockázatát"],
+      "text": "Mikor kell értesíteni a mentőszolgálatot?",
+      "options": [
+        "Csak akkor, ha a sérült eszméletlen.",
+        "Amint a sérült már nincs kapcsolatban az áramforrással.",
+        "Miután elláttam az égési sebeket.",
+        "Nem szükséges hívni őket, ha a sérült jól érzi magát."
+      ],
       "correct": 1,
-      "explanation": "Az azonnali elsősegély növeli a túlélés esélyét áramütés után."
+      "explanation": "Ez a helyes sorrend. Először a közvetlen veszélyt kell elhárítani (áramtalanítás), majd azonnal segítséget kell hívni."
     },
     {
-      "text": "Miért kell stabil oldalfekvésbe helyezni a sérültet?",
-      "image": "kvizek/9evf/mentes6.jpg",
-      "options": ["Mert az oldalfekvés megkönnyíti a légzést", "Mert biztosítja a légutak szabadságát", "Mert a stabil oldalfekvés csökkenti a szédülést", "Mert ez a legkényelmesebb pozíció eszméletlen állapotban"],
-      "correct": 1,
-      "explanation": "A stabil oldalfekvés megakadályozza a fulladást, ha a sérült eszméletlen."
+      "text": "Az alábbiak közül melyik információt NEM elengedhetetlen közölni a mentőkkel egy áramütéses eset bejelentésekor?",
+      "options": [
+        "A sérült nemét és a nevét.",
+        "A pontos helyszínt.",
+        "Hogy áramütés történt.",
+        "A sérült állapotát (eszméleténél van-e, lélegzik-e)."
+      ],
+      "correct": 0,
+      "explanation": "Bár hasznos lehet, a sérült személyes adatai nem annyira sürgősek, mint az állapota és a helyszín leírása."
     },
     {
-      "text": "Miért kell mentőt hívni akkor is, ha 'jól van' valaki?",
-      "image": "kvizek/9evf/mentes8.jpg",
-      "options": ["Mert a mentők gyorsabban stabilizálják az állapotot", "Mert rejtett sérülések lehetnek", "Mert a mentő tudja a legjobb utat a kórházba", "Mert a sérültnek szüksége van az orvosi vizsgálatra a baleset után"],
+      "text": "Miért kell stabil oldalfekvésbe helyezni az eszméletlen, de lélegző sérültet?",
+      "options": [
+        "Mert az oldalfekvés megkönnyíti a szív munkáját",
+        "Mert biztosítja a légutak szabadságát",
+        "Mert a stabil oldalfekvés csökkenti a fájdalmat",
+        "Mert ez a legkényelmesebb pozíció eszméletlen állapotban"
+      ],
       "correct": 1,
-      "explanation": "Az áramütés rejtett belső sérüléseket okozhat, amit orvosnak kell ellenőriznie."
+      "explanation": "A stabil oldalfekvés megakadályozza, hogy az eszméletlen sérült nyelve hátraessen és elzárja a légutakat, illetve megelőzi a fulladást hányás esetén."
+    },
+    {
+      "text": "Milyen egyéb sérülést okozhat az áramütés az égési sebeken kívül?",
+      "options": [
+        "Allergiás reakciót.",
+        "Csonttörést vagy ficamodást.",
+        "Vírusfertőzést.",
+        "Kiszáradást."
+      ],
+      "correct": 1,
+      "explanation": "Az erős, akaratlan izom-összehúzódások olyan erősek lehetnek, hogy csonttöréseket vagy ízületi ficamokat okozhatnak."
+    },
+    {
+      "text": "Miért kell mentőt hívni akkor is, ha valaki egy áramütés után látszólag 'jól van'?",
+      "options": [
+        "Mert a mentők jelenlétében javul az állapota",
+        "Mert szabad szemnel nem látható rejtett belső sérülések lehetnek",
+        "Mert a mentő tudja a legjobb utat a kórházba",
+        "Mert a biztosító csak így fizet"
+      ],
+      "correct": 1,
+      "explanation": "Az áramütés rejtett belső sérüléseket, például szívritmuszavart okozhat, ami később is jelentkezhet és életveszélyes lehet. Ezt csak orvos tudja kizárni."
     }
   ]
 }
+
