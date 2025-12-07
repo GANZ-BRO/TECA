@@ -1,0 +1,127 @@
+{
+  "title": "Villamosságtan - Ellenállás és Teljesítmény (Szöveges formátum)",
+  "shuffleQuestions": true,
+  "gyakorlasmod": true,
+  "questions": [
+    {
+      "text": "Mi az elektromos ellenállás (R)?",
+      "image": "kvizek/ellenallas/fogalom.jpg",
+      "options": [
+        "A feszültség hajtóereje az áramkörben.",
+        "Az a gátló hatás, amit a vezető fejt ki az árammal szemben.",
+        "Az elektromos töltés mennyisége.",
+        "Az egységnyi idő alatt végzett elektromos munka."
+      ],
+      "correct": 1,
+      "explanation": "Az **ellenállás** az az akadályozó hatás, amelyet a vezető anyag fejt ki az áthaladó elektromos árammal szemben."
+    },
+    {
+      "text": "Mi a teljesítmény (P)?",
+      "image": "kvizek/teljesitmeny/fogalom.jpg",
+      "options": [
+        "Az áramkörben a töltés felhalmozódása.",
+        "Az ellenállás reciproka.",
+        "Az egységnyi idő alatt átalakított vagy felhasznált energia.",
+        "Az áramerősség és az ellenállás hányadosa."
+      ],
+      "correct": 2,
+      "explanation": "A **teljesítmény** azt fejezi ki, hogy egységnyi idő (1 másodperc) alatt mennyi elektromos energia alakul át (pl. hővé, fénnyé)."
+    },
+    {
+      "text": "Mi az ellenállás mértékegysége?",
+      "image": "kvizek/ellenallas/ohm.jpg",
+      "options": [
+        "Volt (V)",
+        "Amper (A)",
+        "Ohm (Ohm jel)",
+        "Farad (F)"
+      ],
+      "correct": 2,
+      "explanation": "Az **Ohm** (jele: Ohm jel, görög omega nagybetű) az elektromos ellenállás mértékegysége, Georg Simon Ohm tiszteletére. (Mivel a jelölést nem lehet használni, a szöveges 'Ohm jel' utal rá.)"
+    },
+    {
+      "text": "Mi a teljesítmény mértékegysége?",
+      "image": "kvizek/teljesitmeny/watt.jpg",
+      "options": [
+        "Joule (J)",
+        "Watt (W)",
+        "Volt (V)",
+        "Newton (N)"
+      ],
+      "correct": 1,
+      "explanation": "A **Watt** (jele: W) az elektromos teljesítmény mértékegysége, James Watt skót feltaláló tiszteletére."
+    },
+    {
+      "text": "Milyen összefüggés érvényes az ellenállásra az Ohm-törvény alapján? (U = Feszültség, I = Áramerősség)",
+      "image": "kvizek/ohm/ohm_formula.jpg",
+      "options": [
+        "R = U * I",
+        "R = I / U",
+        "R = U / I",
+        "R = P * I"
+      ],
+      "correct": 2,
+      "explanation": "Az Ohm-törvény szerint az ellenállás a feszültség és az áramerősség hányadosa: **R = U / I**."
+    },
+    {
+      "text": "Melyik fizikai mennyiség jele a P?",
+      "image": "kvizek/jelek/P.jpg",
+      "options": [
+        "Feszültség",
+        "Ellenállás",
+        "Teljesítmény",
+        "Áramerősség"
+      ],
+      "correct": 2,
+      "explanation": "A P jelöli a **teljesítményt** (az angol *power* szóból)."
+    },
+    {
+      "text": "Hogyan befolyásolja egy vezető hosszának növelése az ellenállását (azonos keresztmetszet esetén)?",
+      "image": "kvizek/ellenallas/hossz.jpg",
+      "options": [
+        "Csökkenti az ellenállást.",
+        "Az ellenállás nem változik.",
+        "Növeli az ellenállást.",
+        "Először növeli, majd csökkenti."
+      ],
+      "correct": 2,
+      "explanation": "Az ellenállás egyenesen arányos a vezető hosszával: minél hosszabb a vezető, annál nagyobb az ellenállása."
+    },
+    {
+      "text": "Hogyan számítható ki a teljesítmény, ha ismerjük a feszültséget (U) és az áramerősséget (I)?",
+      "image": "kvizek/teljesitmeny/formula.jpg",
+      "options": [
+        "P = U / I",
+        "P = I * R",
+        "P = U * I",
+        "P = U / R"
+      ],
+      "correct": 2,
+      "explanation": "Az elektromos teljesítmény a feszültség (U) és az áramerősség (I) szorzata: **P = U * I**."
+    },
+    {
+      "text": "Melyik eszköz méri az ellenállást?",
+      "image": "kvizek/ellenallas/eszkoz.jpg",
+      "options": [
+        "Ampermérő",
+        "Voltmérő",
+        "Ohm-mérő (vagy multiméter)",
+        "Wattmérő"
+      ],
+      "correct": 2,
+      "explanation": "Az **Ohm-mérő** (vagy modern **multiméter**) a megfelelő eszköz az elektromos ellenállás mérésére."
+    },
+    {
+      "text": "Mi a W mértékegység és milyen mennyiséghez tartozik?",
+      "image": "kvizek/jelek/W.jpg",
+      "options": [
+        "Watt, Teljesítmény",
+        "Volt, Feszültség",
+        "Joule, Energia",
+        "Weber, Mágneses fluxus"
+      ],
+      "correct": 0,
+      "explanation": "A W a **Watt** mértékegység rövidítése, amely az elektromos **teljesítmény** mértékegysége."
+    }
+  ]
+}

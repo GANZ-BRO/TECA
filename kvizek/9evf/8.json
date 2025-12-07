@@ -1,0 +1,199 @@
+{
+  "title": "Villamosságtani Alapmennyiségek Kvíz (16 Kérdés)",
+  "shuffleQuestions": true,
+  "gyakorlasmod": true,
+  "questions": [
+    {
+      "text": "Mi az I betű jele az elektromosságtanban?",
+      "image": null,
+      "options": [
+        "Feszültség",
+        "Áramerősség",
+        "Ellenállás",
+        "Teljesítmény"
+      ],
+      "correct": 1,
+      "explanation": "Az **I** jelöli az elektromos áramerősséget, amely a töltés áramlásának sebességét fejezi ki."
+    },
+    {
+      "text": "Mi az elektromos áramerősség jele?",
+      "image": null,
+      "options": [
+        "P",
+        "R",
+        "U",
+        "I"
+      ],
+      "correct": 3,
+      "explanation": "Az áramerősség jele **I**, ami az angol *intensity* (intenzitás) szóból ered."
+    },
+    {
+      "text": "Melyik a mértékegység neve, aminek a jele A?",
+      "image": null,
+      "options": [
+        "Volt",
+        "Watt",
+        "Amper",
+        "Ohm"
+      ],
+      "correct": 2,
+      "explanation": "Az áramerősség SI alapegysége az **Amper**, aminek a jele **A**."
+    },
+    {
+      "text": "Mi az Amper mértékegység jele?",
+      "image": null,
+      "options": [
+        "W",
+        "Omega (Ohm jel)",
+        "I",
+        "A"
+      ],
+      "correct": 3,
+      "explanation": "Az Amper jele **A**, az áramerősség mértékegysége."
+    },
+    {
+      "text": "Mi az U betű jele az elektromosságtanban?",
+      "image": null,
+      "options": [
+        "Ellenállás",
+        "Feszültség",
+        "Teljesítmény",
+        "Áramerősség"
+      ],
+      "correct": 1,
+      "explanation": "Az **U** jelöli az elektromos feszültséget, más néven elektromotoros erőt vagy potenciálkülönbséget."
+    },
+    {
+      "text": "Mi az elektromos feszültség jele?",
+      "image": null,
+      "options": [
+        "P",
+        "U",
+        "I",
+        "R"
+      ],
+      "correct": 1,
+      "explanation": "A feszültség jele **U** (németül *Spannung*), bár néha **V**-vel is jelölik."
+    },
+    {
+      "text": "Melyik a mértékegység neve, aminek a jele V?",
+      "image": null,
+      "options": [
+        "Ohm",
+        "Amper",
+        "Volt",
+        "Watt"
+      ],
+      "correct": 2,
+      "explanation": "A feszültség mértékegysége a **Volt**, amit **V** jellel rövidítünk."
+    },
+    {
+      "text": "Mi a Volt mértékegység jele?",
+      "image": null,
+      "options": [
+        "W",
+        "V",
+        "U",
+        "A"
+      ],
+      "correct": 1,
+      "explanation": "A Volt jele **V**, amely Alessandro Volta olasz fizikus nevét őrzi."
+    },
+    {
+      "text": "Mi az R betű jele az elektromosságtanban?",
+      "image": null,
+      "options": [
+        "Feszültség",
+        "Ellenállás",
+        "Teljesítmény",
+        "Áramerősség"
+      ],
+      "correct": 1,
+      "explanation": "Az **R** jelöli az elektromos ellenállást, amely a vezetőnek az árammal szemben kifejtett gátló hatását méri."
+    },
+    {
+      "text": "Mi az elektromos ellenállás jele?",
+      "image": null,
+      "options": [
+        "P",
+        "I",
+        "R",
+        "U"
+      ],
+      "correct": 2,
+      "explanation": "Az ellenállás jele **R**, ami az angol *resistance* (ellenállás) szó kezdőbetűje."
+    },
+    {
+      "text": "Melyik a mértékegység neve, aminek a jele a görög Omega betű?",
+      "image": null,
+      "options": [
+        "Volt",
+        "Watt",
+        "Amper",
+        "Ohm"
+      ],
+      "correct": 3,
+      "explanation": "Az elektromos ellenállás mértékegysége az **Ohm**, aminek a jele a görög **Omega** betű."
+    },
+    {
+      "text": "Mi az Ohm mértékegység jele?",
+      "image": null,
+      "options": [
+        "O",
+        "R",
+        "Omega (görög nagybetű)",
+        "W"
+      ],
+      "correct": 2,
+      "explanation": "Az Ohm jele a görög **Omega** nagybetű."
+    },
+    {
+      "text": "Mi a P betű jele az elektromosságtanban?",
+      "image": null,
+      "options": [
+        "Ellenállás",
+        "Feszültség",
+        "Áramerősség",
+        "Teljesítmény"
+      ],
+      "correct": 3,
+      "explanation": "A **P** jelöli az elektromos teljesítményt, amely megadja az egységnyi idő alatt átalakított vagy felhasznált energiát."
+    },
+    {
+      "text": "Mi az elektromos teljesítmény jele?",
+      "image": null,
+      "options": [
+        "R",
+        "I",
+        "P",
+        "U"
+      ],
+      "correct": 2,
+      "explanation": "Az elektromos teljesítmény jele **P**, ami az angol *power* (teljesítmény) szó kezdőbetűje."
+    },
+    {
+      "text": "Melyik a mértékegység neve, aminek a jele W?",
+      "image": null,
+      "options": [
+        "Volt",
+        "Ohm",
+        "Watt",
+        "Joule"
+      ],
+      "correct": 2,
+      "explanation": "Az elektromos teljesítmény mértékegysége a **Watt**, amelyet **W** jellel rövidítünk."
+    },
+    {
+      "text": "Mi a Watt mértékegység jele?",
+      "image": null,
+      "options": [
+        "P",
+        "J",
+        "W",
+        "V"
+      ],
+      "correct": 2,
+      "explanation": "A Watt jele **W**, amely a teljesítmény mértékegysége."
+    }
+  ]
+}
