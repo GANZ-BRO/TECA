@@ -1,5 +1,5 @@
 {
-  "title": "Villamosságtani Alapmennyiségek Kvíz (16 Kérdés)",
+  "title": "Villamosságtani Alapmennyiségek, Mértékegységek és Képletek",
   "shuffleQuestions": true,
   "gyakorlasmod": true,
   "questions": [
@@ -28,30 +28,6 @@
       "explanation": "Az áramerősség jele **I**, ami az angol *intensity* (intenzitás) szóból ered."
     },
     {
-      "text": "Melyik a mértékegység neve, aminek a jele A?",
-      "image": null,
-      "options": [
-        "Volt",
-        "Watt",
-        "Amper",
-        "Ohm"
-      ],
-      "correct": 2,
-      "explanation": "Az áramerősség SI alapegysége az **Amper**, aminek a jele **A**."
-    },
-    {
-      "text": "Mi az Amper mértékegység jele?",
-      "image": null,
-      "options": [
-        "W",
-        "Omega (Ohm jel)",
-        "I",
-        "A"
-      ],
-      "correct": 3,
-      "explanation": "Az Amper jele **A**, az áramerősség mértékegysége."
-    },
-    {
       "text": "Mi az U betű jele az elektromosságtanban?",
       "image": null,
       "options": [
@@ -74,30 +50,6 @@
       ],
       "correct": 1,
       "explanation": "A feszültség jele **U** (németül *Spannung*), bár néha **V**-vel is jelölik."
-    },
-    {
-      "text": "Melyik a mértékegység neve, aminek a jele V?",
-      "image": null,
-      "options": [
-        "Ohm",
-        "Amper",
-        "Volt",
-        "Watt"
-      ],
-      "correct": 2,
-      "explanation": "A feszültség mértékegysége a **Volt**, amit **V** jellel rövidítünk."
-    },
-    {
-      "text": "Mi a Volt mértékegység jele?",
-      "image": null,
-      "options": [
-        "W",
-        "V",
-        "U",
-        "A"
-      ],
-      "correct": 1,
-      "explanation": "A Volt jele **V**, amely Alessandro Volta olasz fizikus nevét őrzi."
     },
     {
       "text": "Mi az R betű jele az elektromosságtanban?",
@@ -124,30 +76,6 @@
       "explanation": "Az ellenállás jele **R**, ami az angol *resistance* (ellenállás) szó kezdőbetűje."
     },
     {
-      "text": "Melyik a mértékegység neve, aminek a jele a görög Omega betű?",
-      "image": null,
-      "options": [
-        "Volt",
-        "Watt",
-        "Amper",
-        "Ohm"
-      ],
-      "correct": 3,
-      "explanation": "Az elektromos ellenállás mértékegysége az **Ohm**, aminek a jele a görög **Omega** betű."
-    },
-    {
-      "text": "Mi az Ohm mértékegység jele?",
-      "image": null,
-      "options": [
-        "O",
-        "R",
-        "Omega (görög nagybetű)",
-        "W"
-      ],
-      "correct": 2,
-      "explanation": "Az Ohm jele a görög **Omega** nagybetű."
-    },
-    {
       "text": "Mi a P betű jele az elektromosságtanban?",
       "image": null,
       "options": [
@@ -172,7 +100,43 @@
       "explanation": "Az elektromos teljesítmény jele **P**, ami az angol *power* (teljesítmény) szó kezdőbetűje."
     },
     {
-      "text": "Melyik a mértékegység neve, aminek a jele W?",
+      "text": "Mi az elektromos áramerősség mértékegysége?",
+      "image": null,
+      "options": [
+        "Volt",
+        "Watt",
+        "Amper",
+        "Ohm"
+      ],
+      "correct": 2,
+      "explanation": "Az elektromos áramerősség SI mértékegysége az **Amper**."
+    },
+    {
+      "text": "Mi az elektromos feszültség mértékegysége?",
+      "image": null,
+      "options": [
+        "Ohm",
+        "Amper",
+        "Volt",
+        "Watt"
+      ],
+      "correct": 2,
+      "explanation": "Az elektromos feszültség SI mértékegysége a **Volt**."
+    },
+    {
+      "text": "Mi az elektromos ellenállás mértékegysége?",
+      "image": null,
+      "options": [
+        "Volt",
+        "Watt",
+        "Amper",
+        "Ohm"
+      ],
+      "correct": 3,
+      "explanation": "Az elektromos ellenállás SI mértékegysége az **Ohm**."
+    },
+    {
+      "text": "Mi az elektromos teljesítmény mértékegysége?",
       "image": null,
       "options": [
         "Volt",
@@ -181,19 +145,80 @@
         "Joule"
       ],
       "correct": 2,
-      "explanation": "Az elektromos teljesítmény mértékegysége a **Watt**, amelyet **W** jellel rövidítünk."
+      "explanation": "Az elektromos teljesítmény SI mértékegysége a **Watt**."
     },
     {
-      "text": "Mi a Watt mértékegység jele?",
+      "text": "Melyik a helyes képlet az ellenállás (R) kiszámítására az Ohm-törvény alapján?",
       "image": null,
       "options": [
-        "P",
-        "J",
-        "W",
-        "V"
+        "R = U * I",
+        "R = U / I",
+        "R = I / U",
+        "R = P / I"
+      ],
+      "correct": 1,
+      "explanation": "Az Ohm-törvény (U = I * R) átrendezve: **R = U / I**."
+    },
+    {
+      "text": "Melyik a helyes képlet az elektromos teljesítmény (P) kiszámítására?",
+      "image": null,
+      "options": [
+        "P = U / I",
+        "P = I / U",
+        "P = U * I",
+        "P = U * R"
       ],
       "correct": 2,
-      "explanation": "A Watt jele **W**, amely a teljesítmény mértékegysége."
+      "explanation": "Az elektromos teljesítmény alapképlete: **P = U * I**."
+    },
+    {
+      "text": "Hogyan számítjuk ki az áramerősséget (I) a feszültségből (U) és az ellenállásból (R)?",
+      "image": null,
+      "options": [
+        "I = U * R",
+        "I = R / U",
+        "I = U / R",
+        "I = P * U"
+      ],
+      "correct": 2,
+      "explanation": "Az Ohm-törvény átrendezésével az áramerősség: **I = U / R**."
+    },
+    {
+      "text": "Hogyan számítjuk ki a feszültséget (U) az áramerősségből (I) és az ellenállásból (R)?",
+      "image": null,
+      "options": [
+        "U = I * R",
+        "U = I / R",
+        "U = R / I",
+        "U = P / R"
+      ],
+      "correct": 0,
+      "explanation": "Az Ohm-törvény alapképlete: **U = I * R**."
+    },
+    {
+      "text": "Hogyan számítjuk ki az áramerősséget (I) a teljesítményből (P) és a feszültségből (U)?",
+      "image": null,
+      "options": [
+        "I = P * U",
+        "I = P / U",
+        "I = U / P",
+        "I = P / R"
+      ],
+      "correct": 1,
+      "explanation": "A teljesítményképlet (P = U * I) átrendezésével: **I = P / U**."
+    },
+    {
+      "text": "Hogyan számítjuk ki a feszültséget (U) a teljesítményből (P) és az áramerősségből (I)?",
+      "image": null,
+      "options": [
+        "U = P * I",
+        "U = I / P",
+        "U = P / I",
+        "U = P * R"
+      ],
+      "correct": 2,
+      "explanation": "A teljesítményképlet (P = U * I) átrendezésével: **U = P / I**."
     }
+    
   ]
 }
